@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<!-- Mirrored from Jorban.rocks/website-cost-calculator/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Aug 2023 12:29:37 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head><meta charset="UTF-8" /><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(){this.v="1.2.3",this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",t=>{this.persisted=t.persisted}),window.addEventListener("DOMContentLoaded",()=>{this._preconnect3rdParties()}),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}_addUserInteractionListener(t){if(document.hidden){t._triggerListener();return}this.triggerEvents.forEach(e=>window.addEventListener(e,t.userEventHandler,{passive:!0})),window.addEventListener("touchstart",t.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",t.touchStartHandler),document.addEventListener("visibilitychange",t.userEventHandler)}_removeUserInteractionListener(){this.triggerEvents.forEach(t=>window.removeEventListener(t,this.userEventHandler,{passive:!0})),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(t){"HTML"!==t.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),t.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"onclick","rocket-onclick"),this._pendingClickStarted())}_onTouchMove(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),t.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"rocket-onclick","onclick"),this._pendingClickFinished()}_onTouchEnd(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(t){t.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"rocket-onclick","onclick"),this.interceptedClicks.push(t),t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),this._pendingClickFinished()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach(t=>{t.target.dispatchEvent(new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0}))})}_waitForPendingClicks(){return new Promise(t=>{this._isClickPending?this._pendingClickFinished=t:t()})}_pendingClickStarted(){this._isClickPending=!0}_pendingClickFinished(){this._isClickPending=!1}_renameDOMAttribute(t,e,r){t.hasAttribute&&t.hasAttribute(e)&&(event.target.setAttribute(r,event.target.getAttribute(e)),event.target.removeAttribute(e))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let t=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach(e=>{if(e.hasAttribute("src")){let r=new URL(e.html).origin;r!==location.origin&&t.push({src:r,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}}),t=[...new Map(t.map(t=>[JSON.stringify(t),t])).values()],this._batchInjectResourceHints(t,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(this),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(t){console.error(t)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._waitForPendingClicks().then(()=>{this._replayClicks()}),this._emptyTrash()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach(t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)})}async _transformScript(t){return new Promise((await this._littleBreath(),navigator.userAgent.indexOf("Firefox/index.html")>0||""===navigator.vendor)?e=>{let r=document.createElement("script");[...t.attributes].forEach(t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),r.setAttribute(e,t.nodeValue))}),t.text&&(r.text=t.text),r.hasAttribute("src")?(r.addEventListener("load",e),r.addEventListener("error",e)):(r.text=t.text,e());try{t.parentNode.replaceChild(r,t)}catch(i){e()}}:async e=>{function r(){t.setAttribute("data-rocket-status","failed"),e()}try{let i=t.getAttribute("data-rocket-type"),n=t.getAttribute("data-rocket-src");t.text,i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",function r(){t.setAttribute("data-rocket-status","executed"),e()}),t.addEventListener("error",r),n?(t.removeAttribute("data-rocket-src"),t.src=n):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}catch(s){r()}})}async _loadScriptsFromList(t){let e=t.shift();return e&&e.isConnected?(await this._transformScript(e),this._loadScriptsFromList(t)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(t,e){var r=document.createDocumentFragment();t.forEach(t=>{let i=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(i){let n=document.createElement("link");n.href=i,n.rel=e,"preconnect"!==e&&(n.as="script"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),r.appendChild(n),this.trash.push(n)}}),document.head.appendChild(r)}_delayEventListeners(t){let e={};function r(t,r){!function t(r){!e[r]&&(e[r]={originalFunctions:{add:r.addEventListener,remove:r.removeEventListener},eventsToRewrite:[]},r.addEventListener=function(){arguments[0]=i(arguments[0]),e[r].originalFunctions.add.apply(r,arguments)},r.removeEventListener=function(){arguments[0]=i(arguments[0]),e[r].originalFunctions.remove.apply(r,arguments)});function i(t){return e[r].eventsToRewrite.indexOf(t)>=0?"rocket-"+t:t}}(t),e[t].eventsToRewrite.push(r)}function i(t,e){let r=t[e];Object.defineProperty(t,e,{get:()=>r||function(){},set(i){t["rocket"+e]=r=i}})}r(document,"DOMContentLoaded"),r(window,"DOMContentLoaded"),r(window,"load"),r(window,"pageshow"),r(document,"readystatechange"),i(document,"onreadystatechange"),i(window,"onload"),i(window,"onpageshow")}_delayJQueryReady(t){let e;function r(r){if(r&&r.fn&&!t.allJQueries.includes(r)){r.fn.ready=r.fn.init.prototype.ready=function(e){return t.domReadyFired?e.bind(document)(r):document.addEventListener("rocket-DOMContentLoaded",()=>e.bind(document)(r)),r([])};let i=r.fn.on;r.fn.on=r.fn.init.prototype.on=function(){if(this[0]===window){function t(t){return t.split(" ").map(t=>"load"===t||0===t.indexOf("load.")?"rocket-jquery-load":t).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=t(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach(e=>{let r=arguments[0][e];delete arguments[0][e],arguments[0][t(e)]=r})}return i.apply(this,arguments),this},t.allJQueries.push(r)}e=r}r(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){r(t)}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach(t=>t(window).trigger("rocket-jquery-load")),await this._littleBreath();let t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){let t=new Map;document.write=document.writeln=function(e){let r=document.currentScript;r||console.error("WPRocket unable to document.write this: "+e);let i=document.createRange(),n=r.parentElement,s=t.get(r);void 0===s&&(s=r.nextSibling,t.set(r,s));let a=document.createDocumentFragment();i.setStart(a,0),a.appendChild(i.createContextualFragment(e)),n.insertBefore(a,s)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise(t=>setTimeout(t)):new Promise(t=>requestAnimationFrame(t))}_emptyTrash(){this.trash.forEach(t=>t.remove())}static run(){let t=new RocketLazyLoadScripts;t._addUserInteractionListener(t)}}RocketLazyLoadScripts.run();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<script>
+var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,initializeOnLoaded:function(o){gform.domLoaded&&gform.scriptsLoaded?o():!gform.domLoaded&&gform.scriptsLoaded?window.addEventListener("DOMContentLoaded",o):document.addEventListener("gform_main_scripts_loaded",o)},hooks:{action:{},filter:{}},addAction:function(o,n,r,t){gform.addHook("action",o,n,r,t)},addFilter:function(o,n,r,t){gform.addHook("filter",o,n,r,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,n){gform.removeHook("action",o,n)},removeFilter:function(o,n,r){gform.removeHook("filter",o,n,r)},addHook:function(o,n,r,t,i){null==gform.hooks[o][n]&&(gform.hooks[o][n]=[]);var e=gform.hooks[o][n];null==i&&(i=n+"_"+e.length),gform.hooks[o][n].push({tag:i,callable:r,priority:t=null==t?10:t})},doHook:function(n,o,r){var t;if(r=Array.prototype.slice.call(r,1),null!=gform.hooks[n][o]&&((o=gform.hooks[n][o]).sort(function(o,n){return o.priority-n.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==n?t.apply(null,r):r[0]=t.apply(null,r)})),"filter"==n)return r[0]},removeHook:function(o,n,t,i){var r;null!=gform.hooks[o][n]&&(r=(r=gform.hooks[o][n]).filter(function(o,n,r){return!!(null!=i&&i!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][n]=r)}});
+</script>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<meta name="format-detection" content="telephone=no" />
+<link rel="pingback" href="../xmlrpc.php" />
+<script type="rocketlazyloadscript" data-rocket-src="https://app.splithero.com/api/js?r=https://huemor.rocks/website-cost-calculator/&wpliu=false" nitro-exclude defer></script><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+<title>Project Calculator - Jorban</title><link rel="preload" href="../wp-content/uploads/2023/02/logo.png" as="image" />
+<link rel="canonical" href="index.html" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Project Calculator - Jorban" />
+<meta property="og:description" content="Website Cost Calculator instant website cost estimate. Curious about what it might cost to have your website built by the Hue-Crew? Get your custom website cost estimate in less than 2 minutes. *This calculator is geared towards estimating full web projects. If you&#8217;re interested in learning more about the cost of supporting your existing website,&hellip;" />
+<meta property="og:url" content="https://huemor.rocks/website-cost-calculator/" />
+<meta property="og:site_name" content="Huemor" />
+<meta property="article:modified_time" content="2023-08-10T18:29:18+00:00" />
+<meta property="og:image" content="https://huemordev.b-cdn.net/wp-content/uploads/2023/06/website-cost-calculator-featured-img-1.jpg" />
+<meta property="og:image:width" content="1025" />
+<meta property="og:image:height" content="867" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@HuemorDesigns" />
+<meta name="twitter:label1" content="Est. reading time" />
+<meta name="twitter:data1" content="9 minutes" />
+<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://huemor.rocks/website-cost-calculator/","url":"https://huemor.rocks/website-cost-calculator/","name":"Project Calculator - Jorban","isPartOf":{"@id":"https://huemor.rocks/#website"},"primaryImageOfPage":{"@id":"https://huemor.rocks/website-cost-calculator/#primaryimage"},"image":{"@id":"https://huemor.rocks/website-cost-calculator/#primaryimage"},"thumbnailUrl":"https://huemordev.b-cdn.net/wp-content/uploads/2023/06/website-cost-calculator-featured-img-1.jpg","datePublished":"2023-05-04T13:49:31+00:00","dateModified":"2023-08-10T18:29:18+00:00","inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://huemor.rocks/website-cost-calculator/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://huemor.rocks/website-cost-calculator/#primaryimage","url":"https://huemordev.b-cdn.net/wp-content/uploads/2023/06/website-cost-calculator-featured-img-1.jpg","contentUrl":"https://huemordev.b-cdn.net/wp-content/uploads/2023/06/website-cost-calculator-featured-img-1.jpg","width":1025,"height":867},{"@type":"WebSite","@id":"https://huemor.rocks/#website","url":"https://huemor.rocks/","name":"Huemor","description":"Award-Winning Web Agency, based in USA","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://huemor.rocks/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"}]}</script>
+
+<link rel="dns-prefetch" href="http://js.hs-scripts.com/" />
+<link rel="dns-prefetch" href="http://browser.sentry-cdn.com/" />
+<link rel="dns-prefetch" href="http://fonts.googleapis.com/" />
+<link href="https://fonts.gstatic.com/" crossorigin rel="preconnect" />
+<link rel="alternate" type="application/rss+xml" title="Jorban&raquo; Feed" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Jorban&raquo; Comments Feed" href="../comments/feed/index.html" />
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="wp-block-library-css" href="../wp-includes/css/dist/block-library/style.min3781.css?ver=6.2.2" media="all" />
+<style id="wp-block-library-theme-inline-css">
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id="create-block-chapter-fullwidth-style-inline-css">
+.ChapterFullwidth{margin-bottom:60px;margin-top:60px;padding:150px 20px}@media(max-width:767px){.ChapterFullwidth{padding:75px 20px}}.ChapterFullwidth .ChapterFullwitdh-wrapper{margin:0 auto;max-width:850px;text-align:center}@media(max-width:991px){.ChapterFullwidth .ChapterFullwitdh-wrapper{max-width:850px!important;padding:0 40px}}@media(max-width:767px){.ChapterFullwidth .ChapterFullwitdh-wrapper{padding:0 15px}}.ChapterFullwidth .ChapterFullwitdh-icons_chapter{-ms-interpolation-mode:nearest-neighbor;display:flex;height:30px;image-rendering:-moz-crisp-edges;image-rendering:pixelated;image-rendering:-webkit-optimize-contrast;margin:0 auto 15px;width:30px}.ChapterFullwidth .ChapterFullwitdh-chaptersectiontitle{color:#fff;font-family:Archivo;font-size:12px!important;font-weight:500;letter-spacing:1.2px;line-height:normal;margin:0;opacity:.7;text-align:center;text-transform:uppercase}.ChapterFullwidth .ChapterFullwitdh-chaptertitle{color:#fff;font-size:48px!important;font-weight:700;line-height:1.2;margin:25px 0 0;text-align:center;text-transform:capitalize}@media(max-width:767px){.ChapterFullwidth .ChapterFullwitdh-chaptertitle{font-size:36px!important;letter-spacing:normal;line-height:1.35!important}}.ChapterFullwidth p{color:#fff;font-size:18px;letter-spacing:normal;line-height:32px;opacity:.85;text-align:center}@media(max-width:767px){.ChapterFullwidth p{font-size:16px;letter-spacing:normal;line-height:26px}}
+
+</style>
+<style id="create-block-huemor-multi-column-style-inline-css">
+.HuemorMultiColumn-container{justify-content:space-evenly;padding:53px 0 20px;text-align:center}@media(min-width:870px){.HuemorMultiColumn-container{display:flex}}.HuemorMultiColumn-container h2{color:#222;font-size:24px;font-weight:700;line-height:36px;margin-bottom:15px;margin-top:30px!important}.HuemorMultiColumn-container p{color:#040404;font-size:18px;font-weight:300;letter-spacing:0;line-height:32px;margin-bottom:10px;opacity:.6;text-align:center}.HuemorMultiColumn-container .HuemorMultiColumn-button a{color:#000;font-size:17px}.HuemorMultiColumn-column{background:#f5f6fa;margin:0 20px 30px;min-width:260px;padding:40px 20px}.HuemorMultiColumn-image_container{align-items:center;display:flex;flex-direction:column;justify-content:center}.HuemorMultiColumn-image{max-width:200px!important}
+
+</style>
+<style id="create-block-huemor-protip-gb-style-inline-css">
+.huemorProtip-container{background-color:#f5f6fa;border-radius:3px;margin:30px 0;padding:53px;text-align:center}.huemorProtip-container .huemorProtip-title{font-size:24px;line-height:36px;margin:0 0 5px}.huemorProtip-container .huemorProtip-description{font-size:18px;line-height:30px;margin:auto auto 20px;max-width:482px}.huemorProtip-container .huemorProtip-button .wp-block-button .wp-block-button__link{background:#e0345b;border:1px solid #e0345b;border-radius:3px;color:#fff;font-size:12px;font-weight:600;letter-spacing:1px;line-height:22px;padding:15px 56px;text-decoration:none;text-transform:uppercase}.huemorProtip-container .huemorProtip-button .wp-block-button .wp-block-button__link:hover{background:#940e71;border:1px solid #940e71}
+
+</style>
+<link rel="stylesheet" id="classic-theme-styles-css" href="../wp-includes/css/classic-themes.min3781.css?ver=6.2.2" media="all" />
+<link data-minify="1" rel="stylesheet" id="fl-builder-layout-39145-css" href="../wp-content/cache/min/1/wp-content/uploads/bb-plugin/cache/39145-layout1eff.css?ver=1692186640" media="all" />
+<link data-minify="1" rel="stylesheet" id="dashicons-css" href="../wp-content/cache/min/1/wp-includes/css/dashicons.min6d38.css?ver=1692186403" media="all" />
+<link data-minify="1" rel="stylesheet" id="fl-builder-layout-bundle-9e2087a0b25cd65bb484e16abf5166c2-css" href="../wp-content/cache/min/1/wp-content/uploads/bb-plugin/cache/9e2087a0b25cd65bb484e16abf5166c2-layout-bundle03a7.css?ver=1692186476" media="all" />
+<link data-minify="1" rel="stylesheet" id="space-station-customCss-css" href="../wp-content/cache/min/1/wp-content/themes/beaverwarrior/assets/customCss6d38.css?ver=1692186403" media="all" />
+<link data-minify="1" rel="stylesheet" id="space-station-globalcss-css" href="../wp-content/cache/min/1/wp-content/themes/beaverwarrior/assets/cssglobal6d38.css?ver=1692186403" media="all" />
+<link data-minify="1" rel="stylesheet" id="bootstrap-css" href="../wp-content/cache/min/1/wp-content/themes/bb-theme/css/bootstrap.min6d38.css?ver=1692186403" media="all" />
+<link data-minify="1" rel="stylesheet" id="space-station-main-css" href="../wp-content/cache/min/1/wp-content/uploads/beaverwarrior/skin-64dcb41c9c3706d38.css?ver=1692186403" media="all" />
+<link data-minify="1" rel="stylesheet" id="slick-slider-css" href="../wp-content/cache/min/1/wp-content/themes/beaverwarrior/assets/vendor/slick/slick/slick6d38.css?ver=1692186403" media="all" />
+<link data-minify="1" rel="stylesheet" id="moove_gdpr_frontend-css" href="../wp-content/cache/min/1/wp-content/plugins/gdpr-cookie-compliance/dist/styles/gdpr-main-nf7d2e.css?ver=1692186404" media="all" />
+<style id="moove_gdpr_frontend-inline-css">
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main h3.tab-title, 
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main span.tab-title,
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li a, 
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li button,
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content .moove-gdpr-branding-cnt a,
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder a.mgbutton, 
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton,
+				#moove_gdpr_cookie_modal .cookie-switch .cookie-slider:after, 
+				#moove_gdpr_cookie_modal .cookie-switch .slider:after, 
+				#moove_gdpr_cookie_modal .switch .cookie-slider:after, 
+				#moove_gdpr_cookie_modal .switch .slider:after,
+				#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content p, 
+				#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content p a,
+				#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton, 
+				#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton,
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main .moove-gdpr-tab-main-content h1, 
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main .moove-gdpr-tab-main-content h2, 
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main .moove-gdpr-tab-main-content h3, 
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main .moove-gdpr-tab-main-content h4, 
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main .moove-gdpr-tab-main-content h5, 
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main .moove-gdpr-tab-main-content h6,
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content.moove_gdpr_modal_theme_v2 .moove-gdpr-modal-title .tab-title,
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content.moove_gdpr_modal_theme_v2 .moove-gdpr-tab-main h3.tab-title, 
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content.moove_gdpr_modal_theme_v2 .moove-gdpr-tab-main span.tab-title,
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content.moove_gdpr_modal_theme_v2 .moove-gdpr-branding-cnt a {
+				 	font-weight: inherit				}
+			#moove_gdpr_cookie_modal,#moove_gdpr_cookie_info_bar,.gdpr_cookie_settings_shortcode_content{font-family:Archivo,sans-serif}#moove_gdpr_save_popup_settings_button{background-color:#373737;color:#fff}#moove_gdpr_save_popup_settings_button:hover{background-color:#000}#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton,#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton{background-color:#7f60f9}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder a.mgbutton,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton,.gdpr_cookie_settings_shortcode_content .gdpr-shr-button.button-green{background-color:#7f60f9;border-color:#7f60f9}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder a.mgbutton:hover,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton:hover,.gdpr_cookie_settings_shortcode_content .gdpr-shr-button.button-green:hover{background-color:#fff;color:#7f60f9}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close span.gdpr-icon{background-color:#7f60f9;border:1px solid #7f60f9}#moove_gdpr_cookie_info_bar span.change-settings-button.focus-g,#moove_gdpr_cookie_info_bar span.change-settings-button:focus{-webkit-box-shadow:0 0 1px 3px #7f60f9;-moz-box-shadow:0 0 1px 3px #7f60f9;box-shadow:0 0 1px 3px #7f60f9}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close i:hover,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close span.gdpr-icon:hover,#moove_gdpr_cookie_info_bar span[data-href]>u.change-settings-button{color:#7f60f9}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li.menu-item-selected a span.gdpr-icon,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li.menu-item-selected button span.gdpr-icon{color:inherit}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li a span.gdpr-icon,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li button span.gdpr-icon{color:inherit}#moove_gdpr_cookie_modal .gdpr-acc-link{line-height:0;font-size:0;color:transparent;position:absolute}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close:hover i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li a,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li button,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li button i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li a i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main .moove-gdpr-tab-main-content a:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content span.change-settings-button:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content u.change-settings-button:hover,#moove_gdpr_cookie_info_bar span[data-href]>u.change-settings-button,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content span.change-settings-button.focus-g,span.change-settings-button:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content u.change-settings-button.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content u.change-settings-button:focus{color:#7f60f9}#moove_gdpr_cookie_modal.gdpr_lightbox-hide{display:none}#moove_gdpr_cookie_info_bar.gdpr-full-screen-infobar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content .moove-gdpr-cookie-notice p a{color:#7f60f9!important}#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton,#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder a.mgbutton,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton,.gdpr-shr-button,#moove_gdpr_cookie_info_bar .moove-gdpr-infobar-close-btn{border-radius:0}
+</style>
+<link data-minify="1" rel="stylesheet" id="gdpr_cc_addon_frontend-css" href="../wp-content/cache/min/1/wp-content/plugins/gdpr-cookie-compliance-addon/assets/css/gdpr_cc_addon7d2e.css?ver=1692186404" media="all" />
+<link rel="stylesheet" id="jquery-magnificpopup-css" href="../wp-content/plugins/bb-plugin/css/jquery.magnificpopup.mina77c.css?ver=2.7.1.1" media="all" />
+<link rel="stylesheet" id="fl-automator-skin-css" href="../wp-content/uploads/bb-theme/skin-64dcb41df17bce96c.css?ver=1.7.13" media="all" />
+<link rel="stylesheet" id="fl-builder-google-fonts-e1f015e406cc7a441616a66cdeccdfc8-css" href="http://fonts.googleapis.com/css?family=Archivo%3A700%2C500%2C600%2C400%2C300%2C800%7CInter%3A400%7CPoppins%3A600&amp;ver=6.2.2" media="all" />
+<script src="../wp-includes/js/jquery/jquery.min5aed.js?ver=3.6.4" id="jquery-core-js" defer></script>
+<script src="../wp-includes/js/jquery/jquery-migrate.min6b00.js?ver=3.4.0" id="jquery-migrate-js" defer></script>
+<script data-minify="1" src="../wp-content/cache/min/1/wp-content/plugins/space-station-command-module/build/EVABehaviors7d2e.js?ver=1692186404" id="command-module-EVABehaviors-js" defer></script>
+<script data-minify="1" src="../wp-content/cache/min/1/wp-content/plugins/space-station-command-module/build/SSCMSlider7d2e.js?ver=1692186404" id="command-module-SSCMSlider-js" defer></script>
+<script src="../wp-includes/js/imagesloaded.min3781.js?ver=6.2.2" id="imagesloaded-js" defer></script>
+<script id="sentry-io-js-extra">
+var sentry_data = {"url":"https:\/\/huemor.rocks","environment":""};
+</script>
+<script data-minify="1" src="../wp-content/cache/min/1/5.2.0/bundle.min7d2e.js?ver=1692186404" id="sentry-io-js" defer></script>
+<link rel="https://api.w.org/" href="../wp-json/index.html" /><link rel="alternate" type="application/json" href="../wp-json/wp/v2/pages/39145.json" /><link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embed9913.json?url=https%3A%2F%2Fhuemor.rocks%2Fwebsite-cost-calculator%2F" />
+<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed3992?url=https%3A%2F%2Fhuemor.rocks%2Fwebsite-cost-calculator%2F&amp;format=xml" />
+
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" class="hsq-set-content-id" data-content-id="standard-page">
+				var _hsq = _hsq || [];
+				_hsq.push(["setContentType", "standard-page"]);
+			</script>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Project Calculator","serviceType":null,"image":{"@type":"ImageObject","url":"https://huemordev.b-cdn.net/wp-content/uploads/2023/06/website-cost-calculator-featured-img-1.jpg","width":1025,"height":867},"provider":{"@type":"LocalBusiness","name":"Huemor","telephone":null,"priceRange":null},"description":null}</script><script type="application/ld+json">[]</script><script type="application/ld+json">{"@context":"https:\/\/schema.org","@graph":[{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"How We Help","url":"#"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Website Redesign","url":"https:\/\/huemor.rocks\/website-redesign-agency\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Key Skills:","url":"#"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Web Design","url":"https:\/\/huemor.rocks\/web-design-agency\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Web Development","url":"https:\/\/huemor.rocks\/web-development-agency\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"WordPress","url":"https:\/\/huemor.rocks\/wordpress-agency\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Shopify","url":"https:\/\/huemor.rocks\/shopify-agency\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Website Support","url":"https:\/\/huemor.rocks\/website-maintenance-and-support\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"CRO","url":"https:\/\/huemor.rocks\/conversion-rate-optimization\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Landing Pages","url":"https:\/\/huemor.rocks\/custom-landing-pages\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Website Analysis","url":"https:\/\/huemor.rocks\/website-analysis-plan\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Work","url":"https:\/\/huemor.rocks\/case-studies\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"About","url":"https:\/\/huemor.rocks\/agency\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Resources","url":"https:\/\/huemor.rocks\/resources\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"col1","url":"#"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Blog","url":"https:\/\/huemor.rocks\/blog\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Project Calculator","url":"https:\/\/huemor.rocks\/website-cost-calculator\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"ROI Calculator","url":"https:\/\/huemor.rocks\/roi-calculator\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"col3","url":"#"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Featured Resource","url":"\/blog\/website-redesign-project-plan\/"}]}</script><script type="rocketlazyloadscript">
+        var filter_articles_url = "../wp-admin/admin-ajax.html";
+    </script> <style id="wpsp-style-frontend"></style>
+<link rel="icon" href="../../huemordev.b-cdn.net/wp-content/uploads/2023/06/cropped-huemor-icon-32x32.png" sizes="32x32" />
+<link rel="icon" href="../../huemordev.b-cdn.net/wp-content/uploads/2023/06/cropped-huemor-icon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="../../huemordev.b-cdn.net/wp-content/uploads/2023/06/cropped-huemor-icon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://huemordev.b-cdn.net/wp-content/uploads/2023/06/cropped-huemor-icon-270x270.png" />
+<style id="wp-custom-css">
+			/** caching issue: validation message styling. Will be removed once cache settles**/
+.calculatorForm .gfield_validation_message{
+    margin-top: -10px;
+    margin-bottom: 25px;
+    color: #7759f8!important;
+    font-weight: 300!important;
+}
+/** email field **/
+#validation_message_6_18 {
+    padding-top: 0;
+    margin-top: -25px;
+    margin-bottom: 25px;
+    color: #7759f8!important;
+    font-weight: 300!important;
+}
+#gform_wrapper_6 .gfield_validation_message {
+    display: block!important;
+}
+
+/** end: validation message styling **/
+
+/** fix button double tap issue on mobile **/
+.hs_submit span.hiddenValue {
+		display: none!important;
+}
+
+.hs_submit .actions {
+		width: 100%!important;
+		height: 55px;
+}
+
+.hs_submit svg{
+		position: absolute;
+		right: calc(50% - 50px);
+}
+ /**end: fix button double tap issue on mobile **/
+
+
+.position-realitive {
+	position: relative;
+}
+
+.overlap {
+	position: relative;
+	z-index: 1;
+}
+
+.hide--field {
+	display: none;
+}
+
+.blog--content--advanced-styling p {
+    padding: 10px 0px 10px 0px;
+}
+
+.SSCMSlider-content_prev:focus, .SSCMSlider-content_next:focus {
+    position: absolute;
+    top: 50%;
+}		</style>
+<noscript><style>.perfmatters-lazy[data-src]{display:none !important;}</style></noscript><style>.perfmatters-lazy.pmloaded,.perfmatters-lazy.pmloaded>img,.perfmatters-lazy>img.pmloaded,.perfmatters-lazy[data-ll-status=entered]{animation:500ms pmFadeIn}@keyframes pmFadeIn{0%{opacity:0}100%{opacity:1}}body .perfmatters-lazy-css-bg:not([data-ll-status=entered]),body .perfmatters-lazy-css-bg:not([data-ll-status=entered]) *,body .perfmatters-lazy-css-bg:not([data-ll-status=entered])::before,body .perfmatters-lazy-css-bg:not([data-ll-status=entered])::after{background-image:none!important;will-change:transform;transition:opacity 0.025s ease-in,transform 0.025s ease-in!important;}</style> <script id="piwik-snippet" type="text/javascript">
+(function(window, document, dataLayerName, id) {
+window[dataLayerName]=window[dataLayerName]||[],window[dataLayerName].push({start:(new Date).getTime(),event:"stg.start"});var scripts=document.getElementsByTagName('script')[0],tags=document.createElement('script');
+function stgCreateCookie(a,b,c){var d="";if(c){var e=new Date;e.setTime(e.getTime()+24*c*60*60*1e3),d="; expires="+e.toUTCString()}document.cookie=a+"="+b+d+"; path=/"}
+var isStgDebug=(window.location.href.match("stg_debug")||document.cookie.match("stg_debug"))&&!window.location.href.match("stg_disable_debug");stgCreateCookie("stg_debug",isStgDebug?1:"",isStgDebug?14:-1);
+var qP=[];dataLayerName!=="dataLayer"&&qP.push("data_layer_name="+dataLayerName),isStgDebug&&qP.push("stg_debug");var qPString=qP.length>0?("?"+qP.join("&")):"";
+tags.async=!0,tags.src="https://huemor.containers.piwik.pro/"+id+".js"+qPString,scripts.parentNode.insertBefore(tags,scripts);
+!function(a,n,i){a[n]=a[n]||{};for(var c=0;c<i.length;c++)!function(i){a[n][i]=a[n][i]||{},a[n][i].api=a[n][i].api||function(){var a=[].slice.call(arguments,0);"string"==typeof a[0]&&window[dataLayerName].push({event:n+"."+i+":"+a[0],parameters:[].slice.call(arguments,1)})}}(i[c])}(window,"ppms",["tm","cm"]);
+})(window, document, 'dataLayer', 'd0f2b54a-f496-496c-95ea-57993e45f838');
+</script>
+</head>
+<body class="page-template-default page page-id-39145 page-parent fl-builder wp-schema-pro-2.7.9 fl-theme-builder-header fl-theme-builder-header-header-logo-left-cta-button-2-2 fl-theme-builder-footer fl-theme-builder-footer-5-column-footer fl-framework-bootstrap fl-preset-default fl-full-width fl-search-active" itemscope="itemscope" itemtype="http://schema.org/WebPage" data-offcanvas-hover-min data-utmpreserve-preserve="true" data-utmpreserve-forminject="true">
+<a aria-label="Skip to content" class="fl-screen-reader-text" href="#fl-main-content">Skip to content</a>
+<div class="fl-page Page ">
+<header class="fl-builder-content fl-builder-content-24 fl-builder-global-templates-locked" data-post-id="24" data-type="header" data-sticky="1" data-sticky-on data-sticky-breakpoint="medium" data-shrink="1" data-overlay="1" data-overlay-bg="transparent" data-shrink-image-height="50px" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader"><div class="fl-row fl-row-full-width fl-row-bg-none fl-node-dctyeblrsqwv fl-row-default-height fl-row-align-center" data-node="dctyeblrsqwv">
+<div class="fl-row-content-wrap">
+<div class="fl-row-content fl-row-fixed-width fl-node-content">
+<div class="fl-col-group fl-node-g3d5m4hic26v" data-node="g3d5m4hic26v">
+<div class="fl-col fl-node-igvmup9lwehk" data-node="igvmup9lwehk">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-custom-header fl-node-08owxrvncusq" data-node="08owxrvncusq">
+<div class="fl-module-content fl-node-content">
+<div class="CustomHeader CustomHeader-light">
+<div class="CustomHeader-wrapper">
+<div class="CustomHeader-logo">
+<a href="../index.html">
+<img data-perfmatters-preload decoding="async" class="CustomHeader-logo-desktop" width="169px" height="40px" src="../wp-content/uploads/2023/02/logo.png" alt="logo">
+<img decoding="async" class="CustomHeader-logo-desktop-dark perfmatters-lazy" width="169px" height="40px" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;169px&#039;%20height=&#039;40px&#039;%20viewBox=&#039;0%200%20169px%2040px&#039;%3E%3C/svg%3E" alt="logo dark" data-src="https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@3x-300x71.webp" /><noscript><img decoding="async" class="CustomHeader-logo-desktop-dark" width="169px" height="40px" src="https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@3x-300x71.webp" alt="logo dark"></noscript>
+<img width="83" height="80" decoding="async" class="CustomHeader-logo-mobile perfmatters-lazy" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;83&#039;%20height=&#039;80&#039;%20viewBox=&#039;0%200%2083%2080&#039;%3E%3C/svg%3E" alt="logo" data-src="../wp-content/uploads/2023/02/logo.png" /><noscript><img width="83" height="80" decoding="async" class="CustomHeader-logo-mobile" src="../wp-content/uploads/2023/02/logo.png" alt="logo"></noscript>
+</a>
+</div>
+<div class="CustomHeader-email">
+<a class="CustomButton CustomButton-bordered" href="../contact/index.html" target="_self" rel>
+Contact <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.296.971h9.733V2.61H1.296V.971z" fill="#fff" />
+<path d="M9.406 10.8V.97h1.623V10.8H9.406z" fill="#fff" />
+<path d="M.971 9.87 9.46 1.3l1.147 1.158-8.488 8.572L.971 9.87z" fill="#fff" />
+</svg>
+</a>
+</div>
+<div class="CustomHeader-nav">
+<ul id="primary-nav-items" class="primary-nav-items nav navbar-nav CustomHeader-menu HideBeforeLoad"><li class="two-columns hoverable arrow-down-icon menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1347"><a href="#">How We Help</a>
+<ul class="sub-menu">
+<li class="main-item arrow-rounded header-icons-round menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-39887"><a href="../website-redesign-agency/index.html">Website Redesign<p class="menu-item-description"> Elevate your brand with website redesign services that take your website from “good enough” to your industry’s gold standard. </p></a>
+<ul class="sub-menu">
+<li class="no-event grouped-sub-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1364"><a href="#">Key Skills:</a>
+<ul class="sub-menu">
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-39888"><a href="../web-design-agency/index.html">Web Design<p class="menu-item-description"> </p></a></li>
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-38740"><a href="../web-development-agency/index.html">Web Development<p class="menu-item-description"> </p></a></li>
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-37324"><a href="../wordpress-agency/index.html">WordPress<p class="menu-item-description"> </p></a></li>
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-38741"><a href="../shopify-agency/index.html">Shopify<p class="menu-item-description"> </p></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="main-item ungrouped-sub-menu arrow-rounded header-icons-round menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-38742"><a href="../website-maintenance-and-support/index.html">Website Support<p class="menu-item-description">Enhance and protect your existing site with dedicated website support that plans, executes, and measures improvements.</p></a>
+<ul class="sub-menu">
+<li class="no-event grouped-sub-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-39117"><a href="#">Key Skills:</a>
+<ul class="sub-menu">
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-39119"><a href="../conversion-rate-optimization/index.html">CRO<p class="menu-item-description"> </p></a></li>
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-39118"><a href="../custom-landing-pages/index.html">Landing Pages<p class="menu-item-description"> </p></a></li>
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-40568"><a href="../website-analysis-plan/index.html">Website Analysis<p class="menu-item-description"> </p></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1344"><a href="../case-studies/index.html">Work<p class="menu-item-description"> </p></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1343"><a href="../agency/index.html">About<p class="menu-item-description"> </p></a></li>
+<li class="three-columns hoverable arrow-down-icon menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children menu-item-1367"><a href="#">Resources</a>
+<ul class="sub-menu">
+<li class="no-event invisible-label menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-1385"><a href="#">col1</a>
+<ul class="sub-menu">
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-40705"><a href="../blog/index.html">Blog<p class="menu-item-description"> </p></a></li>
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-40704"><a href="../resources/index.html">Resources<p class="menu-item-description"> </p></a></li>
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-39145 current_page_item menu-item-40619"><a href="index.html" aria-current="page">Project Calculator<p class="menu-item-description"> </p></a></li>
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-40620"><a href="../roi-calculator/index.html">ROI Calculator<p class="menu-item-description"> </p></a></li>
+</ul>
+</li>
+<li class="no-event invisible-label menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1387"><a href="#">col3</a>
+<ul class="sub-menu">
+<li class="featured-item menu-item menu-item-type-custom menu-item-object-custom menu-item-1392"><a href="../blog/website-redesign-project-plan/index.html">Featured Resource<p class="menu-item-description">The Ultimate Website Redesign Project Plan and Worksheet.
+<a href="../blog/website-redesign-project-plan/index.html" class="featured-item-button">Read More<i class="fl-button-icon fl-button-icon-after dashicons dashicons-after dashicons-arrow-right-alt"></i></a></p></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul> <div class="CustomHeader-cta">
+<a class="CustomButton CustomButton-bordered" href="../contact/index.html" target="_self" rel>
+Book A Strategy Session
+<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.296.971h9.733V2.61H1.296V.971z" fill="#fff" />
+<path d="M9.406 10.8V.97h1.623V10.8H9.406z" fill="#fff" />
+<path d="M.971 9.87 9.46 1.3l1.147 1.158-8.488 8.572L.971 9.87z" fill="#fff" />
+</svg>
+</a>
+</div>
+</div>
+<div class="CustomHeader-nav CustomHeader-nav-mobile">
+<div class="CustomHeader-nav-mobile-wrapper">
+<ul id="primary-nav-items" class="primary-nav-items nav navbar-nav CustomHeader-menu HideBeforeLoad"><li class="two-columns hoverable arrow-down-icon menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1347"><a href="#">How We Help</a>
+<ul class="sub-menu">
+<li class="main-item arrow-rounded header-icons-round menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-39887"><a href="../website-redesign-agency/index.html">Website Redesign<p class="menu-item-description"> Elevate your brand with website redesign services that take your website from “good enough” to your industry’s gold standard. </p></a>
+<ul class="sub-menu">
+<li class="no-event grouped-sub-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1364"><a href="#">Key Skills:</a>
+<ul class="sub-menu">
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-39888"><a href="../web-design-agency/index.html">Web Design<p class="menu-item-description"> </p></a></li>
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-38740"><a href="../web-development-agency/index.html">Web Development<p class="menu-item-description"> </p></a></li>
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-37324"><a href="../wordpress-agency/index.html">WordPress<p class="menu-item-description"> </p></a></li>
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-38741"><a href="../shopify-agency/index.html">Shopify<p class="menu-item-description"> </p></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="main-item ungrouped-sub-menu arrow-rounded header-icons-round menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-38742"><a href="../website-maintenance-and-support/index.html">Website Support<p class="menu-item-description">Enhance and protect your existing site with dedicated website support that plans, executes, and measures improvements.</p></a>
+<ul class="sub-menu">
+<li class="no-event grouped-sub-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-39117"><a href="#">Key Skills:</a>
+<ul class="sub-menu">
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-39119"><a href="../conversion-rate-optimization/index.html">CRO<p class="menu-item-description"> </p></a></li>
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-39118"><a href="../custom-landing-pages/index.html">Landing Pages<p class="menu-item-description"> </p></a></li>
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-40568"><a href="../website-analysis-plan/index.html">Website Analysis<p class="menu-item-description"> </p></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1344"><a href="../case-studies/index.html">Work<p class="menu-item-description"> </p></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1343"><a href="../agency/index.html">About<p class="menu-item-description"> </p></a></li>
+<li class="three-columns hoverable arrow-down-icon menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children menu-item-1367"><a href="#">Resources</a>
+<ul class="sub-menu">
+<li class="no-event invisible-label menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-1385"><a href="#">col1</a>
+<ul class="sub-menu">
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-40705"><a href="../blog/index.html">Blog<p class="menu-item-description"> </p></a></li>
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-40704"><a href="../resources/index.html">Resources<p class="menu-item-description"> </p></a></li>
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-39145 current_page_item menu-item-40619"><a href="index.html" aria-current="page">Project Calculator<p class="menu-item-description"> </p></a></li>
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-40620"><a href="../roi-calculator/index.html">ROI Calculator<p class="menu-item-description"> </p></a></li>
+</ul>
+</li>
+<li class="no-event invisible-label menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1387"><a href="#">col3</a>
+<ul class="sub-menu">
+<li class="featured-item menu-item menu-item-type-custom menu-item-object-custom menu-item-1392"><a href="../blog/website-redesign-project-plan/index.html">Featured Resource<p class="menu-item-description">The Ultimate Website Redesign Project Plan and Worksheet.
+<a href="../blog/website-redesign-project-plan/index.html" class="featured-item-button">Read More<i class="fl-button-icon fl-button-icon-after dashicons dashicons-after dashicons-arrow-right-alt"></i></a></p></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul> <div class="CustomHeader-bottom">
+<div class="CustomHeader-socials">
+<h3 class="CustomHeader-socials-title">Follow Us</h3>
+<ul class="CustomHeader-socials-list">
+<li>
+<a class href="https://www.linkedin.com/in/ahmad-jorban-308702216/" target="_self" rel>
+Linkedin
+<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.296.971h9.733V2.61H1.296V.971z" fill="#fff" />
+<path d="M9.406 10.8V.97h1.623V10.8H9.406z" fill="#fff" />
+<path d="M.971 9.87 9.46 1.3l1.147 1.158-8.488 8.572L.971 9.87z" fill="#fff" />
+</svg>
+</a>
+</li>
+<li>
+<a class href="https://dribbble.com/huemor" target="_self" rel>
+Dribbble
+<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.296.971h9.733V2.61H1.296V.971z" fill="#fff" />
+<path d="M9.406 10.8V.97h1.623V10.8H9.406z" fill="#fff" />
+<path d="M.971 9.87 9.46 1.3l1.147 1.158-8.488 8.572L.971 9.87z" fill="#fff" />
+</svg>
+</a>
+</li>
+<li>
+<a class href="https://www.instagram.com/jorbanwebdesign/" target="_self" rel>
+Instagram
+<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.296.971h9.733V2.61H1.296V.971z" fill="#fff" />
+<path d="M9.406 10.8V.97h1.623V10.8H9.406z" fill="#fff" />
+<path d="M.971 9.87 9.46 1.3l1.147 1.158-8.488 8.572L.971 9.87z" fill="#fff" />
+</svg>
+</a>
+</li>
+<li>
+<a class href="https://twitter.com/HuemorDesigns" target="_self" rel>
+Twitter
+<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.296.971h9.733V2.61H1.296V.971z" fill="#fff" />
+<path d="M9.406 10.8V.97h1.623V10.8H9.406z" fill="#fff" />
+<path d="M.971 9.87 9.46 1.3l1.147 1.158-8.488 8.572L.971 9.87z" fill="#fff" />
+</svg>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="CustomHeader-nav-toggler">
+<button class="CustomHeader-nav-toggler-btn" id="CustomHeader-toggler">
+<div id="CustomHeader-menu-icon">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="fl-page-content" itemprop="mainContentOfPage">
+<div class="fl-content-full container">
+<div class="row">
+<div class="fl-content col-md-12">
+<article class="fl-post post-39145 page type-page status-publish has-post-thumbnail hentry" id="fl-post-39145" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+<div class="fl-post-content clearfix" itemprop="text">
+<div class="fl-builder-content fl-builder-content-39145 fl-builder-content-primary fl-builder-global-templates-locked" data-post-id="39145"><div class="fl-row fl-row-full-width fl-row-bg-color fl-node-5py8tnk23ub4 fl-row-default-height fl-row-align-center" data-node="5py8tnk23ub4">
+<div class="fl-row-content-wrap">
+<div class="fl-row-content fl-row-fixed-width fl-node-content">
+<div class="fl-col-group fl-node-4lms9hnpxuwz fl-col-group-equal-height fl-col-group-align-top fl-col-group-custom-width" data-node="4lms9hnpxuwz">
+<div class="fl-col fl-node-va4tcq1k5muh" data-node="va4tcq1k5muh">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-photo fl-node-nxt34uceqhvr" data-node="nxt34uceqhvr">
+<div class="fl-module-content fl-node-content">
+<div class="fl-photo fl-photo-align-left" itemscope itemtype="https://schema.org/ImageObject">
+<div class="fl-photo-content fl-photo-img-png">
+<img decoding="async" class="fl-photo-img wp-image-1519 size-full perfmatters-lazy" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;58&#039;%20height=&#039;58&#039;%20viewBox=&#039;0%200%2058%2058&#039;%3E%3C/svg%3E" alt="solar system" itemprop="image" height="58" width="58" title="solar system" data-src="https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system.png.webp" data-srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system.png.webp 58w,https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system-24x24.png.webp 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system-36x36.png.webp 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system-48x48.png.webp 48w" data-sizes="(max-width: 58px) 100vw, 58px" /><noscript><img decoding="async" class="fl-photo-img wp-image-1519 size-full" src="https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system.png.webp" alt="solar system" itemprop="image" height="58" width="58" title="solar system" srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system.png.webp 58w,https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system-24x24.png.webp 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system-36x36.png.webp 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system-48x48.png.webp 48w" sizes="(max-width: 58px) 100vw, 58px" /></noscript>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-heading fl-node-pqk8fc0jwo1x" data-node="pqk8fc0jwo1x">
+<div class="fl-module-content fl-node-content">
+<h1 class="fl-heading">
+<span class="fl-heading-text">Website Cost Calculator</span>
+</h1>
+</div>
+</div>
+<div class="fl-module fl-module-heading fl-node-mfpb318r6xsh" data-node="mfpb318r6xsh">
+<div class="fl-module-content fl-node-content">
+<h2 class="fl-heading">
+<span class="fl-heading-text">instant website cost estimate<span style="color:#7f60f9" ;>.</span></span>
+</h2>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-f7sk8rbngdhj" data-node="f7sk8rbngdhj">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>Curious about what it might cost to have your website built by the Hue-Crew? Get your custom website cost estimate in less than 2 minutes.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-col fl-node-gvrwosd1laqy fl-col-small fl-col-small-custom-width" data-node="gvrwosd1laqy">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-widget fl-node-ue6jlyb3dzkq calculatorForm" data-node="ue6jlyb3dzkq">
+<div class="fl-module-content fl-node-content">
+<div class="fl-widget">
+<div class="widget gform_widget"><h2 class="widgettitle"> </h2><link rel="stylesheet" id="gforms_reset_css-css" href="../wp-content/plugins/gravityforms/legacy/css/formreset.min4537.css?ver=2.7.12" media="all" />
+<link rel="stylesheet" id="gforms_formsmain_css-css" href="../wp-content/plugins/gravityforms/legacy/css/formsmain.min4537.css?ver=2.7.12" media="all" />
+<link rel="stylesheet" id="gforms_ready_class_css-css" href="../wp-content/plugins/gravityforms/legacy/css/readyclass.min4537.css?ver=2.7.12" media="all" />
+<link rel="stylesheet" id="gforms_browsers_css-css" href="../wp-content/plugins/gravityforms/legacy/css/browsers.min4537.css?ver=2.7.12" media="all" />
+<script src="../wp-includes/js/dist/vendor/wp-polyfill-inert.min0226.js?ver=3.1.2" id="wp-polyfill-inert-js" defer></script>
+<script src="../wp-includes/js/dist/vendor/regenerator-runtime.min8fa4.js?ver=0.13.11" id="regenerator-runtime-js" defer></script>
+<script src="../wp-includes/js/dist/vendor/wp-polyfill.min2c7c.js?ver=3.15.0" id="wp-polyfill-js"></script>
+<script src="../wp-includes/js/dist/dom-ready.minded6.js?ver=392bdd43726760d1f3ca" id="wp-dom-ready-js" defer></script>
+<script src="../wp-includes/js/dist/hooks.min6c65.js?ver=4169d3cf8e8d95a3d6d5" id="wp-hooks-js"></script>
+<script src="../wp-includes/js/dist/i18n.mine57b.js?ver=9e794f35a71bb98672ae" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script src="../wp-includes/js/dist/a11y.min65c7.js?ver=ecce20f002eda4c19664" id="wp-a11y-js" defer></script>
+<script defer="defer" src="../wp-content/plugins/gravityforms/js/jquery.json.min4537.js?ver=2.7.12" id="gform_json-js"></script>
+<script id="gform_gravityforms-js-extra">
+var gform_i18n = {"datepicker":{"days":{"monday":"Mo","tuesday":"Tu","wednesday":"We","thursday":"Th","friday":"Fr","saturday":"Sa","sunday":"Su"},"months":{"january":"January","february":"February","march":"March","april":"April","may":"May","june":"June","july":"July","august":"August","september":"September","october":"October","november":"November","december":"December"},"firstDay":1,"iconText":"Select date"}};
+var gf_legacy_multi = [];
+var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file is not allowed. Must be one of the following:","delete_file":"Delete this file","in_progress":"in progress","file_exceeds_limit":"File exceeds size limit","illegal_extension":"This type of file is not allowed.","max_reached":"Maximum number of files reached","unknown_error":"There was a problem while saving the file on the server","currently_uploading":"Please wait for the uploading to complete","cancel":"Cancel","cancel_upload":"Cancel this upload","cancelled":"Cancelled"},"vars":{"images_url":"https:\/\/huemor.rocks\/wp-content\/plugins\/gravityforms\/images"}};
+var gf_field_checkbox = {"strings":{"selected":"All choices are selected.","deselected":"All choices are unselected."}};
+var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2,"code":"USD"},"base_url":"https:\/\/huemor.rocks\/wp-content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/huemor.rocks\/wp-content\/plugins\/gravityforms\/images\/spinner.svg","version_hash":"8278e571b26d9345e666af5ea27380cd","strings":{"newRowAdded":"New row added.","rowRemoved":"Row removed","formSaved":"The form has been saved.  The content contains the link to return and complete the form."}};
+</script>
+<script defer="defer" src="../wp-content/plugins/gravityforms/js/gravityforms.min4537.js?ver=2.7.12" id="gform_gravityforms-js"></script>
+<script id="gform_conditional_logic-js-extra">
+var gf_legacy = {"is_legacy":"1"};
+</script>
+<script defer="defer" src="../wp-content/plugins/gravityforms/js/conditional_logic.min4537.js?ver=2.7.12" id="gform_conditional_logic-js"></script>
+<script defer="defer" src="../wp-content/plugins/gravityforms/js/placeholders.jquery.min4537.js?ver=2.7.12" id="gform_placeholder-js"></script>
+<script type="text/javascript"></script>
+<div class="gf_browser_chrome gform_wrapper gform_legacy_markup_wrapper gform-theme--no-framework" data-form-theme="legacy" data-form-index="0" id="gform_wrapper_6" style="display:none"><div id="gf_6" class="gform_anchor" tabindex="-1"></div><form method="post" enctype="multipart/form-data" id="gform_6" action="https://huemor.rocks/website-cost-calculator/#gf_6" data-formid="6">
+<div id="gf_progressbar_wrapper_6" class="gf_progressbar_wrapper">
+<h3 class="gf_progressbar_title">Step <span class="gf_step_current_page">1</span> of <span class="gf_step_page_count">3</span>
+</h3>
+<div class="gf_progressbar gf_progressbar_blue" aria-hidden="true">
+<div class="gf_progressbar_percentage percentbar_blue percentbar_33" style="width:33%;"><span>33%</span></div>
+</div></div>
+<div class="gform-body gform_body"><div id="gform_page_6_1" class="gform_page " data-js="page-field-id-1">
+<div class="gform_page_fields"><ul id="gform_fields_6" class="gform_fields top_label form_sublabel_below description_below"><li id="field_6_14" class="gfield gfield--type-section gsection FormItem FormItem--stacked field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible" data-js-reload="field_6_14"><h2 class="gsection_title">Overview</h2></li><li id="field_6_1" class="gfield gfield--type-radio gfield--type-choice largeLabel FormItem FormItem--stacked FormItem--type_checkbox gfield_contains_required field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible" data-js-reload="field_6_1"><label class="gfield_label gform-field-label">What kind of website is it?<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_radio"><ul class="gfield_radio" id="input_6_1">
+<li class="gchoice gchoice_6_1_0">
+<input name="input_1" type="radio" value="Online Store (Ecommerce)" id="choice_6_1_0" />
+<label for="choice_6_1_0" id="label_6_1_0" class="gform-field-label gform-field-label--type-inline">Online Store (Ecommerce)</label>
+</li>
+<li class="gchoice gchoice_6_1_1">
+<input name="input_1" type="radio" value="Marketing Website (No Ecommerce)" id="choice_6_1_1" />
+<label for="choice_6_1_1" id="label_6_1_1" class="gform-field-label gform-field-label--type-inline">Marketing Website (No Ecommerce)</label>
+</li></ul></div></li><li id="field_6_3" class="gfield gfield--type-checkbox gfield--type-choice largeLabel FormItem FormItem--stacked FormItem--type_checkbox gfield_contains_required field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible" data-js-reload="field_6_3"><label class="gfield_label gform-field-label gfield_label_before_complex">What services are you interested in?<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_checkbox"><ul class="gfield_checkbox" id="input_6_3"><li class="gchoice gchoice_select_all">
+<input class="gfield-choice-input" type="checkbox" id="choice_3_select_all" onclick="gformToggleCheckboxes( this )" onkeypress="gformToggleCheckboxes( this )" />
+<label for="choice_3_select_all" id="label_3_select_all" class="gform-field-label  gform-field-label--type-inline" data-label-select="Select All" data-label-deselect="Deselect All">Select All</label>
+</li><li class="gchoice gchoice_6_3_1">
+<input class="gfield-choice-input" name="input_3.1" type="checkbox" value="15000" id="choice_6_3_1" />
+<label for="choice_6_3_1" id="label_6_3_1" class="gform-field-label gform-field-label--type-inline">Website Strategy/Planning</label>
+</li><li class="gchoice gchoice_6_3_2">
+<input class="gfield-choice-input" name="input_3.2" type="checkbox" value="20000" id="choice_6_3_2" />
+<label for="choice_6_3_2" id="label_6_3_2" class="gform-field-label gform-field-label--type-inline">UI/UX Design</label>
+</li><li class="gchoice gchoice_6_3_3">
+<input class="gfield-choice-input" name="input_3.3" type="checkbox" value="25000" id="choice_6_3_3" />
+<label for="choice_6_3_3" id="label_6_3_3" class="gform-field-label gform-field-label--type-inline">Web Development</label>
+</li><li class="gchoice gchoice_6_3_4">
+<input class="gfield-choice-input" name="input_3.4" type="checkbox" value="7500" id="choice_6_3_4" />
+<label for="choice_6_3_4" id="label_6_3_4" class="gform-field-label gform-field-label--type-inline">Visual Asset Creation (Illustrations, Icons etc)</label>
+</li><li class="gchoice gchoice_6_3_5">
+<input class="gfield-choice-input" name="input_3.5" type="checkbox" value="7000" id="choice_6_3_5" />
+<label for="choice_6_3_5" id="label_6_3_5" class="gform-field-label gform-field-label--type-inline">Content Writing</label>
+</li><li class="gchoice gchoice_6_3_6">
+<input class="gfield-choice-input" name="input_3.6" type="checkbox" value="10000" id="choice_6_3_6" />
+<label for="choice_6_3_6" id="label_6_3_6" class="gform-field-label gform-field-label--type-inline">Photography</label>
+</li><li class="gchoice gchoice_6_3_7">
+<input class="gfield-choice-input" name="input_3.7" type="checkbox" value="11000" id="choice_6_3_7" />
+<label for="choice_6_3_7" id="label_6_3_7" class="gform-field-label gform-field-label--type-inline">Video/Animation</label>
+</li></ul></div></li><li id="field_6_4" class="gfield gfield--type-radio gfield--type-choice largeLabel FormItem FormItem--stacked FormItem--type_checkbox gfield_contains_required field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible" data-js-reload="field_6_4"><label class="gfield_label gform-field-label">What platform are you interested in?<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_radio"><ul class="gfield_radio" id="input_6_4">
+<li class="gchoice gchoice_6_4_0">
+<input name="input_4" type="radio" value="0" id="choice_6_4_0" />
+<label for="choice_6_4_0" id="label_6_4_0" class="gform-field-label gform-field-label--type-inline">Shopify</label>
+</li>
+<li class="gchoice gchoice_6_4_1">
+<input name="input_4" type="radio" value="5000" id="choice_6_4_1" />
+<label for="choice_6_4_1" id="label_6_4_1" class="gform-field-label gform-field-label--type-inline">WooCommerce</label>
+</li>
+<li class="gchoice gchoice_6_4_2">
+<input name="input_4" type="radio" value="35000" id="choice_6_4_2" />
+<label for="choice_6_4_2" id="label_6_4_2" class="gform-field-label gform-field-label--type-inline">Magento</label>
+</li>
+<li class="gchoice gchoice_6_4_3">
+<input name="input_4" type="radio" value="0" id="choice_6_4_3" />
+<label for="choice_6_4_3" id="label_6_4_3" class="gform-field-label gform-field-label--type-inline">Unsure</label>
+</li></ul></div></li><li id="field_6_5" class="gfield gfield--type-radio gfield--type-choice largeLabel FormItem FormItem--stacked FormItem--type_checkbox gfield_contains_required field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible" data-js-reload="field_6_5"><label class="gfield_label gform-field-label">What platform are you interested in?<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_radio"><ul class="gfield_radio" id="input_6_5">
+<li class="gchoice gchoice_6_5_0">
+<input name="input_5" type="radio" value="0" id="choice_6_5_0" />
+<label for="choice_6_5_0" id="label_6_5_0" class="gform-field-label gform-field-label--type-inline">Wordpress</label>
+</li>
+<li class="gchoice gchoice_6_5_1">
+<input name="input_5" type="radio" value="25000" id="choice_6_5_1" />
+<label for="choice_6_5_1" id="label_6_5_1" class="gform-field-label gform-field-label--type-inline">Drupal</label>
+</li>
+<li class="gchoice gchoice_6_5_2">
+<input name="input_5" type="radio" value="0" id="choice_6_5_2" />
+<label for="choice_6_5_2" id="label_6_5_2" class="gform-field-label gform-field-label--type-inline">Unsure</label>
+</li></ul></div></li><li id="field_6_26" class="gfield gfield--type-number FormItem FormItem--stacked gfield_calculation field_sublabel_below gfield--no-description field_description_below gfield_visibility_hidden" data-js-reload="field_6_26"><div class="admin-hidden-markup"><i class="gform-icon gform-icon--hidden"></i><span>Hidden</span></div><label class="gfield_label gform-field-label" for="input_6_26">Platform Calculation</label><div class="ginput_container ginput_container_number"><input name="input_26" id="input_6_26" type="text" value class="medium" readonly="readonly" aria-invalid="false" /></div></li></ul>
+</div>
+<div class="gform_page_footer top_label">
+<input type="button" id="gform_next_button_6_23" class="gform_next_button gform-theme-button button" value="Next" onclick="jQuery(&quot;#gform_target_page_number_6&quot;).val(&quot;2&quot;);  jQuery(&quot;#gform_6&quot;).trigger(&quot;submit&quot;,[true]); " onkeypress="if( event.keyCode == 13 ){ jQuery(&quot;#gform_target_page_number_6&quot;).val(&quot;2&quot;);  jQuery(&quot;#gform_6&quot;).trigger(&quot;submit&quot;,[true]); } " />
+</div>
+</div>
+<div id="gform_page_6_2" class="gform_page  FormItem FormItem--stacked" data-js="page-field-id-23" style="display:none;">
+<div class="gform_page_fields">
+<ul id="gform_fields_6_2" class="gform_fields top_label form_sublabel_below description_below"><li id="field_6_13" class="gfield gfield--type-section gsection FormItem FormItem--stacked field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible" data-js-reload="field_6_13"><h2 class="gsection_title">Features</h2></li><li id="field_6_7" class="gfield gfield--type-checkbox gfield--type-choice largeLabel FormItem FormItem--stacked FormItem--type_checkbox gfield_contains_required field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible" data-js-reload="field_6_7"><label class="gfield_label gform-field-label gfield_label_before_complex">Do you need any social features?<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_checkbox"><ul class="gfield_checkbox" id="input_6_7"><li class="gchoice gchoice_6_7_1">
+<input class="gfield-choice-input" name="input_7.1" type="checkbox" value="0" id="choice_6_7_1" />
+<label for="choice_6_7_1" id="label_6_7_1" class="gform-field-label gform-field-label--type-inline">We don’t require social features</label>
+</li><li class="gchoice gchoice_6_7_2">
+<input class="gfield-choice-input" name="input_7.2" type="checkbox" value="40" id="choice_6_7_2" />
+<label for="choice_6_7_2" id="label_6_7_2" class="gform-field-label gform-field-label--type-inline">Comments, likes, shares</label>
+</li><li class="gchoice gchoice_6_7_3">
+<input class="gfield-choice-input" name="input_7.3" type="checkbox" value="5000" id="choice_6_7_3" />
+<label for="choice_6_7_3" id="label_6_7_3" class="gform-field-label gform-field-label--type-inline">News feed or user wall</label>
+</li></ul></div></li><li id="field_6_8" class="gfield gfield--type-checkbox gfield--type-choice largeLabel FormItem FormItem--stacked FormItem--type_checkbox gfield_contains_required field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible" data-js-reload="field_6_8"><label class="gfield_label gform-field-label gfield_label_before_complex">How do you want to collect user inquiries?<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_checkbox"><ul class="gfield_checkbox" id="input_6_8"><li class="gchoice gchoice_6_8_1">
+<input class="gfield-choice-input" name="input_8.1" type="checkbox" value="0" id="choice_6_8_1" />
+<label for="choice_6_8_1" id="label_6_8_1" class="gform-field-label gform-field-label--type-inline">A public email address that goes directly to an inbox</label>
+</li><li class="gchoice gchoice_6_8_2">
+<input class="gfield-choice-input" name="input_8.2" type="checkbox" value="50" id="choice_6_8_2" />
+<label for="choice_6_8_2" id="label_6_8_2" class="gform-field-label gform-field-label--type-inline">A contact form that stores inquiries on the website</label>
+</li><li class="gchoice gchoice_6_8_3">
+<input class="gfield-choice-input" name="input_8.3" type="checkbox" value="5000" id="choice_6_8_3" />
+<label for="choice_6_8_3" id="label_6_8_3" class="gform-field-label gform-field-label--type-inline">A contact form that connects to a third party CRM</label>
+</li></ul></div></li><li id="field_6_9" class="gfield gfield--type-radio gfield--type-choice largeLabel FormItem FormItem--stacked FormItem--type_checkbox gfield_contains_required field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible" data-js-reload="field_6_9"><label class="gfield_label gform-field-label">Do you need to integrate video or audio?<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_radio"><ul class="gfield_radio" id="input_6_9">
+<li class="gchoice gchoice_6_9_0">
+<input name="input_9" type="radio" value="I do not need to stream video or audio" id="choice_6_9_0" />
+<label for="choice_6_9_0" id="label_6_9_0" class="gform-field-label gform-field-label--type-inline">I do not need to stream video or audio</label>
+</li>
+<li class="gchoice gchoice_6_9_1">
+<input name="input_9" type="radio" value="I need to stream video or audio, but I plan on using a third party" id="choice_6_9_1" />
+<label for="choice_6_9_1" id="label_6_9_1" class="gform-field-label gform-field-label--type-inline">I need to stream video or audio, but I plan on using a third party</label>
+</li>
+<li class="gchoice gchoice_6_9_2">
+<input name="input_9" type="radio" value="I need to stream video or audio and would like it to be hosted by the website" id="choice_6_9_2" />
+<label for="choice_6_9_2" id="label_6_9_2" class="gform-field-label gform-field-label--type-inline">I need to stream video or audio and would like it to be hosted by the website</label>
+</li></ul></div></li><li id="field_6_11" class="gfield gfield--type-checkbox gfield--type-choice largeLabel FormItem FormItem--stacked FormItem--type_checkbox field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible" data-js-reload="field_6_11"><label class="gfield_label gform-field-label gfield_label_before_complex">What other web features do you need?</label><div class="ginput_container ginput_container_checkbox"><ul class="gfield_checkbox" id="input_6_11"><li class="gchoice gchoice_6_11_1">
+<input class="gfield-choice-input" name="input_11.1" type="checkbox" value="5000" id="choice_6_11_1" />
+<label for="choice_6_11_1" id="label_6_11_1" class="gform-field-label gform-field-label--type-inline">Rating or reviews</label>
+</li><li class="gchoice gchoice_6_11_2">
+<input class="gfield-choice-input" name="input_11.2" type="checkbox" value="0" id="choice_6_11_2" />
+<label for="choice_6_11_2" id="label_6_11_2" class="gform-field-label gform-field-label--type-inline">Calendar integration</label>
+</li><li class="gchoice gchoice_6_11_3">
+<input class="gfield-choice-input" name="input_11.3" type="checkbox" value="2200" id="choice_6_11_3" />
+<label for="choice_6_11_3" id="label_6_11_3" class="gform-field-label gform-field-label--type-inline">Loyalty program</label>
+</li><li class="gchoice gchoice_6_11_4">
+<input class="gfield-choice-input" name="input_11.4" type="checkbox" value="1550" id="choice_6_11_4" />
+<label for="choice_6_11_4" id="label_6_11_4" class="gform-field-label gform-field-label--type-inline">Coupon Codes</label>
+</li><li class="gchoice gchoice_6_11_5">
+<input class="gfield-choice-input" name="input_11.5" type="checkbox" value="2800" id="choice_6_11_5" />
+<label for="choice_6_11_5" id="label_6_11_5" class="gform-field-label gform-field-label--type-inline">Advanced Search</label>
+</li><li class="gchoice gchoice_6_11_6">
+<input class="gfield-choice-input" name="input_11.6" type="checkbox" value="1200" id="choice_6_11_6" />
+<label for="choice_6_11_6" id="label_6_11_6" class="gform-field-label gform-field-label--type-inline">Push notifications or alerts - EC</label>
+</li><li class="gchoice gchoice_6_11_7">
+<input class="gfield-choice-input" name="input_11.7" type="checkbox" value="2500" id="choice_6_11_7" />
+<label for="choice_6_11_7" id="label_6_11_7" class="gform-field-label gform-field-label--type-inline">Calculator</label>
+</li><li class="gchoice gchoice_6_11_8">
+<input class="gfield-choice-input" name="input_11.8" type="checkbox" value="5500" id="choice_6_11_8" />
+<label for="choice_6_11_8" id="label_6_11_8" class="gform-field-label gform-field-label--type-inline">Blog or news feed</label>
+</li><li class="gchoice gchoice_6_11_9">
+<input class="gfield-choice-input" name="input_11.9" type="checkbox" value="0" id="choice_6_11_9" />
+<label for="choice_6_11_9" id="label_6_11_9" class="gform-field-label gform-field-label--type-inline">FAQs</label>
+</li><li class="gchoice gchoice_6_11_11">
+<input class="gfield-choice-input" name="input_11.11" type="checkbox" value="2450" id="choice_6_11_11" />
+<label for="choice_6_11_11" id="label_6_11_11" class="gform-field-label gform-field-label--type-inline">Maps &amp; Location</label>
+</li><li class="gchoice gchoice_6_11_12">
+<input class="gfield-choice-input" name="input_11.12" type="checkbox" value="2600" id="choice_6_11_12" />
+<label for="choice_6_11_12" id="label_6_11_12" class="gform-field-label gform-field-label--type-inline">Quiz</label>
+</li><li class="gchoice gchoice_6_11_13">
+<input class="gfield-choice-input" name="input_11.13" type="checkbox" value="2700" id="choice_6_11_13" />
+<label for="choice_6_11_13" id="label_6_11_13" class="gform-field-label gform-field-label--type-inline">Chatbot</label>
+</li><li class="gchoice gchoice_6_11_14">
+<input class="gfield-choice-input" name="input_11.14" type="checkbox" value="3000" id="choice_6_11_14" />
+<label for="choice_6_11_14" id="label_6_11_14" class="gform-field-label gform-field-label--type-inline">Applicant Tracking System</label>
+</li></ul></div></li><li id="field_6_12" class="gfield gfield--type-checkbox gfield--type-choice largeLabel FormItem FormItem--stacked FormItem--type_checkbox field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible" data-js-reload="field_6_12"><label class="gfield_label gform-field-label gfield_label_before_complex">What other web features do you need?</label><div class="ginput_container ginput_container_checkbox"><ul class="gfield_checkbox" id="input_6_12"><li class="gchoice gchoice_6_12_1">
+<input class="gfield-choice-input" name="input_12.1" type="checkbox" value="0" id="choice_6_12_1" />
+<label for="choice_6_12_1" id="label_6_12_1" class="gform-field-label gform-field-label--type-inline">Calendar integration</label>
+</li><li class="gchoice gchoice_6_12_2">
+<input class="gfield-choice-input" name="input_12.2" type="checkbox" value="2550" id="choice_6_12_2" />
+<label for="choice_6_12_2" id="label_6_12_2" class="gform-field-label gform-field-label--type-inline">Advanced Search</label>
+</li><li class="gchoice gchoice_6_12_3">
+<input class="gfield-choice-input" name="input_12.3" type="checkbox" value="1500" id="choice_6_12_3" />
+<label for="choice_6_12_3" id="label_6_12_3" class="gform-field-label gform-field-label--type-inline">Push notifications or alerts</label>
+</li><li class="gchoice gchoice_6_12_4">
+<input class="gfield-choice-input" name="input_12.4" type="checkbox" value="4550" id="choice_6_12_4" />
+<label for="choice_6_12_4" id="label_6_12_4" class="gform-field-label gform-field-label--type-inline">Calculator</label>
+</li><li class="gchoice gchoice_6_12_5">
+<input class="gfield-choice-input" name="input_12.5" type="checkbox" value="4950" id="choice_6_12_5" />
+<label for="choice_6_12_5" id="label_6_12_5" class="gform-field-label gform-field-label--type-inline">Blog or news feed</label>
+</li><li class="gchoice gchoice_6_12_6">
+<input class="gfield-choice-input" name="input_12.6" type="checkbox" value="0" id="choice_6_12_6" />
+<label for="choice_6_12_6" id="label_6_12_6" class="gform-field-label gform-field-label--type-inline">FAQs</label>
+</li><li class="gchoice gchoice_6_12_7">
+<input class="gfield-choice-input" name="input_12.7" type="checkbox" value="2450" id="choice_6_12_7" />
+<label for="choice_6_12_7" id="label_6_12_7" class="gform-field-label gform-field-label--type-inline">Maps &amp; Location</label>
+</li><li class="gchoice gchoice_6_12_8">
+<input class="gfield-choice-input" name="input_12.8" type="checkbox" value="2660" id="choice_6_12_8" />
+<label for="choice_6_12_8" id="label_6_12_8" class="gform-field-label gform-field-label--type-inline">Quiz</label>
+</li><li class="gchoice gchoice_6_12_9">
+<input class="gfield-choice-input" name="input_12.9" type="checkbox" value="2350" id="choice_6_12_9" />
+<label for="choice_6_12_9" id="label_6_12_9" class="gform-field-label gform-field-label--type-inline">Chatbot</label>
+</li><li class="gchoice gchoice_6_12_11">
+<input class="gfield-choice-input" name="input_12.11" type="checkbox" value="3000" id="choice_6_12_11" />
+<label for="choice_6_12_11" id="label_6_12_11" class="gform-field-label gform-field-label--type-inline">Applicant Tracking System</label>
+</li></ul></div></li><li id="field_6_15" class="gfield gfield--type-checkbox gfield--type-choice largeLabel FormItem FormItem--stacked FormItem--type_checkbox field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible" data-js-reload="field_6_15"><label class="gfield_label gform-field-label gfield_label_before_complex">What marketing and analytics support do you need?</label><div class="ginput_container ginput_container_checkbox"><ul class="gfield_checkbox" id="input_6_15"><li class="gchoice gchoice_6_15_1">
+<input class="gfield-choice-input" name="input_15.1" type="checkbox" value="0" id="choice_6_15_1" />
+<label for="choice_6_15_1" id="label_6_15_1" class="gform-field-label gform-field-label--type-inline">Email subscription forms</label>
+</li><li class="gchoice gchoice_6_15_2">
+<input class="gfield-choice-input" name="input_15.2" type="checkbox" value="2500" id="choice_6_15_2" />
+<label for="choice_6_15_2" id="label_6_15_2" class="gform-field-label gform-field-label--type-inline">Email automation set-up</label>
+</li><li class="gchoice gchoice_6_15_3">
+<input class="gfield-choice-input" name="input_15.3" type="checkbox" value="0" id="choice_6_15_3" />
+<label for="choice_6_15_3" id="label_6_15_3" class="gform-field-label gform-field-label--type-inline">Simple behavior tracking set up</label>
+</li><li class="gchoice gchoice_6_15_4">
+<input class="gfield-choice-input" name="input_15.4" type="checkbox" value="5000" id="choice_6_15_4" />
+<label for="choice_6_15_4" id="label_6_15_4" class="gform-field-label gform-field-label--type-inline">Advanced event tracking and reporting</label>
+</li><li class="gchoice gchoice_6_15_5">
+<input class="gfield-choice-input" name="input_15.5" type="checkbox" value="1000" id="choice_6_15_5" />
+<label for="choice_6_15_5" id="label_6_15_5" class="gform-field-label gform-field-label--type-inline">Remarketing</label>
+</li></ul></div></li></ul>
+</div>
+<div class="gform_page_footer top_label">
+<input type="button" id="gform_previous_button_6_21" class="gform_previous_button gform-theme-button gform-theme-button--secondary button" value="Previous" onclick="jQuery(&quot;#gform_target_page_number_6&quot;).val(&quot;1&quot;);  jQuery(&quot;#gform_6&quot;).trigger(&quot;submit&quot;,[true]); " onkeypress="if( event.keyCode == 13 ){ jQuery(&quot;#gform_target_page_number_6&quot;).val(&quot;1&quot;);  jQuery(&quot;#gform_6&quot;).trigger(&quot;submit&quot;,[true]); } " /> <input type="button" id="gform_next_button_6_21" class="gform_next_button gform-theme-button button" value="Next" onclick="jQuery(&quot;#gform_target_page_number_6&quot;).val(&quot;3&quot;);  jQuery(&quot;#gform_6&quot;).trigger(&quot;submit&quot;,[true]); " onkeypress="if( event.keyCode == 13 ){ jQuery(&quot;#gform_target_page_number_6&quot;).val(&quot;3&quot;);  jQuery(&quot;#gform_6&quot;).trigger(&quot;submit&quot;,[true]); } " />
+</div>
+</div>
+<div id="gform_page_6_3" class="gform_page  FormItem FormItem--stacked" data-js="page-field-id-21" style="display:none;">
+<div class="gform_page_fields">
+<ul id="gform_fields_6_3" class="gform_fields top_label form_sublabel_below description_below"><li id="field_6_16" class="gfield gfield--type-section gsection FormItem FormItem--stacked field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible" data-js-reload="field_6_16"><h2 class="gsection_title">Contact Info</h2></li><li id="field_6_29" class="gfield gfield--type-text gfield--width-full FormItem FormItem--stacked gfield_contains_required field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible" data-js-reload="field_6_29"><label class="gfield_label gform-field-label" for="input_6_29">First Name<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_text"><input name="input_29" id="input_6_29" type="text" value class="medium" placeholder="First Name" aria-required="true" aria-invalid="false" /> </div></li><li id="field_6_30" class="gfield gfield--type-text gfield--width-full FormItem FormItem--stacked gfield_contains_required field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible" data-js-reload="field_6_30"><label class="gfield_label gform-field-label" for="input_6_30">Last Name<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_text"><input name="input_30" id="input_6_30" type="text" value class="medium" placeholder="Last Name" aria-required="true" aria-invalid="false" /> </div></li><li id="field_6_18" class="gfield gfield--type-email gfield--width-full FormItem FormItem--stacked gfield_contains_required field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible" data-js-reload="field_6_18"><label class="gfield_label gform-field-label" for="input_6_18">Email<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_email">
+<input name="input_18" id="input_6_18" type="text" value class="large" placeholder="Email" aria-required="true" aria-invalid="false" />
+</div></li><li id="field_6_31" class="gfield gfield--type-text gfield--width-full FormItem FormItem--stacked field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible" data-js-reload="field_6_31"><label class="gfield_label gform-field-label" for="input_6_31">How did you hear about us?</label><div class="ginput_container ginput_container_text"><input name="input_31" id="input_6_31" type="text" value class="large" placeholder="Google Search, Google Ads, LinkedIn, Clutch.co, Etc" aria-invalid="false" /> </div></li><li id="field_6_20" class="gfield gfield--type-checkbox gfield--type-choice gfield--width-full FormItem FormItem--stacked FormItem--type_checkbox field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible" data-js-reload="field_6_20"><label class="gfield_label gform-field-label screen-reader-text gfield_label_before_complex"></label><div class="ginput_container ginput_container_checkbox"><ul class="gfield_checkbox" id="input_6_20"><li class="gchoice gchoice_6_20_1">
+<input class="gfield-choice-input" name="input_20.1" type="checkbox" value="I&#039;d like to receive occasional marketing emails" checked="checked" id="choice_6_20_1" />
+<label for="choice_6_20_1" id="label_6_20_1" class="gform-field-label gform-field-label--type-inline">I'd like to receive occasional marketing emails</label>
+</li></ul></div></li><li id="field_6_27" class="gfield gfield--type-number FormItem FormItem--stacked gfield_calculation field_sublabel_below gfield--no-description field_description_below gfield_visibility_hidden" data-js-reload="field_6_27"><div class="admin-hidden-markup"><i class="gform-icon gform-icon--hidden"></i><span>Hidden</span></div><label class="gfield_label gform-field-label" for="input_6_27">Features Calculation</label><div class="ginput_container ginput_container_number"><input name="input_27" id="input_6_27" type="text" value class="medium" readonly="readonly" aria-invalid="false" /></div></li><li id="field_6_28" class="gfield gfield--type-number FormItem FormItem--stacked gfield_calculation field_sublabel_below gfield--no-description field_description_below gfield_visibility_hidden" data-js-reload="field_6_28"><div class="admin-hidden-markup"><i class="gform-icon gform-icon--hidden"></i><span>Hidden</span></div><label class="gfield_label gform-field-label" for="input_6_28">Quote Value</label><div class="ginput_container ginput_container_number"><input name="input_28" id="input_6_28" type="text" value class="medium" readonly="readonly" aria-invalid="false" /></div></li></ul></div>
+<div class="gform_page_footer top_label"><input type="submit" id="gform_previous_button_6" class="gform_previous_button gform-theme-button gform-theme-button--secondary button" value="Previous" onclick="if(window[&quot;gf_submitting_6&quot;]){return false;}  window[&quot;gf_submitting_6&quot;]=true;  " onkeypress="if( event.keyCode == 13 ){ if(window[&quot;gf_submitting_6&quot;]){return false;} window[&quot;gf_submitting_6&quot;]=true;  jQuery(&quot;#gform_6&quot;).trigger(&quot;submit&quot;,[true]); }" /> <button type="submit" id="gform_submit_button_6" class="gform_button button FormItem-action" onclick="if(window[&quot;gf_submitting_6&quot;]){return false;}  window[&quot;gf_submitting_6&quot;]=true;  " onkeypress="if( event.keyCode == 13 ){ if(window[&quot;gf_submitting_6&quot;]){return false;} window[&quot;gf_submitting_6&quot;]=true;  jQuery(&quot;#gform_6&quot;).trigger(&quot;submit&quot;,[true]); }">Submit</button>
+<input type="hidden" class="gform_hidden" name="is_submit_6" value="1" />
+<input type="hidden" class="gform_hidden" name="gform_submit" value="6" />
+<input type="hidden" class="gform_hidden" name="gform_unique_id" value />
+<input type="hidden" class="gform_hidden" name="state_6" value="WyJbXSIsImMyNzk3OTZkOTE2ZTBhODg1YTU0ZDgzOGQ0ZjM3MzMxIl0=" />
+<input type="hidden" class="gform_hidden" name="gform_target_page_number_6" id="gform_target_page_number_6" value="2" />
+<input type="hidden" class="gform_hidden" name="gform_source_page_number_6" id="gform_source_page_number_6" value="1" />
+<input type="hidden" name="gform_field_values" value />
+</div>
+</div></div>
+<p style="display: none !important;"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="123" /><script type="rocketlazyloadscript">document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>
+</div><script>window.addEventListener('DOMContentLoaded', function() {
+gform.initializeOnLoaded( function() {gformInitSpinner( 6, 'https://huemordev.b-cdn.net/wp-content/plugins/gravityforms/images/spinner.svg', true );jQuery('#gform_ajax_frame_6').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_6');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_6').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_6').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_6').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_6').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_6').offset().top - mt); }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_6').val();gformInitSpinner( 6, 'https://huemordev.b-cdn.net/wp-content/plugins/gravityforms/images/spinner.svg', true );jQuery(document).trigger('gform_page_loaded', [6, current_page]);window['gf_submitting_6'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}setTimeout(function(){jQuery('#gform_wrapper_6').replaceWith(confirmation_content);jQuery(document).scrollTop(jQuery('#gf_6').offset().top - mt);jQuery(document).trigger('gform_confirmation_loaded', [6]);window['gf_submitting_6'] = false;wp.a11y.speak(jQuery('#gform_confirmation_message_6').text());}, 50);}else{jQuery('#gform_6').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger('gform_post_render', [6, current_page]);gform.utils.trigger({ event: 'gform/postRender', native: false, data: { formId: 6, currentPage: current_page } });} );} );
+});</script>
+</div></div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-vrix456pqelc" data-node="vrix456pqelc">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>*This calculator is geared towards estimating full web projects. If you're interested in learning more about the cost of supporting your existing website, <a style="text-decoration: underline;" href="../contact/index.html">contact us.</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-row fl-row-full-width fl-row-bg-none fl-node-8ymqks41rl9g fl-row-default-height fl-row-align-center overflow-v white-h rich-content-underlink" data-node="8ymqks41rl9g">
+<div class="fl-row-content-wrap">
+<div class="fl-row-content fl-row-fixed-width fl-node-content">
+<div class="fl-col-group fl-node-614zjbsxk08l" data-node="614zjbsxk08l">
+<div class="fl-col fl-node-zsqx7gvtulrk" data-node="zsqx7gvtulrk">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-separator fl-node-oi86cvzas5yh" data-node="oi86cvzas5yh">
+<div class="fl-module-content fl-node-content">
+<div class="fl-separator"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-col-group fl-node-fpxrjzdu4m1l" data-node="fpxrjzdu4m1l">
+<div id="seo-content" class="fl-col fl-node-nqpxgch5vj9z" data-node="nqpxgch5vj9z">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-photo fl-node-wahr6imtqfon" data-node="wahr6imtqfon">
+<div class="fl-module-content fl-node-content">
+<div class="fl-photo fl-photo-align-left" itemscope itemtype="https://schema.org/ImageObject">
+<div class="fl-photo-content fl-photo-img-png">
+<img decoding="async" class="fl-photo-img wp-image-1519 size-full perfmatters-lazy" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;58&#039;%20height=&#039;58&#039;%20viewBox=&#039;0%200%2058%2058&#039;%3E%3C/svg%3E" alt="solar system" itemprop="image" height="58" width="58" title="solar system" data-src="https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system.png.webp" data-srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system.png.webp 58w,https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system-24x24.png.webp 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system-36x36.png.webp 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system-48x48.png.webp 48w" data-sizes="(max-width: 58px) 100vw, 58px" /><noscript><img decoding="async" class="fl-photo-img wp-image-1519 size-full" src="https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system.png.webp" alt="solar system" itemprop="image" height="58" width="58" title="solar system" srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system.png.webp 58w,https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system-24x24.png.webp 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system-36x36.png.webp 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system-48x48.png.webp 48w" sizes="(max-width: 58px) 100vw, 58px" /></noscript>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-afidtbc61ru8" data-node="afidtbc61ru8">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>Key Resources</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-heading fl-node-4zlfk7vn8s1t fl-animation fl-fade-up" data-node="4zlfk7vn8s1t" data-animation-delay="0" data-animation-duration=".5">
+<div class="fl-module-content fl-node-content">
+<h2 class="fl-heading">
+<span class="fl-heading-text">How Much Does A Website Cost In 2023?</span>
+</h2>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-lkrmn40xz5ds fl-animation fl-fade-up" data-node="lkrmn40xz5ds" data-animation-delay="0" data-animation-duration=".5">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>You're going to be disappointed by this answer, but here's the truth: <em>it depends</em>.</p>
+<p>There is no 1-size-fits-all price for websites. The needs of your business will weigh heavily on the functionality of the website, and with hundreds of variables, the price is bound to fluctuate.</p>
+<p>&nbsp;</p>
+<h3>A Website Is Your Digital Home</h3>
+<p>A great comparison can be made between buying/building a new home and custom website costs.</p>
+<p>For example, a 2,000 sq ft home in San Francisco will cost more than the same size in Charleston. Similarly, a 5,000 sq ft home in the same will have a higher average cost than 1,500 sqft.</p>
+<p>The same principle applies to a website, and here are more aspects to consider:</p>
+<ul>
+<li><strong>Square Feet = Page Count:</strong> Much like how the square feet dictate the space available in a property, the page count limits the amount of content you can add to your website.</li>
+<li><strong>Features/Layouts = Integrations/Complexity:</strong> Pools, outdoor areas, and security additions in a house are equivalent to carts, analytics, and live chat features on a website.</li>
+<li><strong>Finishes = Design and Assets:</strong> Hardwood floors? High-vaulted ceilings? These finishes can be compared to the visual design, navigation, and typography of your website.</li>
+<li><strong>Location = Company Size and Maturity:</strong> Properties in in-demand locations are more expensive. The same goes for an established business, which expects more traffic and conversions.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-r1bkq3mhjz64 fl-animation fl-fade-in" data-node="r1bkq3mhjz64" data-animation-delay="0" data-animation-duration=".5">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<h2>Before We Talk Website Cost, Let’s Understand Your Goals And Preferences</h2>
+<p>&nbsp;</p>
+<h3>What Do You Want The Website To Accomplish?</h3>
+<p>The cost of your website will largely depend on what you're trying to achieve.</p>
+<p>For smaller businesses who want a simple, informational website, you shouldn't need to spend a fortune in 2023.</p>
+<p>For businesses that want to rely on their website as a major driver in sales, recruiting, or education, expect to have to invest more in your website as these goals can be complex, nuanced, and require a lot of added website functionality.</p>
+<p>&nbsp;</p>
+<h3>Who Do You Want To Work With?</h3>
+<p>The cost of labor, especially technical labor is quickly rising globally. On average, a US-based web developer will earn $75,000-$150,000 annually. That means it's more expensive now than ever, for agencies to staff these individuals.</p>
+<p>If you're a US-based company and you want the convenience of working with a US-based agency, expect to pay a higher premium to do so.</p>
+<p>By working with an international team, you can potentially lower your average costs by 25-50%. The downside, however, will most likely be strained communication.</p>
+<p>&nbsp;</p>
+<h3>What Level Of Collaboration Are You Looking For?</h3>
+<p>Are you looking for a web agency partner that can do everything for you? Or are you seeking a partner to only execute one aspect of your website project?</p>
+<p>If you plan to have an agency partner do everything (customer research, UI/UX design, full-stack development, database integration, 3rd party-integrations, illustrations, custom graphics, copywriting, search engine optimization, etc.) expect to have a larger team, and in part, expect the website to cost more.</p>
+<p>If you're comfortable with owning specific aspects of the project and only having the agency partner execute others, then the cost of the project will be far less.</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-xfv2w49hqksb fl-animation fl-fade-in" data-node="xfv2w49hqksb" data-animation-delay="0" data-animation-duration=".5">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<h2>Estimating Your Website Project Cost</h2>
+<p>Hopefully, now we're on the same page in terms of all of the variations that could weigh on a custom website cost calculator. Moving forward, this next section will be written assuming the following:</p>
+<ul>
+<li>You're looking for a website that can be used as a viable sales, recruitment, and educational tool</li>
+<li>You're looking for a partner based in North America or Western Europe</li>
+<li>You're looking for a partner that can execute the entire project from start to finish, minimizing your involvement</li>
+</ul>
+<p>All of these things are true for our typical <a href="../web-design-agency/small-business/index.html" target="_blank" rel="noopener noreferrer"><u>mid-market web design</u></a> customer.</p>
+<p>We will notate how within these sections web design costs may be minimized or reduced based on the size and scope of your web designers project.</p>
+<p>&nbsp;</p>
+<h3>Standard Agency Hourly Rates</h3>
+<p>Most US / EU-based web development and design agencies will charge $150-$250 per hour for their services. These rates will be the basis of the estimates provided.</p>
+<p>&nbsp;</p>
+<h3>Customer Research &amp; Discovery Costs</h3>
+<p><strong>Cost Estimated: $12,000-$20,000</strong></p>
+<p>Any agency that wants to create a worthwhile outcome should be incorporating a designated research and discovery phase in their website cost estimate. During this period of time, the agency will do their due diligence to better understand the client's business, and their customers. This process will typically take 2-4 weeks to complete.</p>
+<p><em>*If you are a small business with a simple site, this step will most likely cost far less than this estimate.</em></p>
+<p><strong>Curious about your</strong> own web development cost calculator and<strong> design cost?</strong><br/>
+<a href="index.html#website-cost-calculator" target="_blank" rel="noopener noreferrer"><u>Use our web design cost calculator.</u></a></p>
+<p>&nbsp;</p>
+<h3>Website Architecture &amp; Planning Cost</h3>
+<p><strong>Cost Estimated: $6,000-$12,000</strong></p>
+<p>In this stage, your agency partner will plan out the overall structure of your website. This is an important step both from a user experience and search engine optimization standpoint. This process will typically take 1-2 weeks to complete.</p>
+<p><em>*If you have a small website with few pages, this step will most likely cost far less than this estimate.</em></p>
+<p><strong>Curious about your web design cost?</strong><br/>
+<a href="index.html#website-cost-calculator" target="_blank" rel="noopener noreferrer"><u>Use our web design cost calculator.</u></a></p>
+<p>&nbsp;</p>
+<h3>Web Design Cost</h3>
+<p><strong>Cost Estimated: $24,000-$40,000+</strong></p>
+<p>In this stage, your agency partner will be creating wireframes and prototypes of the website with the anticipation of creating a product that looks like the real deal. This is an area in the web design project where there will be a ton of variability based on the size and complexity of the website. Furthermore, the objective of the user experience itself will dictate website design costs. Highly experiential websites with many moving parts require more design time. The same can be said for complex features that require multiple states and statuses. This process will typically take 8-12 weeks to complete.</p>
+<p><em>*If you have a small website with a simple</em> responsive design<em>, this step will most likely cost far less than this estimate.</em></p>
+<p><strong>Curious about your web design cost?</strong><br/>
+<a href="index.html#website-cost-calculator" target="_blank" rel="noopener noreferrer"><u>Use our website</u></a> web design cost calculator<a href="index.html#website-cost-calculator" target="_blank" rel="noopener noreferrer"><u>.</u></a></p>
+<p>&nbsp;</p>
+<h3>Website Development Cost</h3>
+<p><strong>Cost Estimated: $30,000-$50,000</strong></p>
+<p>In this stage, your agency partner will be taking the items from the previous phase and turning them into functional web pages. This is another area of the project where there can be a lot of flexibility in price based on the objectives of the website. Complicated functionality or user experiences will increase development time, and in turn, increase the total cost of development for the web project. This process will typically take 12-16 weeks to complete.</p>
+<p><em>*If you have limited custom functionality, or do not need to have the</em> new website be<em> integrated into a CMS, then this step will most likely cost far less than this estimate.</em></p>
+<p><strong>Curious about your custom website cost?</strong><br/>
+<a href="index.html#website-cost-calculator" target="_blank" rel="noopener noreferrer"><u>Use our website cost calculator.</u></a></p>
+<p>&nbsp;</p>
+<h3>Copywriting Cost</h3>
+<p><strong>Cost Estimated: $12,000-$20,000</strong></p>
+<p>Writing for a web project is just as in-depth as design planning. Each page must be written both for the ideal customer and the search engine's benefit. This process will typically take 2-4 weeks to complete.</p>
+<p><em>*If you have the ability to write copy in-house, or have a smaller site, this step will likely cost far less than this estimate.</em></p>
+<p><strong>Curious about your custom website cost?</strong><br/>
+<a href="index.html#website-cost-calculator" target="_blank" rel="noopener noreferrer"><u>Use our website cost calculator.</u></a></p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-n217yrxbp8lk fl-animation fl-fade-in" data-node="n217yrxbp8lk" data-animation-delay="0" data-animation-duration=".5">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<h2>Who Should Invest in Their Website?</h2>
+<p>As a general rule in business, you should spend your time, money, and effort on something that will give you a high ROI. You can focus on manufacturing quality goods, streamlining your services, or hiring dependable manpower.</p>
+<p>For most, a website is treated as an investment. This is something that customers directly interact with, so you want to put your best foot forward.</p>
+<p>However, there are some important considerations before you spend money on a website.</p>
+<p>&nbsp;</p>
+<h3>A Custom Website Is Not for Bootstrapped Start-ups and Very Small Businesses</h3>
+<p>If you're just beginning as a company, you might be tempted to get a premium startup website to give off authoritative branding.</p>
+<p>On the other hand, a very small business might want a high-end site to provide better customer service to their loyal customers or improve their marketing. But hear us out—investing in a premium website is not a good decision.</p>
+<p>The most obvious reason for this is the high costs of building, launching, and maintaining a premium website. Premium themes with complicated functionalities (that your customers will probably not use) will add up to the expense.</p>
+<p>For very small businesses, the costs will not lead to high ROI. It will eat up your capital long before it starts to pay off—if it ever does.</p>
+<p>Start-ups must also focus on selling their products or services first before trying anything too flashy. It's more important to establish your capabilities as it helps create a stronger customer base.</p>
+<p>&nbsp;</p>
+<h3>A Premium Website Is for Established Businesses and Funded Start-ups</h3>
+<p>If your business is earning around $5 million in revenue annually, you can consider yourself an established company. This is the best moment to start investing in a premium professional website as it can help streamline your processes and add to your revenue.</p>
+<p>Web design is particularly important for companies that use their website for services, or commerce functionality such as those that sell enterprise software, expensive equipment, or goods directly to customers (which is why good ecommerce store design is integral).</p>
+<p>The costs will be justified with the increased engagement with customers, easy tracking of data for reports, and automated integrations including useful premium content management system and plugins. Therefore, a premium website is definitely a worth-it investment that will result in high ROI.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-col fl-node-642o175ljrkb fl-col-small sticky top-20" data-node="642o175ljrkb">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-table-of-contents fl-node-7phlt6bxrcoe" data-node="7phlt6bxrcoe">
+<div class="fl-module-content fl-node-content">
+<div class="TableOfContents  " id="TableOfContents-7phlt6bxrcoe">
+<div class="TableOfContents-wrapper">
+<div class="TableOfContents-toc">
+<div class="accordion" id="TableOfContentsAccordion-7phlt6bxrcoe">
+<div class="card panel">
+<div class="card-header" id="headingOne">
+<button class="btn btn-link toggle desktop-disabled " data-parent="#TableOfContentsAccordion-7phlt6bxrcoe" type="button" data-toggle="collapse" data-target="#tocOne" aria-expanded="false" aria-controls="tocOne">
+Table of Contents <i class="fl-accordion-button-icon fl-accordion-button-icon-right dashicons-arrow-down-alt2 dashicons dashicons-before"><span class="sr-only">Expand</span></i>
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.125 10h13.75M10 3.125v13.75" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</button>
+</div>
+<div id="tocOne" class="collapse in" aria-labelledby="headingOne" data-parent="#TableOfContentsAccordion-7phlt6bxrcoe">
+<div class="card-body">
+<ul class="TableOfContents-list" id="TableOfContents-list-7phlt6bxrcoe">
+</ul>
+</div>
+</div>
+</div>
+<div class="card panel">
+<div class="card-header" id="additional-reading-heading">
+<button class="btn btn-link collapsed toggle" type="button" data-parent="#TableOfContentsAccordion-7phlt6bxrcoe" data-toggle="collapse" data-target="#additional-reading" aria-expanded="false" aria-controls="additional-reading">
+Additional Reading <i class="fl-accordion-button-icon fl-accordion-button-icon-right dashicons-arrow-down-alt2 dashicons dashicons-before"><span class="sr-only">Expand</span></i>
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.125 10h13.75M10 3.125v13.75" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</button>
+</div>
+<div id="additional-reading" class="collapse" aria-labelledby="additional-reading-heading" data-parent="#TableOfContentsAccordion-7phlt6bxrcoe">
+<div class="card-body">
+<ul class="TableOfContents-list">
+<li class="TableOfContents-list-item">
+<a href="../blog/website-cost-guide/index.html" rel target>How Much Does It Cost to Build a Website? </a>
+</li>
+<li class="TableOfContents-list-item">
+<a href="../blog/website-redesign-project-plan/index.html" rel target="_self">A Step-by-Step Website Redesign Project Plan </a>
+</li>
+<li class="TableOfContents-list-item">
+<a href="../blog/web-design-system/index.html" rel target="_self">How to Build a Web Design System </a>
+</li>
+<li class="TableOfContents-list-item">
+<a href="../blog/how-can-a-proper-ux-research-process-enhance-product-metrics/index.html" rel target="_self">Choosing the Right Product Metrics Using UX Research Process </a>
+</li>
+<li class="TableOfContents-list-item">
+<a href="../blog/top-retail-website-examples/index.html" rel target="_self">Our Top Retail Website Examples </a>
+</li>
+<li class="TableOfContents-list-item">
+<a href="../blog/web-design-vs-web-development/index.html" rel target="_self">Understanding Web Design vs Web Development </a>
+</li>
+<li class="TableOfContents-list-item">
+<a href="../blog/top-beauty-website-examples/index.html" rel target="_self">Our Top Beauty Website Examples </a>
+</li>
+<li class="TableOfContents-list-item">
+<a href="../resource/shopify-speed-guide-checklist/index.html" rel target="_self">Our Shopify Speed Guide Checklist </a>
+</li>
+<li class="TableOfContents-list-item">
+<a href rel target="_self">Guide to Optimizing Shopify Image sizes </a>
+</li>
+<li class="TableOfContents-list-item">
+<a href="../blog/service-page-design-examples/index.html" rel target="_self">Our Service Page Layout Examples </a>
+</li>
+<li class="TableOfContents-list-item">
+<a href="../blog/top-saas-website-examples/index.html" rel target="_self">Best SaaS Websites of 2022 </a>
+</li>
+<li class="TableOfContents-list-item">
+<a href="../blog/seo-for-a-new-website/index.html" rel target="_self">New Website SEO Foundations </a>
+</li>
+<li class="TableOfContents-list-item">
+<a href="../blog/wordpress-performance-optimization/index.html" rel target="_self">WordPress Performance Optimization Best Practices </a>
+</li>
+<li class="TableOfContents-list-item">
+<a href="../blog/100-ecommerce-web-design-tips-to-skyrocket-sales/index.html" rel target="_self">100 Ecommerce Website Design Tips </a>
+</li>
+<li class="TableOfContents-list-item">
+<a href="../blog/dynamic-website-content/index.html" rel target="_self">How to Use Dynamic Website Content </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="TableOfContents-cta custom-button bordered-icon-front no-border-text small-icon">
+<a href="../contact/index.html" target="_self" rel class="fl-button" role="button">
+<span class="fl-button-text">Book A Strategy Session</span>
+<i class="fl-button-icon fl-button-icon-before dashicons dashicons-before dashicons-arrow-right-alt" aria-hidden="true"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div> </div>
+</article>
+
+</div>
+</div>
+</div>
+</div>
+<footer class="fl-builder-content fl-builder-content-197 fl-builder-global-templates-locked" data-post-id="197" data-type="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter"><div class="fl-row fl-row-full-width fl-row-bg-gradient fl-node-c7ou2dj1zfq4 fl-row-default-height fl-row-align-center" data-node="c7ou2dj1zfq4">
+<div class="fl-row-content-wrap">
+<div class="fl-row-content fl-row-fixed-width fl-node-content">
+<div class="fl-col-group fl-node-xt1rabo3hc5s" data-node="xt1rabo3hc5s">
+<div class="fl-col fl-node-ins6gt2f3ze5 fl-col-small" data-node="ins6gt2f3ze5">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-photo fl-node-c0gtwklqhnse" data-node="c0gtwklqhnse">
+<div class="fl-module-content fl-node-content">
+<div class="fl-photo fl-photo-align-left" itemscope itemtype="https://schema.org/ImageObject">
+<div class="fl-photo-content fl-photo-img-webp">
+<img decoding="async" class="fl-photo-img wp-image-1406 size-full perfmatters-lazy" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;83&#039;%20height=&#039;80&#039;%20viewBox=&#039;0%200%2083%2080&#039;%3E%3C/svg%3E" alt="Huemor-Logo-Black@2x-1-e1674490603267" itemprop="image" height="80" width="83" title="Huemor-Logo-Black@2x-1-e1674490603267" data-src="../wp-content/uploads/2023/02/logo.png" data-srcset="../wp-content/uploads/2023/02/logo.png 83w, https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@2x-1-e1674490603267-24x24.webp 24w, https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@2x-1-e1674490603267-36x36.webp 36w, https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@2x-1-e1674490603267-48x46.webp 48w" data-sizes="(max-width: 83px) 100vw, 83px" /><noscript><img decoding="async" class="fl-photo-img wp-image-1406 size-full" src="../wp-content/uploads/2023/02/logo.png" alt="Huemor-Logo-Black@2x-1-e1674490603267" itemprop="image" height="80" width="83" title="Huemor-Logo-Black@2x-1-e1674490603267" srcset="../wp-content/uploads/2023/02/logo.png 83w, https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@2x-1-e1674490603267-24x24.webp 24w, https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@2x-1-e1674490603267-36x36.webp 36w, https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@2x-1-e1674490603267-48x46.webp 48w" sizes="(max-width: 83px) 100vw, 83px" /></noscript>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-col fl-node-qczey80dr719 fl-col-small" data-node="qczey80dr719">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-button fl-node-mps3bwr1z64c custom-button fully-bordered" data-node="mps3bwr1z64c">
+<div class="fl-module-content fl-node-content">
+<div class="fl-button-wrap fl-button-width-auto fl-button-right fl-button-has-icon">
+<a href="../support-request/index.html" target="_self" class="fl-button">
+<span class="fl-button-text">Client Support</span>
+<i class="fl-button-icon fl-button-icon-after dashicons dashicons-before dashicons-arrow-right-alt" aria-hidden="true"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-col-group fl-node-jle5cxr78syg fl-col-group-custom-width" data-node="jle5cxr78syg">
+<div class="fl-col fl-node-o39a470ldvwj fl-col-small fl-col-small-custom-width" data-node="o39a470ldvwj">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-button fl-node-enubltfycdpa custom-button no-border icon-color" data-node="enubltfycdpa">
+<div class="fl-module-content fl-node-content">
+<div class="fl-button-wrap fl-button-width-auto fl-button-left fl-button-has-icon">
+<a href="../website-platforms/index.html" target="_self" class="fl-button">
+<span class="fl-button-text">Website Platforms</span>
+<i class="fl-button-icon fl-button-icon-after dashicons dashicons-before dashicons-arrow-right-alt" aria-hidden="true"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-x3n5bg76rich links-hover" data-node="x3n5bg76rich">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p><a href="../wordpress-agency/index.html">WordPress Website</a></p>
+<p><a href="../shopify-agency/index.html">Shopify Website</a></p>
+<p><a href="../hubspot-agency/index.html">Hubspot Website</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-col fl-node-283npusmy5cx fl-col-small fl-col-small-custom-width" data-node="283npusmy5cx">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-button fl-node-tbg0d2flayq7 custom-button no-border icon-color" data-node="tbg0d2flayq7">
+<div class="fl-module-content fl-node-content">
+<div class="fl-button-wrap fl-button-width-auto fl-button-left fl-button-has-icon">
+<a href="../services/index.html" target="_self" class="fl-button">
+<span class="fl-button-text">Website Services</span>
+<i class="fl-button-icon fl-button-icon-after dashicons dashicons-before dashicons-arrow-right-alt" aria-hidden="true"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-3e07jof6hl8v links-hover" data-node="3e07jof6hl8v">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p><a href="../web-design-agency/index.html">Web Design</a></p>
+<p><a href="../web-development-agency/index.html">Web Development</a></p>
+<p><a href="../website-maintenance-and-support/index.html">Website Maintenance &amp; Support</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-col fl-node-zfk0velincjx fl-col-small fl-col-small-custom-width" data-node="zfk0velincjx">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-button fl-node-keh2p57it10y custom-button no-border icon-color" data-node="keh2p57it10y">
+<div class="fl-module-content fl-node-content">
+<div class="fl-button-wrap fl-button-width-auto fl-button-left fl-button-has-icon">
+<a href="../industries/index.html" target="_self" class="fl-button">
+<span class="fl-button-text">Clients We Serve</span>
+<i class="fl-button-icon fl-button-icon-after dashicons dashicons-before dashicons-arrow-right-alt" aria-hidden="true"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-ikvyg69qe2wb links-hover" data-node="ikvyg69qe2wb">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p><a href="../web-design-agency/saas/index.html">SaaS Website</a></p>
+<p><a href="../web-design-agency/b2b/index.html">Corporate Website</a></p>
+<p><a href="../ecommerce-website-agency/index.html">Ecommerce Website</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="fl-col fl-node-nq3dgx02smby fl-col-small fl-col-small-custom-width" data-node="nq3dgx02smby">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-button fl-node-i6ovpgj28tk1 custom-button no-border icon-color" data-node="i6ovpgj28tk1">
+<div class="fl-module-content fl-node-content">
+<div class="fl-button-wrap fl-button-width-auto fl-button-left fl-button-has-icon">
+<a href="../agency/index.html" target="_self" class="fl-button">
+<span class="fl-button-text">About Us</span>
+<i class="fl-button-icon fl-button-icon-after dashicons dashicons-before dashicons-arrow-right-alt" aria-hidden="true"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-yg97dei3hk2v links-hover" data-node="yg97dei3hk2v">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p><a href="../agency/careers/index.html">Careers</a></p>
+<p><a href="../agency/partners/index.html">Partners</a></p>
+<p><a href="../agency/news/index.html">News</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-col-group fl-node-bu9t5r4w1eqn" data-node="bu9t5r4w1eqn">
+<div class="fl-col fl-node-iaskwzxo0r3t fl-col-has-cols" data-node="iaskwzxo0r3t">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-separator fl-node-qsrljodvnti8" data-node="qsrljodvnti8">
+<div class="fl-module-content fl-node-content">
+<div class="fl-separator"></div>
+</div>
+</div>
+<div class="fl-col-group fl-node-f46crmzue1jw fl-col-group-nested fl-col-group-custom-width fl-col-group-responsive-reversed" data-node="f46crmzue1jw">
+<div class="fl-col fl-node-slkfnorbtm39 fl-col-small-custom-width" data-node="slkfnorbtm39">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-ygrvibzk9fw3" data-node="ygrvibzk9fw3">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>Follow Us</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-p2vx0o359j7k fl-visible-desktop fl-visible-large fl-visible-medium links-with-icons" data-node="p2vx0o359j7k">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p><a href="https://www.linkedin.com/in/ahmad-jorban-308702216/" target="_blank" rel="noopener">LinkedIn</a>           <a href="https://www.instagram.com/jorbanwebdesign/" target="_blank" rel="noopener">Instagram </a>    </p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-gzo9tlcad2wu fl-visible-mobile links-with-icons" data-node="gzo9tlcad2wu">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p><a href="https://www.linkedin.com/in/ahmad-jorban-308702216/" target="_blank" rel="noopener">LinkedIn</a>      <a href="https://dribbble.com/huemor" target="_blank" rel="noopener">Dribbble</a></p>
+<p>&nbsp;</p>
+<p><a href="https://www.instagram.com/jorbanwebdesign/" target="_blank" rel="noopener">Instagram </a>    </p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-ly4h86ovxq9k" data-node="ly4h86ovxq9k">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>Home Base: Israel</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-pwmibl14xdnf" data-node="pwmibl14xdnf">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>2 Alkana st, Jiser Az Zarqa - 3785800</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-zrgk3n9w2oy4 fl-visible-mobile" data-node="zrgk3n9w2oy4">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>Copyright 2023 Jorban LLC.</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-80v1q2gs4ul5 fl-visible-mobile links-with-icons" data-node="80v1q2gs4ul5">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p><a href="../privacy-policy/index.html">Privacy Policy</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-col fl-node-s0g2ahe4zlqm fl-col-small fl-col-small-custom-width" data-node="s0g2ahe4zlqm">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-xrvhkabycsp3" data-node="xrvhkabycsp3">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>We'd love to hear from you</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-iha2qpwtrj4e links-with-icons" data-node="iha2qpwtrj4e">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p><a href="tel:+972 0539527635">+972 0539527635</a>      <a href="jorbanaahmad@gmail.com"><span>jorbanaahmad@gmail.com</span></a></p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-izyvpsqrhe0o fl-visible-desktop fl-visible-large fl-visible-medium links-with-icons" data-node="izyvpsqrhe0o">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>Copyright 2023 Jorban LLC.  <a href="../privacy-policy/index.html">Privacy Policy</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="rocketlazyloadscript">(function(){var s=document.createElement('script');e = !document.body ? document.querySelector('head'):document.body;s.src='../../acsbapp.com/apps/app/dist/js/app.js';s.defer=true;s.onload=function(){acsbJS.init({
+            statementLink     : '',
+            feedbackLink      : '',
+            footerHtml        : '',
+            hideMobile        : false,
+            hideTrigger       : false,
+            language          : 'en',
+            position          : 'left',
+            leadColor         : '#146FF8',
+            triggerColor      : '#146FF8',
+            triggerRadius     : '50%',
+            triggerPositionX  : 'right',
+            triggerPositionY  : 'bottom',
+            triggerIcon       : 'people',
+            triggerSize       : 'medium',
+            triggerOffsetX    : 20,
+            triggerOffsetY    : 20,
+            mobile            : {
+                triggerSize       : 'small',
+                triggerPositionX  : 'right',
+                triggerPositionY  : 'bottom',
+                triggerOffsetX    : 0,
+                triggerOffsetY    : 0,
+                triggerRadius     : '50%'
+            }
+        });
+    };
+    e.appendChild(s);}());</script>
+
+<aside id="moove_gdpr_cookie_info_bar" class="moove-gdpr-info-bar-hidden moove-gdpr-align-center moove-gdpr-dark-scheme gdpr_infobar_postion_bottom" aria-label="GDPR Cookie Banner" style="display: none;">
+<div class="moove-gdpr-info-bar-container">
+<div class="moove-gdpr-info-bar-content">
+<div class="moove-gdpr-cookie-notice">
+<p>We are using cookies to give you the best experience on our website.</p>
+<p>You can find out more about which cookies we are using or switch them off in <span role="button" data-href="#moove_gdpr_cookie_modal" class="change-settings-button">settings</span>.</p>
+</div>
+
+<div class="moove-gdpr-button-holder">
+<button class="mgbutton moove-gdpr-infobar-allow-all gdpr-fbo-0" aria-label="Accept">Accept</button>
+<button class="mgbutton moove-gdpr-infobar-reject-btn gdpr-fbo-1 " aria-label="Reject">Reject</button>
+</div>
+ </div>
+
+</div>
+
+</aside>
+
+
+<link rel="stylesheet" id="gravity_forms_theme_reset-css" href="../wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-theme-reset.min4537.css?ver=2.7.12" media="all" />
+<link rel="stylesheet" id="gravity_forms_theme_foundation-css" href="../wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-theme-foundation.min4537.css?ver=2.7.12" media="all" />
+<link data-minify="1" rel="stylesheet" id="gravity_forms_theme_framework-css" href="../wp-content/cache/min/1/wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-theme-framework.min1eff.css?ver=1692186640" media="all" />
+<link rel="stylesheet" id="gravity_forms_orbital_theme-css" href="../wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-orbital-theme.min4537.css?ver=2.7.12" media="all" />
+<link rel="stylesheet" id="fl-builder-google-fonts-d7d758cc27f16acdd2f3206b4f2f6da0-css" href="http://fonts.googleapis.com/css?family=Archivo%3A300%2C800%2C400%2C700%2C500%2C600%7CInter%3A400%7CPoppins%3A600&amp;ver=6.2.2" media="all" />
+<script src="../wp-content/plugins/bb-plugin/js/jquery.waypoints.mina77c.js?ver=2.7.1.1" id="jquery-waypoints-js" defer></script>
+<script data-minify="1" src="../wp-content/cache/min/1/wp-content/uploads/bb-plugin/cache/39145-layout1eff.js?ver=1692186640" id="fl-builder-layout-39145-js" defer></script>
+<script id="leadin-script-loader-js-js-extra">
+var leadin_wordpress = {"userRole":"visitor","pageType":"page","leadinPluginVersion":"10.1.30"};
+</script>
+<script data-minify="1" src="../wp-content/cache/min/1/66065567d2e.js?ver=1692186404" async defer id="hs-script-loader"></script>
+<script id="wpil-frontend-script-js-extra">
+var wpilFrontend = {"ajaxUrl":"\/wp-admin\/admin-ajax.php","postId":"39145","postType":"post","openInternalInNewTab":"0","openExternalInNewTab":"0","disableClicks":"0","openLinksWithJS":"0","trackAllElementClicks":"0","clicksI18n":{"imageNoText":"Image in link: No Text","imageText":"Image Title: ","noText":"No Anchor Text Found"}};
+</script>
+<script src="../wp-content/plugins/link-whisper-premium/js/frontend.min1ccf.js?ver=1689318398" id="wpil-frontend-script-js" defer></script>
+<script src="../wp-content/plugins/bb-plugin/js/jquery.ba-throttle-debounce.mina77c.js?ver=2.7.1.1" id="jquery-throttle-js" defer></script>
+<script data-minify="1" src="../wp-content/cache/min/1/wp-content/uploads/bb-plugin/cache/b8e4dbf0a8e832d21a899481e8f79222-layout-bundlee992.js?ver=1692186465" id="fl-builder-layout-bundle-b8e4dbf0a8e832d21a899481e8f79222-js" defer></script>
+<script id="scripts-js-extra">
+var scripts_data = [];
+</script>
+<script data-minify="1" src="../wp-content/cache/min/1/wp-content/themes/beaverwarrior/build/script7d2e.js?ver=1692186404" id="scripts-js" defer></script>
+<script src="../wp-content/themes/beaverwarrior/assets/vendor/slick/slick/slick.min.js" id="slick-slider-js" defer></script>
+<script data-minify="1" src="../wp-content/cache/min/1/wp-content/themes/beaverwarrior/assets/custom7d2e.js?ver=1692186404" id="scroll-custom-js-js" defer></script>
+<script id="perfmatters-lazy-load-js-before">
+window.lazyLoadOptions={elements_selector:"img[data-src],.perfmatters-lazy,.perfmatters-lazy-css-bg",thresholds:"0px 0px",class_loading:"pmloading",class_loaded:"pmloaded",callback_loaded:function(element){if(element.tagName==="IFRAME"){if(element.classList.contains("pmloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener("LazyLoad::Initialized",function(e){var lazyLoadInstance=e.detail.instance;var target=document.querySelector("body");var observer=new MutationObserver(function(mutations){lazyLoadInstance.update()});var config={childList:!0,subtree:!0};observer.observe(target,config);});
+</script>
+<script async src="../wp-content/plugins/perfmatters/js/lazyload.min4c71.js?ver=2.1.3" id="perfmatters-lazy-load-js"></script>
+<script id="moove_gdpr_frontend-js-extra">
+var moove_frontend_gdpr_scripts = {"ajaxurl":"https:\/\/huemor.rocks\/wp-admin\/admin-ajax.php","post_id":"39145","plugin_dir":"https:\/\/huemordev.b-cdn.net\/wp-content\/plugins\/gdpr-cookie-compliance","show_icons":"all","is_page":"1","ajax_cookie_removal":"false","strict_init":"3","enabled_default":{"third_party":1,"advanced":1},"geo_location":"true","force_reload":"false","is_single":"","hide_save_btn":"false","current_user":"0","cookie_expiration":"365","script_delay":"2000","close_btn_action":"1","close_btn_rdr":"","scripts_defined":"{\"cache\":true,\"header\":\"\",\"body\":\"\",\"footer\":\"\",\"thirdparty\":{\"header\":\"<!-- Google Tag Manager -->\\r\\n<script data-gdpr>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\\r\\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\\r\\nj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\\r\\n'https:\\\/\\\/www.googletagmanager.com\\\/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\\r\\n})(window,document,'script','dataLayer','GTM-PMZ7CZF');<\\\/script>\\r\\n<!-- End Google Tag Manager -->\",\"body\":\"<!-- Google Tag Manager (noscript) -->\\r\\n<noscript><iframe src=\\\"https:\\\/\\\/www.googletagmanager.com\\\/ns.html?id=GTM-PMZ7CZF\\\"\\r\\nheight=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"><\\\/iframe><\\\/noscript>\\r\\n<!-- End Google Tag Manager (noscript) -->\",\"footer\":\"\"},\"advanced\":{\"header\":\"\",\"body\":\"\",\"footer\":\"\"}}","gdpr_scor":"true","wp_lang":"","geo_debug":"","display_cookie_banner":"false","gdpr_consent_version":"1","gdpr_uvid":"f5ef2e831778cf94df25691800a1155e","stats_enabled":"","gdpr_aos_hide":["0","1","2"],"consent_log_enabled":"","enable_on_scroll":"true","gdpr_aos_hide_seconds":"10"};
+</script>
+<script data-minify="1" src="../wp-content/cache/min/1/wp-content/plugins/gdpr-cookie-compliance/dist/scripts/main7d2e.js?ver=1692186404" id="moove_gdpr_frontend-js" defer></script>
+<script id="moove_gdpr_frontend-js-after">
+var gdpr_consent__strict = "true"
+var gdpr_consent__thirdparty = "true"
+var gdpr_consent__advanced = "false"
+var gdpr_consent__cookies = "strict|thirdparty"
+</script>
+<script data-minify="1" src="../wp-content/cache/min/1/wp-content/plugins/gdpr-cookie-compliance-addon/assets/js/gdpr_cc_addon7d2e.js?ver=1692186404" id="gdpr_cc_addon_frontend-js" defer></script>
+<script src="../wp-content/plugins/bb-plugin/js/jquery.magnificpopup.mina77c.js?ver=2.7.1.1" id="jquery-magnificpopup-js" defer></script>
+<script src="../wp-content/themes/bb-theme/js/bootstrap.mine96c.js?ver=1.7.13" id="bootstrap-js" defer></script>
+<script id="fl-automator-js-extra">
+var themeopts = {"medium_breakpoint":"992","mobile_breakpoint":"768","scrollTopPosition":"800"};
+</script>
+<script src="../wp-content/themes/bb-theme/js/theme.mine96c.js?ver=1.7.13" id="fl-automator-js" defer></script>
+<script data-minify="1" async data-no-optimize="1" src="../wp-content/cache/min/1/wp-content/plugins/perfmatters/vendor/instant-page/instantpage7d2e.js?ver=1692186404" id="perfmatters-instant-page-js"></script>
+<script defer="defer" src="../wp-content/plugins/gravityforms/assets/js/dist/utils.min1f52.js?ver=9cecf9943583937c8b36678fadcce50d" id="gform_gravityforms_utils-js"></script>
+<script defer="defer" src="../wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.minb7e3.js?ver=4ef53fe41c14a48b294541d9fc37387e" id="gform_gravityforms_theme_vendors-js"></script>
+<script id="gform_gravityforms_theme-js-extra">
+var gform_theme_config = {"common":{"form":{"honeypot":{"version_hash":"8278e571b26d9345e666af5ea27380cd"}}},"hmr_dev":"","public_path":"https:\/\/huemor.rocks\/wp-content\/plugins\/gravityforms\/assets\/js\/dist\/"};
+</script>
+<script defer="defer" src="../wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min5eab.js?ver=f4d12a887a23a8c5755fd2b956bc8fcf" id="gform_gravityforms_theme-js"></script>
+
+
+<div id="moove_gdpr_cookie_modal" class="gdpr_lightbox-hide" role="complementary" aria-label="GDPR Settings Screen">
+<div class="moove-gdpr-modal-content moove-clearfix logo-position-left moove_gdpr_modal_theme_v1">
+<button class="moove-gdpr-modal-close" aria-label="Close GDPR Cookie Settings">
+<span class="gdpr-sr-only">Close GDPR Cookie Settings</span>
+<span class="gdpr-icon moovegdpr-arrow-close"></span>
+</button>
+<div class="moove-gdpr-modal-left-content">
+<div class="moove-gdpr-company-logo-holder">
+<img width="507" height="120" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;507&#039;%20height=&#039;120&#039;%20viewBox=&#039;0%200%20507%20120&#039;%3E%3C/svg%3E" alt="Huemor" class="img-responsive perfmatters-lazy" data-src="https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@3x.webp?ver" /><noscript><img width="507" height="120" src="https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@3x.webp?ver" alt="Huemor"     class="img-responsive" /></noscript>
+</div>
+ <ul id="moove-gdpr-menu">
+<li class="menu-item-on menu-item-privacy_overview menu-item-selected">
+<button data-href="#privacy_overview" class="moove-gdpr-tab-nav" aria-label="Privacy Overview">
+<span class="gdpr-nav-tab-title">Privacy Overview</span>
+</button>
+</li>
+<li class="menu-item-off menu-item-third_party_cookies">
+<button data-href="#third_party_cookies" class="moove-gdpr-tab-nav" aria-label="3rd Party Cookies">
+<span class="gdpr-nav-tab-title">3rd Party Cookies</span>
+</button>
+</li>
+</ul>
+<div class="moove-gdpr-branding-cnt">
+<a href="https://wordpress.org/plugins/gdpr-cookie-compliance/" rel="noopener noreferrer" target="_blank" class="moove-gdpr-branding">Powered by&nbsp; <span>GDPR Cookie Compliance</span></a>
+</div>
+ </div>
+
+<div class="moove-gdpr-modal-right-content">
+<div class="moove-gdpr-modal-title">
+</div>
+
+<div class="main-modal-content">
+<div class="moove-gdpr-tab-content">
+<div id="privacy_overview" class="moove-gdpr-tab-main">
+<span class="tab-title">Privacy Overview</span>
+<div class="moove-gdpr-tab-main-content">
+<p>This website uses cookies so that we can provide you with the best user experience possible. Cookie information is stored in your browser and performs functions such as recognising you when you return to our website and helping our team to understand which sections of the website you find most interesting and useful.</p>
+</div>
+
+</div>
+
+<div id="third_party_cookies" class="moove-gdpr-tab-main" style="display:none">
+<span class="tab-title">3rd Party Cookies</span>
+<div class="moove-gdpr-tab-main-content">
+<p>This website uses Piwik and Clearbit to collect anonymous information such as the number of visitors to the site, and the most popular pages.</p>
+<p>Keeping this cookie enabled helps us to improve our website.</p>
+<div class="moove-gdpr-status-bar">
+<div class="gdpr-cc-form-wrap">
+<div class="gdpr-cc-form-fieldset">
+<label class="cookie-switch" for="moove_gdpr_performance_cookies">
+<span class="gdpr-sr-only">Enable or Disable Cookies</span>
+<input type="checkbox" aria-label="3rd Party Cookies" value="check" name="moove_gdpr_performance_cookies" id="moove_gdpr_performance_cookies">
+<span class="cookie-slider cookie-round" data-text-enable="Enabled" data-text-disabled="Disabled"></span>
+</label>
+</div>
+
+</div>
+
+</div>
+
+<div class="moove-gdpr-strict-secondary-warning-message" style="margin-top: 10px; display: none;">
+<p>Please enable Strictly Necessary Cookies first so that we can save your preferences!</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="moove-gdpr-modal-footer-content">
+<div class="moove-gdpr-button-holder">
+<button class="mgbutton moove-gdpr-modal-allow-all button-visible" aria-label="Enable All">Enable All</button>
+<button class="mgbutton moove-gdpr-modal-save-settings button-visible" aria-label="Save Settings">Save Settings</button>
+</div>
+ </div>
+
+</div>
+
+<div class="moove-clearfix"></div>
+</div>
+
+</div>
+
+
+<script>window.addEventListener('DOMContentLoaded', function() {
+gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 6) {gf_global["number_formats"][6] = {"14":{"price":false,"value":false},"1":{"price":false,"value":false},"3":{"price":false,"value":false},"4":{"price":false,"value":false},"5":{"price":false,"value":false},"26":{"price":false,"value":"decimal_dot"},"23":{"price":false,"value":false},"13":{"price":false,"value":false},"7":{"price":false,"value":false},"8":{"price":false,"value":false},"9":{"price":false,"value":false},"11":{"price":false,"value":false},"12":{"price":false,"value":false},"15":{"price":false,"value":false},"21":{"price":false,"value":false},"16":{"price":false,"value":false},"29":{"price":false,"value":false},"30":{"price":false,"value":false},"18":{"price":false,"value":false},"31":{"price":false,"value":false},"20":{"price":false,"value":false},"27":{"price":false,"value":"decimal_dot"},"28":{"price":false,"value":"decimal_dot"}};if(window['jQuery']){if(!window['gf_form_conditional_logic'])window['gf_form_conditional_logic'] = new Array();window['gf_form_conditional_logic'][6] = { logic: { 4: {"field":{"actionType":"show","logicType":"all","rules":[{"fieldId":"1","operator":"is","value":"Online Store (Ecommerce)"},{"fieldId":"3","operator":"is","value":"25000"}]},"nextButton":null,"section":""},5: {"field":{"actionType":"show","logicType":"all","rules":[{"fieldId":"1","operator":"is","value":"Marketing Website (No Ecommerce)"},{"fieldId":"3","operator":"is","value":"25000"}]},"nextButton":null,"section":""},11: {"field":{"actionType":"show","logicType":"all","rules":[{"fieldId":"3","operator":"is","value":"25000"},{"fieldId":"1","operator":"is","value":"Online Store (Ecommerce)"}]},"nextButton":null,"section":""},12: {"field":{"actionType":"show","logicType":"all","rules":[{"fieldId":"3","operator":"is","value":"25000"},{"fieldId":"1","operator":"is","value":"Marketing Website (No Ecommerce)"}]},"nextButton":null,"section":""} }, dependents: { 4: [4],5: [5],11: [11],12: [12] }, animation: 0, defaults: {"20":["choice_6_20_1"]}, fields: {"14":[],"1":[4,5,11,12],"3":[4,5,11,12],"4":[],"5":[],"26":[],"23":[],"13":[],"7":[],"8":[],"9":[],"11":[],"12":[],"15":[],"21":[],"16":[],"29":[],"30":[],"18":[],"31":[],"20":[],"27":[],"28":[]} }; if(!window['gf_number_format'])window['gf_number_format'] = 'decimal_dot';jQuery(document).ready(function(){gform.utils.trigger({ event: 'gform/conditionalLogic/init/start', native: false, data: { formId: 6, fields: null, isInit: true } });window['gformInitPriceFields']();gf_apply_rules(6, [4,5,11,12], true);jQuery('#gform_wrapper_6').show();jQuery(document).trigger('gform_post_conditional_logic', [6, null, true]);gform.utils.trigger({ event: 'gform/conditionalLogic/init/end', native: false, data: { formId: 6, fields: null, isInit: true } });} );} if( typeof window.gf_global["gfcalc"] == "undefined" ) { window.gf_global["gfcalc"] = {}; } window.gf_global["gfcalc"][6] = new GFCalc(6, [{"field_id":26,"formula":"{Website Strategy\/Planning:3.1} + {UI\/UX Design:3.2} + {Web Development:3.3} + {Visual Asset Creation (Illustrations, Icons etc):3.4} + {Content Writing:3.5} + {Photography:3.6} + {Video\/Animation:3.7} + {What platform are you interested in?:4} + {What platform are you interested in?:5}","rounding":"2"},{"field_id":27,"formula":"{We don\u2019t require social features:7.1} + {Comments, likes, shares:7.2} + {News feed or user wall:7.3} + {A public email address that goes directly to an inbox:8.1} + {A contact form that stores inquiries on the website:8.2} + {A contact form that connects to a third party CRM:8.3} + {Do you need to integrate video or audio?:9} + {Rating or reviews:11.1} + {Calendar integration:11.2} + {Calendar integration:11.2} + {Loyalty program:11.3} + {Coupons Codes:11.4} + {Advanced Search:11.5} + {Push notifications or alerts:11.6} + {Calculator:11.7} + {Blog or news feed:11.8} + {FAQs:11.9} + {Maps & Location:11.11} + {Quiz:11.12} + {Chatbot:11.13} + {Applicant Tracking System:11.14} + {Calendar integration:12.1} + {Advanced Search:12.2} + {Push notifications or alerts:12.3} + {Calculator:12.4} + {Blog or news feed:12.5}  + {FAQs:12.6} + {Maps & Location:12.7} + {Quiz:12.8} + {Chatbot:12.9} + {Applicant Tracking System:12.10} + {Email subscription forms:15.1} + {Email automation set-up:15.2} + {Simple behavior tracking set up:15.3} + {Advanced event tracking and reporting:15.4} + {Remarketing:15.5}","rounding":"4"},{"field_id":28,"formula":"{Platform Calculation:26} + {Features Calculation:27}","rounding":"4"}]);if(typeof Placeholders != 'undefined'){
+                        Placeholders.enable();
+                    }} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} ) } );
+});</script>
+<script>window.addEventListener('DOMContentLoaded', function() {
+gform.initializeOnLoaded( function() {jQuery(document).trigger('gform_post_render', [6, 1]);gform.utils.trigger({ event: 'gform/postRender', native: false, data: { formId: 6, currentPage: 1 } });} );
+});</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="wpsp-script-frontend"></script>
+</body>
+
+<!-- Mirrored from Jorban.rocks/website-cost-calculator/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Aug 2023 12:29:59 GMT -->
+</html>
+

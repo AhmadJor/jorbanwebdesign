@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<!-- Mirrored from Jorban.rocks/blog/key-ui-ux-terms/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Aug 2023 13:27:51 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head><meta charset="UTF-8" /><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(){this.v="1.2.3",this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",t=>{this.persisted=t.persisted}),window.addEventListener("DOMContentLoaded",()=>{this._preconnect3rdParties()}),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}_addUserInteractionListener(t){if(document.hidden){t._triggerListener();return}this.triggerEvents.forEach(e=>window.addEventListener(e,t.userEventHandler,{passive:!0})),window.addEventListener("touchstart",t.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",t.touchStartHandler),document.addEventListener("visibilitychange",t.userEventHandler)}_removeUserInteractionListener(){this.triggerEvents.forEach(t=>window.removeEventListener(t,this.userEventHandler,{passive:!0})),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(t){"HTML"!==t.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),t.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"onclick","rocket-onclick"),this._pendingClickStarted())}_onTouchMove(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),t.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"rocket-onclick","onclick"),this._pendingClickFinished()}_onTouchEnd(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(t){t.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"rocket-onclick","onclick"),this.interceptedClicks.push(t),t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),this._pendingClickFinished()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach(t=>{t.target.dispatchEvent(new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0}))})}_waitForPendingClicks(){return new Promise(t=>{this._isClickPending?this._pendingClickFinished=t:t()})}_pendingClickStarted(){this._isClickPending=!0}_pendingClickFinished(){this._isClickPending=!1}_renameDOMAttribute(t,e,r){t.hasAttribute&&t.hasAttribute(e)&&(event.target.setAttribute(r,event.target.getAttribute(e)),event.target.removeAttribute(e))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let t=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach(e=>{if(e.hasAttribute("src")){let r=new URL(e.html).origin;r!==location.origin&&t.push({src:r,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}}),t=[...new Map(t.map(t=>[JSON.stringify(t),t])).values()],this._batchInjectResourceHints(t,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(this),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(t){console.error(t)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._waitForPendingClicks().then(()=>{this._replayClicks()}),this._emptyTrash()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach(t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)})}async _transformScript(t){return new Promise((await this._littleBreath(),navigator.userAgent.indexOf("Firefox/index.html")>0||""===navigator.vendor)?e=>{let r=document.createElement("script");[...t.attributes].forEach(t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),r.setAttribute(e,t.nodeValue))}),t.text&&(r.text=t.text),r.hasAttribute("src")?(r.addEventListener("load",e),r.addEventListener("error",e)):(r.text=t.text,e());try{t.parentNode.replaceChild(r,t)}catch(i){e()}}:async e=>{function r(){t.setAttribute("data-rocket-status","failed"),e()}try{let i=t.getAttribute("data-rocket-type"),n=t.getAttribute("data-rocket-src");t.text,i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",function r(){t.setAttribute("data-rocket-status","executed"),e()}),t.addEventListener("error",r),n?(t.removeAttribute("data-rocket-src"),t.src=n):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}catch(s){r()}})}async _loadScriptsFromList(t){let e=t.shift();return e&&e.isConnected?(await this._transformScript(e),this._loadScriptsFromList(t)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(t,e){var r=document.createDocumentFragment();t.forEach(t=>{let i=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(i){let n=document.createElement("link");n.href=i,n.rel=e,"preconnect"!==e&&(n.as="script"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),r.appendChild(n),this.trash.push(n)}}),document.head.appendChild(r)}_delayEventListeners(t){let e={};function r(t,r){!function t(r){!e[r]&&(e[r]={originalFunctions:{add:r.addEventListener,remove:r.removeEventListener},eventsToRewrite:[]},r.addEventListener=function(){arguments[0]=i(arguments[0]),e[r].originalFunctions.add.apply(r,arguments)},r.removeEventListener=function(){arguments[0]=i(arguments[0]),e[r].originalFunctions.remove.apply(r,arguments)});function i(t){return e[r].eventsToRewrite.indexOf(t)>=0?"rocket-"+t:t}}(t),e[t].eventsToRewrite.push(r)}function i(t,e){let r=t[e];Object.defineProperty(t,e,{get:()=>r||function(){},set(i){t["rocket"+e]=r=i}})}r(document,"DOMContentLoaded"),r(window,"DOMContentLoaded"),r(window,"load"),r(window,"pageshow"),r(document,"readystatechange"),i(document,"onreadystatechange"),i(window,"onload"),i(window,"onpageshow")}_delayJQueryReady(t){let e;function r(r){if(r&&r.fn&&!t.allJQueries.includes(r)){r.fn.ready=r.fn.init.prototype.ready=function(e){return t.domReadyFired?e.bind(document)(r):document.addEventListener("rocket-DOMContentLoaded",()=>e.bind(document)(r)),r([])};let i=r.fn.on;r.fn.on=r.fn.init.prototype.on=function(){if(this[0]===window){function t(t){return t.split(" ").map(t=>"load"===t||0===t.indexOf("load.")?"rocket-jquery-load":t).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=t(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach(e=>{let r=arguments[0][e];delete arguments[0][e],arguments[0][t(e)]=r})}return i.apply(this,arguments),this},t.allJQueries.push(r)}e=r}r(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){r(t)}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach(t=>t(window).trigger("rocket-jquery-load")),await this._littleBreath();let t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){let t=new Map;document.write=document.writeln=function(e){let r=document.currentScript;r||console.error("WPRocket unable to document.write this: "+e);let i=document.createRange(),n=r.parentElement,s=t.get(r);void 0===s&&(s=r.nextSibling,t.set(r,s));let a=document.createDocumentFragment();i.setStart(a,0),a.appendChild(i.createContextualFragment(e)),n.insertBefore(a,s)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise(t=>setTimeout(t)):new Promise(t=>requestAnimationFrame(t))}_emptyTrash(){this.trash.forEach(t=>t.remove())}static run(){let t=new RocketLazyLoadScripts;t._addUserInteractionListener(t)}}RocketLazyLoadScripts.run();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<meta name="format-detection" content="telephone=no" />
+<link rel="pingback" href="../../xmlrpc.php" />
+<script type="rocketlazyloadscript" data-rocket-src="https://app.splithero.com/api/js?r=https://huemor.rocks/blog/key-ui-ux-terms/&wpliu=false" nitro-exclude defer></script><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+<title>The Key UI / UX Terms Every Marketer Should Know - Jorban</title><link rel="preload" href="../../wp-content/uploads/2023/02/logo.png" as="image" />
+<meta name="description" content="This concise list of UI / UX terms has been created to help marketers have better conversations with the designers and developers they collaborate with." />
+<link rel="canonical" href="index.html" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="The Key UI / UX Terms Every Marketer Should Know - Jorban" />
+<meta property="og:description" content="This concise list of UI / UX terms has been created to help marketers have better conversations with the designers and developers they collaborate with." />
+<meta property="og:url" content="https://huemor.rocks/blog/key-ui-ux-terms/" />
+<meta property="og:site_name" content="Huemor" />
+<meta property="article:published_time" content="2020-09-28T18:36:13+00:00" />
+<meta property="article:modified_time" content="2023-08-15T15:25:49+00:00" />
+<meta property="og:image" content="https://huemordev.b-cdn.net/wp-content/uploads/2020/09/2023.06.23.The-Key-UI-UX-Terms-Every-Marketer-Should-Know.jpg" />
+<meta property="og:image:width" content="1025" />
+<meta property="og:image:height" content="867" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta name="author" content="Ahmad Jorban" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:creator" content="@HuemorDesigns" />
+<meta name="twitter:site" content="@HuemorDesigns" />
+<meta name="twitter:label1" content="Written by" />
+<meta name="twitter:data1" content="Ahmad Jorban" />
+<meta name="twitter:label2" content="Est. reading time" />
+<meta name="twitter:data2" content="26 minutes" />
+<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://huemor.rocks/blog/key-ui-ux-terms/","url":"https://huemor.rocks/blog/key-ui-ux-terms/","name":"The Key UI / UX Terms Every Marketer Should Know - Jorban","isPartOf":{"@id":"https://huemor.rocks/#website"},"primaryImageOfPage":{"@id":"https://huemor.rocks/blog/key-ui-ux-terms/#primaryimage"},"image":{"@id":"https://huemor.rocks/blog/key-ui-ux-terms/#primaryimage"},"thumbnailUrl":"https://huemordev.b-cdn.net/wp-content/uploads/2020/09/2023.06.23.The-Key-UI-UX-Terms-Every-Marketer-Should-Know.jpg","datePublished":"2020-09-28T18:36:13+00:00","dateModified":"2023-08-15T15:25:49+00:00","author":{"@id":"https://huemor.rocks/#/schema/person/de86670ca16bf41a35b3f0c914f75893"},"description":"This concise list of UI / UX terms has been created to help marketers have better conversations with the designers and developers they collaborate with.","inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://huemor.rocks/blog/key-ui-ux-terms/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://huemor.rocks/blog/key-ui-ux-terms/#primaryimage","url":"https://huemordev.b-cdn.net/wp-content/uploads/2020/09/2023.06.23.The-Key-UI-UX-Terms-Every-Marketer-Should-Know.jpg","contentUrl":"https://huemordev.b-cdn.net/wp-content/uploads/2020/09/2023.06.23.The-Key-UI-UX-Terms-Every-Marketer-Should-Know.jpg","width":1025,"height":867},{"@type":"WebSite","@id":"https://huemor.rocks/#website","url":"https://huemor.rocks/","name":"Huemor","description":"Award-Winning Web Agency, based in USA","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://huemor.rocks/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"Person","@id":"https://huemor.rocks/#/schema/person/de86670ca16bf41a35b3f0c914f75893","name":"Ahmad Jorban","image":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://huemor.rocks/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/12f6535a8d7adc5a7ffc81ec45a5f070?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/12f6535a8d7adc5a7ffc81ec45a5f070?s=96&d=mm&r=g","caption":"Ahmad Jorban"},"description":"Ahmad Jorban is the President of Jorbanwhere he helps plan the long-term strategic growth of the agency. Jeff is passionate about UI/UX, demand generation, and digital strategy.","sameAs":["https://www.linkedin.com/in/jeffrey-gapinski/"]}]}</script>
+
+<link rel="dns-prefetch" href="http://js.hs-scripts.com/" />
+<link rel="dns-prefetch" href="http://browser.sentry-cdn.com/" />
+<link rel="dns-prefetch" href="http://fonts.googleapis.com/" />
+<link href="https://fonts.gstatic.com/" crossorigin rel="preconnect" />
+<link rel="alternate" type="application/rss+xml" title="Jorban&raquo; Feed" href="../../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Jorban&raquo; Comments Feed" href="../../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Jorban&raquo; The Key UI / UX Terms Every Marketer Should Know Comments Feed" href="feed/index.html" />
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<style id="create-block-chapter-fullwidth-style-inline-css">
+.ChapterFullwidth{margin-bottom:60px;margin-top:60px;padding:150px 20px}@media(max-width:767px){.ChapterFullwidth{padding:75px 20px}}.ChapterFullwidth .ChapterFullwitdh-wrapper{margin:0 auto;max-width:850px;text-align:center}@media(max-width:991px){.ChapterFullwidth .ChapterFullwitdh-wrapper{max-width:850px!important;padding:0 40px}}@media(max-width:767px){.ChapterFullwidth .ChapterFullwitdh-wrapper{padding:0 15px}}.ChapterFullwidth .ChapterFullwitdh-icons_chapter{-ms-interpolation-mode:nearest-neighbor;display:flex;height:30px;image-rendering:-moz-crisp-edges;image-rendering:pixelated;image-rendering:-webkit-optimize-contrast;margin:0 auto 15px;width:30px}.ChapterFullwidth .ChapterFullwitdh-chaptersectiontitle{color:#fff;font-family:Archivo;font-size:12px!important;font-weight:500;letter-spacing:1.2px;line-height:normal;margin:0;opacity:.7;text-align:center;text-transform:uppercase}.ChapterFullwidth .ChapterFullwitdh-chaptertitle{color:#fff;font-size:48px!important;font-weight:700;line-height:1.2;margin:25px 0 0;text-align:center;text-transform:capitalize}@media(max-width:767px){.ChapterFullwidth .ChapterFullwitdh-chaptertitle{font-size:36px!important;letter-spacing:normal;line-height:1.35!important}}.ChapterFullwidth p{color:#fff;font-size:18px;letter-spacing:normal;line-height:32px;opacity:.85;text-align:center}@media(max-width:767px){.ChapterFullwidth p{font-size:16px;letter-spacing:normal;line-height:26px}}
+
+</style>
+<link rel="stylesheet" id="wp-block-library-css" href="../../wp-includes/css/dist/block-library/style.min3781.css?ver=6.2.2" media="all" />
+<style id="wp-block-library-theme-inline-css">
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id="create-block-huemor-multi-column-style-inline-css">
+.HuemorMultiColumn-container{justify-content:space-evenly;padding:53px 0 20px;text-align:center}@media(min-width:870px){.HuemorMultiColumn-container{display:flex}}.HuemorMultiColumn-container h2{color:#222;font-size:24px;font-weight:700;line-height:36px;margin-bottom:15px;margin-top:30px!important}.HuemorMultiColumn-container p{color:#040404;font-size:18px;font-weight:300;letter-spacing:0;line-height:32px;margin-bottom:10px;opacity:.6;text-align:center}.HuemorMultiColumn-container .HuemorMultiColumn-button a{color:#000;font-size:17px}.HuemorMultiColumn-column{background:#f5f6fa;margin:0 20px 30px;min-width:260px;padding:40px 20px}.HuemorMultiColumn-image_container{align-items:center;display:flex;flex-direction:column;justify-content:center}.HuemorMultiColumn-image{max-width:200px!important}
+
+</style>
+<style id="create-block-huemor-protip-gb-style-inline-css">
+.huemorProtip-container{background-color:#f5f6fa;border-radius:3px;margin:30px 0;padding:53px;text-align:center}.huemorProtip-container .huemorProtip-title{font-size:24px;line-height:36px;margin:0 0 5px}.huemorProtip-container .huemorProtip-description{font-size:18px;line-height:30px;margin:auto auto 20px;max-width:482px}.huemorProtip-container .huemorProtip-button .wp-block-button .wp-block-button__link{background:#e0345b;border:1px solid #e0345b;border-radius:3px;color:#fff;font-size:12px;font-weight:600;letter-spacing:1px;line-height:22px;padding:15px 56px;text-decoration:none;text-transform:uppercase}.huemorProtip-container .huemorProtip-button .wp-block-button .wp-block-button__link:hover{background:#940e71;border:1px solid #940e71}
+
+</style>
+<link rel="stylesheet" id="classic-theme-styles-css" href="../../wp-includes/css/classic-themes.min3781.css?ver=6.2.2" media="all" />
+<link data-minify="1" rel="stylesheet" id="dashicons-css" href="../../wp-content/cache/min/1/wp-includes/css/dashicons.min6d38.css?ver=1692186403" media="all" />
+<link data-minify="1" rel="stylesheet" id="fl-builder-layout-bundle-da2b1b34738c24e4e5403a50721e8dff-css" href="../../wp-content/cache/min/1/wp-content/uploads/bb-plugin/cache/da2b1b34738c24e4e5403a50721e8dff-layout-bundlec350.css?ver=1692186405" media="all" />
+<link data-minify="1" rel="stylesheet" id="space-station-customCss-css" href="../../wp-content/cache/min/1/wp-content/themes/beaverwarrior/assets/customCss6d38.css?ver=1692186403" media="all" />
+<link data-minify="1" rel="stylesheet" id="space-station-globalcss-css" href="../../wp-content/cache/min/1/wp-content/themes/beaverwarrior/assets/cssglobal6d38.css?ver=1692186403" media="all" />
+<link data-minify="1" rel="stylesheet" id="bootstrap-css" href="../../wp-content/cache/min/1/wp-content/themes/bb-theme/css/bootstrap.min6d38.css?ver=1692186403" media="all" />
+<link data-minify="1" rel="stylesheet" id="space-station-main-css" href="../../wp-content/cache/min/1/wp-content/uploads/beaverwarrior/skin-64dcb41c9c3706d38.css?ver=1692186403" media="all" />
+<link data-minify="1" rel="stylesheet" id="slick-slider-css" href="../../wp-content/cache/min/1/wp-content/themes/beaverwarrior/assets/vendor/slick/slick/slick6d38.css?ver=1692186403" media="all" />
+<link data-minify="1" rel="stylesheet" id="moove_gdpr_frontend-css" href="../../wp-content/cache/min/1/wp-content/plugins/gdpr-cookie-compliance/dist/styles/gdpr-main-nf7d2e.css?ver=1692186404" media="all" />
+<style id="moove_gdpr_frontend-inline-css">
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main h3.tab-title, 
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main span.tab-title,
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li a, 
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li button,
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content .moove-gdpr-branding-cnt a,
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder a.mgbutton, 
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton,
+				#moove_gdpr_cookie_modal .cookie-switch .cookie-slider:after, 
+				#moove_gdpr_cookie_modal .cookie-switch .slider:after, 
+				#moove_gdpr_cookie_modal .switch .cookie-slider:after, 
+				#moove_gdpr_cookie_modal .switch .slider:after,
+				#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content p, 
+				#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content p a,
+				#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton, 
+				#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton,
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main .moove-gdpr-tab-main-content h1, 
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main .moove-gdpr-tab-main-content h2, 
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main .moove-gdpr-tab-main-content h3, 
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main .moove-gdpr-tab-main-content h4, 
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main .moove-gdpr-tab-main-content h5, 
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main .moove-gdpr-tab-main-content h6,
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content.moove_gdpr_modal_theme_v2 .moove-gdpr-modal-title .tab-title,
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content.moove_gdpr_modal_theme_v2 .moove-gdpr-tab-main h3.tab-title, 
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content.moove_gdpr_modal_theme_v2 .moove-gdpr-tab-main span.tab-title,
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content.moove_gdpr_modal_theme_v2 .moove-gdpr-branding-cnt a {
+				 	font-weight: inherit				}
+			#moove_gdpr_cookie_modal,#moove_gdpr_cookie_info_bar,.gdpr_cookie_settings_shortcode_content{font-family:Archivo,sans-serif}#moove_gdpr_save_popup_settings_button{background-color:#373737;color:#fff}#moove_gdpr_save_popup_settings_button:hover{background-color:#000}#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton,#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton{background-color:#7f60f9}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder a.mgbutton,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton,.gdpr_cookie_settings_shortcode_content .gdpr-shr-button.button-green{background-color:#7f60f9;border-color:#7f60f9}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder a.mgbutton:hover,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton:hover,.gdpr_cookie_settings_shortcode_content .gdpr-shr-button.button-green:hover{background-color:#fff;color:#7f60f9}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close span.gdpr-icon{background-color:#7f60f9;border:1px solid #7f60f9}#moove_gdpr_cookie_info_bar span.change-settings-button.focus-g,#moove_gdpr_cookie_info_bar span.change-settings-button:focus{-webkit-box-shadow:0 0 1px 3px #7f60f9;-moz-box-shadow:0 0 1px 3px #7f60f9;box-shadow:0 0 1px 3px #7f60f9}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close i:hover,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close span.gdpr-icon:hover,#moove_gdpr_cookie_info_bar span[data-href]>u.change-settings-button{color:#7f60f9}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li.menu-item-selected a span.gdpr-icon,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li.menu-item-selected button span.gdpr-icon{color:inherit}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li a span.gdpr-icon,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li button span.gdpr-icon{color:inherit}#moove_gdpr_cookie_modal .gdpr-acc-link{line-height:0;font-size:0;color:transparent;position:absolute}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close:hover i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li a,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li button,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li button i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li a i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main .moove-gdpr-tab-main-content a:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content span.change-settings-button:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content u.change-settings-button:hover,#moove_gdpr_cookie_info_bar span[data-href]>u.change-settings-button,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content span.change-settings-button.focus-g,span.change-settings-button:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content u.change-settings-button.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content u.change-settings-button:focus{color:#7f60f9}#moove_gdpr_cookie_modal.gdpr_lightbox-hide{display:none}#moove_gdpr_cookie_info_bar.gdpr-full-screen-infobar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content .moove-gdpr-cookie-notice p a{color:#7f60f9!important}#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton,#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder a.mgbutton,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton,.gdpr-shr-button,#moove_gdpr_cookie_info_bar .moove-gdpr-infobar-close-btn{border-radius:0}
+</style>
+<link data-minify="1" rel="stylesheet" id="gdpr_cc_addon_frontend-css" href="../../wp-content/cache/min/1/wp-content/plugins/gdpr-cookie-compliance-addon/assets/css/gdpr_cc_addon7d2e.css?ver=1692186404" media="all" />
+<link rel="stylesheet" id="jquery-magnificpopup-css" href="../../wp-content/plugins/bb-plugin/css/jquery.magnificpopup.mina77c.css?ver=2.7.1.1" media="all" />
+<link rel="stylesheet" id="fl-automator-skin-css" href="../../wp-content/uploads/bb-theme/skin-64dcb41df17bce96c.css?ver=1.7.13" media="all" />
+<link rel="stylesheet" id="fl-builder-google-fonts-340eb1ad557c357435e6158ce50849d3-css" href="http://fonts.googleapis.com/css?family=Archivo%3A700%2C500%2C600%2C400%2C300%7CInter%3A700%2C400%7CPoppins%3A600&amp;ver=6.2.2" media="all" />
+<script data-minify="1" src="../../wp-content/cache/min/1/wp-content/plugins/space-station-command-module/build/EVABehaviors7d2e.js?ver=1692186404" id="command-module-EVABehaviors-js" defer></script>
+<script src="../../wp-includes/js/jquery/jquery.min5aed.js?ver=3.6.4" id="jquery-core-js" defer></script>
+<script src="../../wp-includes/js/jquery/jquery-migrate.min6b00.js?ver=3.4.0" id="jquery-migrate-js" defer></script>
+<script data-minify="1" src="../../wp-content/cache/min/1/wp-content/plugins/space-station-command-module/build/SSCMSlider7d2e.js?ver=1692186404" id="command-module-SSCMSlider-js" defer></script>
+<script src="../../wp-includes/js/imagesloaded.min3781.js?ver=6.2.2" id="imagesloaded-js" defer></script>
+<script id="sentry-io-js-extra">
+var sentry_data = {"url":"https:\/\/huemor.rocks","environment":""};
+</script>
+<script data-minify="1" src="../../wp-content/cache/min/1/5.2.0/bundle.min7d2e.js?ver=1692186404" id="sentry-io-js" defer></script>
+<link rel="https://api.w.org/" href="../../wp-json/index.html" /><link rel="alternate" type="application/json" href="../../wp-json/wp/v2/posts/36220.json" /><link rel="alternate" type="application/json+oembed" href="../../wp-json/oembed/1.0/embedeb94.json?url=https%3A%2F%2Fhuemor.rocks%2Fblog%2Fkey-ui-ux-terms%2F" />
+<link rel="alternate" type="text/xml+oembed" href="../../wp-json/oembed/1.0/embed738f?url=https%3A%2F%2Fhuemor.rocks%2Fblog%2Fkey-ui-ux-terms%2F&amp;format=xml" />
+
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" class="hsq-set-content-id" data-content-id="blog-post">
+				var _hsq = _hsq || [];
+				_hsq.push(["setContentType", "blog-post"]);
+			</script>
+
+<script type="application/ld+json">[]</script><script type="application/ld+json">{"@context":"https:\/\/schema.org","@graph":[{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"How We Help","url":"#"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Website Redesign","url":"https:\/\/huemor.rocks\/website-redesign-agency\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Key Skills:","url":"#"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Web Design","url":"https:\/\/huemor.rocks\/web-design-agency\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Web Development","url":"https:\/\/huemor.rocks\/web-development-agency\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"WordPress","url":"https:\/\/huemor.rocks\/wordpress-agency\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Shopify","url":"https:\/\/huemor.rocks\/shopify-agency\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Website Support","url":"https:\/\/huemor.rocks\/website-maintenance-and-support\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"CRO","url":"https:\/\/huemor.rocks\/conversion-rate-optimization\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Landing Pages","url":"https:\/\/huemor.rocks\/custom-landing-pages\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Website Analysis","url":"https:\/\/huemor.rocks\/website-analysis-plan\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Work","url":"https:\/\/huemor.rocks\/case-studies\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"About","url":"https:\/\/huemor.rocks\/agency\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Resources","url":"https:\/\/huemor.rocks\/resources\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"col1","url":"#"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Blog","url":"https:\/\/huemor.rocks\/blog\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Project Calculator","url":"https:\/\/huemor.rocks\/website-cost-calculator\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"ROI Calculator","url":"https:\/\/huemor.rocks\/roi-calculator\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"col3","url":"#"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Featured Resource","url":"\/blog\/website-redesign-project-plan\/"}]}</script><script type="rocketlazyloadscript">
+        var filter_articles_url = "../../wp-admin/admin-ajax.html";
+    </script><link rel="pingback" href="../../xmlrpc.php">
+<style id="wpsp-style-frontend"></style>
+<link rel="icon" href="../../../huemordev.b-cdn.net/wp-content/uploads/2023/06/cropped-huemor-icon-32x32.png" sizes="32x32" />
+<link rel="icon" href="../../../huemordev.b-cdn.net/wp-content/uploads/2023/06/cropped-huemor-icon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="../../../huemordev.b-cdn.net/wp-content/uploads/2023/06/cropped-huemor-icon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://huemordev.b-cdn.net/wp-content/uploads/2023/06/cropped-huemor-icon-270x270.png" />
+<style id="wp-custom-css">
+			/** caching issue: validation message styling. Will be removed once cache settles**/
+.calculatorForm .gfield_validation_message{
+    margin-top: -10px;
+    margin-bottom: 25px;
+    color: #7759f8!important;
+    font-weight: 300!important;
+}
+/** email field **/
+#validation_message_6_18 {
+    padding-top: 0;
+    margin-top: -25px;
+    margin-bottom: 25px;
+    color: #7759f8!important;
+    font-weight: 300!important;
+}
+#gform_wrapper_6 .gfield_validation_message {
+    display: block!important;
+}
+
+/** end: validation message styling **/
+
+/** fix button double tap issue on mobile **/
+.hs_submit span.hiddenValue {
+		display: none!important;
+}
+
+.hs_submit .actions {
+		width: 100%!important;
+		height: 55px;
+}
+
+.hs_submit svg{
+		position: absolute;
+		right: calc(50% - 50px);
+}
+ /**end: fix button double tap issue on mobile **/
+
+
+.position-realitive {
+	position: relative;
+}
+
+.overlap {
+	position: relative;
+	z-index: 1;
+}
+
+.hide--field {
+	display: none;
+}
+
+.blog--content--advanced-styling p {
+    padding: 10px 0px 10px 0px;
+}
+
+.SSCMSlider-content_prev:focus, .SSCMSlider-content_next:focus {
+    position: absolute;
+    top: 50%;
+}		</style>
+<noscript><style>.perfmatters-lazy[data-src]{display:none !important;}</style></noscript><style>.perfmatters-lazy.pmloaded,.perfmatters-lazy.pmloaded>img,.perfmatters-lazy>img.pmloaded,.perfmatters-lazy[data-ll-status=entered]{animation:500ms pmFadeIn}@keyframes pmFadeIn{0%{opacity:0}100%{opacity:1}}body .perfmatters-lazy-css-bg:not([data-ll-status=entered]),body .perfmatters-lazy-css-bg:not([data-ll-status=entered]) *,body .perfmatters-lazy-css-bg:not([data-ll-status=entered])::before,body .perfmatters-lazy-css-bg:not([data-ll-status=entered])::after{background-image:none!important;will-change:transform;transition:opacity 0.025s ease-in,transform 0.025s ease-in!important;}</style> <script id="piwik-snippet" type="text/javascript">
+(function(window, document, dataLayerName, id) {
+window[dataLayerName]=window[dataLayerName]||[],window[dataLayerName].push({start:(new Date).getTime(),event:"stg.start"});var scripts=document.getElementsByTagName('script')[0],tags=document.createElement('script');
+function stgCreateCookie(a,b,c){var d="";if(c){var e=new Date;e.setTime(e.getTime()+24*c*60*60*1e3),d="; expires="+e.toUTCString()}document.cookie=a+"="+b+d+"; path=/"}
+var isStgDebug=(window.location.href.match("stg_debug")||document.cookie.match("stg_debug"))&&!window.location.href.match("stg_disable_debug");stgCreateCookie("stg_debug",isStgDebug?1:"",isStgDebug?14:-1);
+var qP=[];dataLayerName!=="dataLayer"&&qP.push("data_layer_name="+dataLayerName),isStgDebug&&qP.push("stg_debug");var qPString=qP.length>0?("?"+qP.join("&")):"";
+tags.async=!0,tags.src="https://huemor.containers.piwik.pro/"+id+".js"+qPString,scripts.parentNode.insertBefore(tags,scripts);
+!function(a,n,i){a[n]=a[n]||{};for(var c=0;c<i.length;c++)!function(i){a[n][i]=a[n][i]||{},a[n][i].api=a[n][i].api||function(){var a=[].slice.call(arguments,0);"string"==typeof a[0]&&window[dataLayerName].push({event:n+"."+i+":"+a[0],parameters:[].slice.call(arguments,1)})}}(i[c])}(window,"ppms",["tm","cm"]);
+})(window, document, 'dataLayer', 'd0f2b54a-f496-496c-95ea-57993e45f838');
+</script>
+</head>
+<body class="post-template-default single single-post postid-36220 single-format-standard wp-schema-pro-2.7.9 fl-theme-builder-header fl-theme-builder-header-header-logo-left-cta-button-2-2 fl-theme-builder-footer fl-theme-builder-footer-5-column-footer fl-theme-builder-singular fl-theme-builder-singular-blog-post-inner-template fl-framework-bootstrap fl-preset-default fl-full-width fl-has-sidebar fl-search-active has-blocks" itemscope="itemscope" itemtype="http://schema.org/WebPage" data-offcanvas-hover-min data-utmpreserve-preserve="true" data-utmpreserve-forminject="true">
+<a aria-label="Skip to content" class="fl-screen-reader-text" href="#fl-main-content">Skip to content</a>
+<div class="fl-page Page ">
+<header class="fl-builder-content fl-builder-content-24 fl-builder-global-templates-locked" data-post-id="24" data-type="header" data-sticky="1" data-sticky-on data-sticky-breakpoint="medium" data-shrink="1" data-overlay="1" data-overlay-bg="transparent" data-shrink-image-height="50px" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader"><div class="fl-row fl-row-full-width fl-row-bg-none fl-node-dctyeblrsqwv fl-row-default-height fl-row-align-center" data-node="dctyeblrsqwv">
+<div class="fl-row-content-wrap">
+<div class="fl-row-content fl-row-fixed-width fl-node-content">
+<div class="fl-col-group fl-node-g3d5m4hic26v" data-node="g3d5m4hic26v">
+<div class="fl-col fl-node-igvmup9lwehk" data-node="igvmup9lwehk">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-custom-header fl-node-08owxrvncusq" data-node="08owxrvncusq">
+<div class="fl-module-content fl-node-content">
+<div class="CustomHeader CustomHeader-light">
+<div class="CustomHeader-wrapper">
+<div class="CustomHeader-logo">
+<a href="../../index.html">
+<img data-perfmatters-preload decoding="async" class="CustomHeader-logo-desktop" width="169px" height="40px" src="../../wp-content/uploads/2023/02/logo.png" alt="logo">
+<img decoding="async" class="CustomHeader-logo-desktop-dark perfmatters-lazy" width="169px" height="40px" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;169px&#039;%20height=&#039;40px&#039;%20viewBox=&#039;0%200%20169px%2040px&#039;%3E%3C/svg%3E" alt="logo dark" data-src="https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@3x-300x71.webp" /><noscript><img decoding="async" class="CustomHeader-logo-desktop-dark" width="169px" height="40px" src="https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@3x-300x71.webp" alt="logo dark"></noscript>
+<img width="83" height="80" decoding="async" class="CustomHeader-logo-mobile perfmatters-lazy" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;83&#039;%20height=&#039;80&#039;%20viewBox=&#039;0%200%2083%2080&#039;%3E%3C/svg%3E" alt="logo" data-src="../../wp-content/uploads/2023/02/logo.png" /><noscript><img width="83" height="80" decoding="async" class="CustomHeader-logo-mobile" src="../../wp-content/uploads/2023/02/logo.png" alt="logo"></noscript>
+</a>
+</div>
+<div class="CustomHeader-email">
+<a class="CustomButton CustomButton-bordered" href="../../contact/index.html" target="_self" rel>
+Contact <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.296.971h9.733V2.61H1.296V.971z" fill="#fff" />
+<path d="M9.406 10.8V.97h1.623V10.8H9.406z" fill="#fff" />
+<path d="M.971 9.87 9.46 1.3l1.147 1.158-8.488 8.572L.971 9.87z" fill="#fff" />
+</svg>
+</a>
+</div>
+<div class="CustomHeader-nav">
+<ul id="primary-nav-items" class="primary-nav-items nav navbar-nav CustomHeader-menu HideBeforeLoad"><li class="two-columns hoverable arrow-down-icon menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1347"><a href="#">How We Help</a>
+<ul class="sub-menu">
+<li class="main-item arrow-rounded header-icons-round menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-39887"><a href="../../website-redesign-agency/index.html">Website Redesign<p class="menu-item-description"> Elevate your brand with website redesign services that take your website from “good enough” to your industry’s gold standard. </p></a>
+<ul class="sub-menu">
+<li class="no-event grouped-sub-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1364"><a href="#">Key Skills:</a>
+<ul class="sub-menu">
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-39888"><a href="../../web-design-agency/index.html">Web Design<p class="menu-item-description"> </p></a></li>
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-38740"><a href="../../web-development-agency/index.html">Web Development<p class="menu-item-description"> </p></a></li>
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-37324"><a href="../../wordpress-agency/index.html">WordPress<p class="menu-item-description"> </p></a></li>
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-38741"><a href="../../shopify-agency/index.html">Shopify<p class="menu-item-description"> </p></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="main-item ungrouped-sub-menu arrow-rounded header-icons-round menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-38742"><a href="../../website-maintenance-and-support/index.html">Website Support<p class="menu-item-description">Enhance and protect your existing site with dedicated website support that plans, executes, and measures improvements.</p></a>
+<ul class="sub-menu">
+<li class="no-event grouped-sub-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-39117"><a href="#">Key Skills:</a>
+<ul class="sub-menu">
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-39119"><a href="../../conversion-rate-optimization/index.html">CRO<p class="menu-item-description"> </p></a></li>
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-39118"><a href="../../custom-landing-pages/index.html">Landing Pages<p class="menu-item-description"> </p></a></li>
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-40568"><a href="../../website-analysis-plan/index.html">Website Analysis<p class="menu-item-description"> </p></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1344"><a href="../../case-studies/index.html">Work<p class="menu-item-description"> </p></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1343"><a href="../../agency/index.html">About<p class="menu-item-description"> </p></a></li>
+<li class="three-columns hoverable arrow-down-icon menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1367"><a href="#">Resources</a>
+<ul class="sub-menu">
+<li class="no-event invisible-label menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1385"><a href="#">col1</a>
+<ul class="sub-menu">
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-40705"><a href="../index.html">Blog<p class="menu-item-description"> </p></a></li>
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-40704"><a href="../../resources/index.html">Resources<p class="menu-item-description"> </p></a></li>
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-40619"><a href="../../website-cost-calculator/index.html">Project Calculator<p class="menu-item-description"> </p></a></li>
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-40620"><a href="../../roi-calculator/index.html">ROI Calculator<p class="menu-item-description"> </p></a></li>
+</ul>
+</li>
+<li class="no-event invisible-label menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1387"><a href="#">col3</a>
+<ul class="sub-menu">
+<li class="featured-item menu-item menu-item-type-custom menu-item-object-custom menu-item-1392"><a href="../website-redesign-project-plan/index.html">Featured Resource<p class="menu-item-description">The Ultimate Website Redesign Project Plan and Worksheet.
+<a href="../website-redesign-project-plan/index.html" class="featured-item-button">Read More<i class="fl-button-icon fl-button-icon-after dashicons dashicons-after dashicons-arrow-right-alt"></i></a></p></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul> <div class="CustomHeader-cta">
+<a class="CustomButton CustomButton-bordered" href="../../contact/index.html" target="_self" rel>
+Book A Strategy Session
+<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.296.971h9.733V2.61H1.296V.971z" fill="#fff" />
+<path d="M9.406 10.8V.97h1.623V10.8H9.406z" fill="#fff" />
+<path d="M.971 9.87 9.46 1.3l1.147 1.158-8.488 8.572L.971 9.87z" fill="#fff" />
+</svg>
+</a>
+</div>
+</div>
+<div class="CustomHeader-nav CustomHeader-nav-mobile">
+<div class="CustomHeader-nav-mobile-wrapper">
+<ul id="primary-nav-items" class="primary-nav-items nav navbar-nav CustomHeader-menu HideBeforeLoad"><li class="two-columns hoverable arrow-down-icon menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1347"><a href="#">How We Help</a>
+<ul class="sub-menu">
+<li class="main-item arrow-rounded header-icons-round menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-39887"><a href="../../website-redesign-agency/index.html">Website Redesign<p class="menu-item-description"> Elevate your brand with website redesign services that take your website from “good enough” to your industry’s gold standard. </p></a>
+<ul class="sub-menu">
+<li class="no-event grouped-sub-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1364"><a href="#">Key Skills:</a>
+<ul class="sub-menu">
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-39888"><a href="../../web-design-agency/index.html">Web Design<p class="menu-item-description"> </p></a></li>
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-38740"><a href="../../web-development-agency/index.html">Web Development<p class="menu-item-description"> </p></a></li>
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-37324"><a href="../../wordpress-agency/index.html">WordPress<p class="menu-item-description"> </p></a></li>
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-38741"><a href="../../shopify-agency/index.html">Shopify<p class="menu-item-description"> </p></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="main-item ungrouped-sub-menu arrow-rounded header-icons-round menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-38742"><a href="../../website-maintenance-and-support/index.html">Website Support<p class="menu-item-description">Enhance and protect your existing site with dedicated website support that plans, executes, and measures improvements.</p></a>
+<ul class="sub-menu">
+<li class="no-event grouped-sub-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-39117"><a href="#">Key Skills:</a>
+<ul class="sub-menu">
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-39119"><a href="../../conversion-rate-optimization/index.html">CRO<p class="menu-item-description"> </p></a></li>
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-39118"><a href="../../custom-landing-pages/index.html">Landing Pages<p class="menu-item-description"> </p></a></li>
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-40568"><a href="../../website-analysis-plan/index.html">Website Analysis<p class="menu-item-description"> </p></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1344"><a href="../../case-studies/index.html">Work<p class="menu-item-description"> </p></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1343"><a href="../../agency/index.html">About<p class="menu-item-description"> </p></a></li>
+<li class="three-columns hoverable arrow-down-icon menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1367"><a href="#">Resources</a>
+<ul class="sub-menu">
+<li class="no-event invisible-label menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1385"><a href="#">col1</a>
+<ul class="sub-menu">
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-40705"><a href="../index.html">Blog<p class="menu-item-description"> </p></a></li>
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-40704"><a href="../../resources/index.html">Resources<p class="menu-item-description"> </p></a></li>
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-40619"><a href="../../website-cost-calculator/index.html">Project Calculator<p class="menu-item-description"> </p></a></li>
+<li class="arrow-icon menu-item menu-item-type-post_type menu-item-object-page menu-item-40620"><a href="../../roi-calculator/index.html">ROI Calculator<p class="menu-item-description"> </p></a></li>
+</ul>
+</li>
+<li class="no-event invisible-label menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1387"><a href="#">col3</a>
+<ul class="sub-menu">
+<li class="featured-item menu-item menu-item-type-custom menu-item-object-custom menu-item-1392"><a href="../website-redesign-project-plan/index.html">Featured Resource<p class="menu-item-description">The Ultimate Website Redesign Project Plan and Worksheet.
+<a href="../website-redesign-project-plan/index.html" class="featured-item-button">Read More<i class="fl-button-icon fl-button-icon-after dashicons dashicons-after dashicons-arrow-right-alt"></i></a></p></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul> <div class="CustomHeader-bottom">
+<div class="CustomHeader-socials">
+<h3 class="CustomHeader-socials-title">Follow Us</h3>
+<ul class="CustomHeader-socials-list">
+<li>
+<a class href="https://www.linkedin.com/in/ahmad-jorban-308702216/" target="_self" rel>
+Linkedin
+<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.296.971h9.733V2.61H1.296V.971z" fill="#fff" />
+<path d="M9.406 10.8V.97h1.623V10.8H9.406z" fill="#fff" />
+<path d="M.971 9.87 9.46 1.3l1.147 1.158-8.488 8.572L.971 9.87z" fill="#fff" />
+</svg>
+</a>
+</li>
+<li>
+<a class href="https://dribbble.com/huemor" target="_self" rel>
+Dribbble
+<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.296.971h9.733V2.61H1.296V.971z" fill="#fff" />
+<path d="M9.406 10.8V.97h1.623V10.8H9.406z" fill="#fff" />
+<path d="M.971 9.87 9.46 1.3l1.147 1.158-8.488 8.572L.971 9.87z" fill="#fff" />
+</svg>
+</a>
+</li>
+<li>
+<a class href="https://www.instagram.com/jorbanwebdesign/" target="_self" rel>
+Instagram
+<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.296.971h9.733V2.61H1.296V.971z" fill="#fff" />
+<path d="M9.406 10.8V.97h1.623V10.8H9.406z" fill="#fff" />
+<path d="M.971 9.87 9.46 1.3l1.147 1.158-8.488 8.572L.971 9.87z" fill="#fff" />
+</svg>
+</a>
+</li>
+<li>
+<a class href="https://twitter.com/HuemorDesigns" target="_self" rel>
+Twitter
+<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.296.971h9.733V2.61H1.296V.971z" fill="#fff" />
+<path d="M9.406 10.8V.97h1.623V10.8H9.406z" fill="#fff" />
+<path d="M.971 9.87 9.46 1.3l1.147 1.158-8.488 8.572L.971 9.87z" fill="#fff" />
+</svg>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="CustomHeader-nav-toggler">
+<button class="CustomHeader-nav-toggler-btn" id="CustomHeader-toggler">
+<div id="CustomHeader-menu-icon">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="fl-page-content" itemprop="mainContentOfPage">
+<div class="fl-builder-content fl-builder-content-29380 fl-builder-global-templates-locked" data-post-id="29380"><div class="fl-row fl-row-full-width fl-row-bg-none fl-node-43mcujl9k7bo fl-row-default-height fl-row-align-center" data-node="43mcujl9k7bo">
+<div class="fl-row-content-wrap">
+<div class="fl-row-content fl-row-fixed-width fl-node-content">
+<div class="fl-col-group fl-node-p6jaxnoe20h5" data-node="p6jaxnoe20h5">
+<div class="fl-col fl-node-ty57ixjlakb8 fl-col-has-cols d-flex" data-node="ty57ixjlakb8">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-bw-hue-solar-system fl-node-6pe7o8qlduzf" data-node="6pe7o8qlduzf">
+<div class="fl-module-content fl-node-content">
+<div class="HueSolarSystem " data-zoom="1.2" data-mobile-zoom="1">
+<div class="HueSolarSystem-inner">
+<div class="HueSolarSystem-ellipse"><span class="HueSolarSystem-planet"></span></div>
+<div class="HueSolarSystem-ellipse"><span class="HueSolarSystem-planet"></span></div>
+<div class="HueSolarSystem-ellipse"><span class="HueSolarSystem-planet"></span></div>
+<div class="HueSolarSystem-ellipse"><span class="HueSolarSystem-planet"></span></div>
+</div>
+</div> </div>
+</div>
+<div class="fl-col-group fl-node-6nqgzks4f23a fl-col-group-nested fl-col-group-equal-height fl-col-group-align-center fl-col-group-custom-width" data-node="6nqgzks4f23a">
+<div class="fl-col fl-node-zvn6jfadb0oe post-hero-content" data-node="zvn6jfadb0oe">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-ujgy5hw21v4p post-hero-category d-inline" data-node="ujgy5hw21v4p">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>Design</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-xcremzu5710h post-hero-time d-inline" data-node="xcremzu5710h">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>22 minute read</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-heading fl-node-dv7e35j6lcof blog-inner-title" data-node="dv7e35j6lcof">
+<div class="fl-module-content fl-node-content">
+<h1 class="fl-heading">
+<span class="fl-heading-text">The Key UI / UX Terms Every Marketer Should Know<span style="color:#7f60f9;">.</span></span>
+</h1>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-1hsz42edyr3j d-inline" data-node="1hsz42edyr3j">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>LAST UPDATED:</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-av6lmgtzqukh d-inline" data-node="av6lmgtzqukh">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>August 15, 2023</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-col fl-node-859lwsomcgnf fl-col-small fl-col-small-custom-width order-first" data-node="859lwsomcgnf">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-photo fl-node-0k7ztlu4cv5n" data-node="0k7ztlu4cv5n">
+<div class="fl-module-content fl-node-content">
+<div class="fl-photo fl-photo-align-left" itemscope itemtype="https://schema.org/ImageObject">
+<div class="fl-photo-content fl-photo-img-jpg">
+<img decoding="async" width="768" height="650" class="fl-photo-img wp-image-43139 perfmatters-lazy" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;768&#039;%20height=&#039;650&#039;%20viewBox=&#039;0%200%20768%20650&#039;%3E%3C/svg%3E" alt="2023.06.23.The Key UI UX Terms Every Marketer Should Know" itemprop="image" title="2023.06.23.The Key UI UX Terms Every Marketer Should Know" data-src="https://huemordev.b-cdn.net/wp-content/uploads/2020/09/2023.06.23.The-Key-UI-UX-Terms-Every-Marketer-Should-Know-768x650.jpg.webp" data-srcset="https://huemordev.b-cdn.net/wp-content/uploads/2020/09/2023.06.23.The-Key-UI-UX-Terms-Every-Marketer-Should-Know-768x650.jpg.webp 768w,https://huemordev.b-cdn.net/wp-content/uploads/2020/09/2023.06.23.The-Key-UI-UX-Terms-Every-Marketer-Should-Know-300x254.jpg.webp 300w,https://huemordev.b-cdn.net/wp-content/uploads/2020/09/2023.06.23.The-Key-UI-UX-Terms-Every-Marketer-Should-Know.jpg.webp 1025w" data-sizes="(max-width: 768px) 100vw, 768px" /><noscript><img decoding="async" width="768" height="650" class="fl-photo-img wp-image-43139" src="https://huemordev.b-cdn.net/wp-content/uploads/2020/09/2023.06.23.The-Key-UI-UX-Terms-Every-Marketer-Should-Know-768x650.jpg.webp" alt="2023.06.23.The Key UI UX Terms Every Marketer Should Know" itemprop="image" title="2023.06.23.The Key UI UX Terms Every Marketer Should Know" srcset="https://huemordev.b-cdn.net/wp-content/uploads/2020/09/2023.06.23.The-Key-UI-UX-Terms-Every-Marketer-Should-Know-768x650.jpg.webp 768w,https://huemordev.b-cdn.net/wp-content/uploads/2020/09/2023.06.23.The-Key-UI-UX-Terms-Every-Marketer-Should-Know-300x254.jpg.webp 300w,https://huemordev.b-cdn.net/wp-content/uploads/2020/09/2023.06.23.The-Key-UI-UX-Terms-Every-Marketer-Should-Know.jpg.webp 1025w" sizes="(max-width: 768px) 100vw, 768px" /></noscript>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-neidbmk2gptz fl-row-default-height fl-row-align-center fl-row-bg-overlay overflow-v column-reverse-lg" data-node="neidbmk2gptz">
+<div class="fl-row-content-wrap">
+<div class="fl-row-content fl-row-fixed-width fl-node-content">
+<div class="fl-col-group fl-node-ihj5v7a4olpm fl-col-group-custom-width" data-node="ihj5v7a4olpm">
+<div class="fl-col fl-node-1az73kp6inym fl-col-small-custom-width" data-node="1az73kp6inym">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-photo fl-node-mfhzjl64x7ka" data-node="mfhzjl64x7ka">
+<div class="fl-module-content fl-node-content">
+<div class="fl-photo fl-photo-align-left" itemscope itemtype="https://schema.org/ImageObject">
+<div class="fl-photo-content fl-photo-img-png">
+<img decoding="async" class="fl-photo-img wp-image-37347 size-full perfmatters-lazy" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;58&#039;%20height=&#039;58&#039;%20viewBox=&#039;0%200%2058%2058&#039;%3E%3C/svg%3E" alt="solar_system" itemprop="image" height="58" width="58" title="solar_system" data-src="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/solar_system.png.webp" data-srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/solar_system.png.webp 58w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/solar_system-24x24.png 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/solar_system-36x36.png 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/solar_system-48x48.png 48w" data-sizes="(max-width: 58px) 100vw, 58px" /><noscript><img decoding="async" class="fl-photo-img wp-image-37347 size-full" src="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/solar_system.png.webp" alt="solar_system" itemprop="image" height="58" width="58" title="solar_system" srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/solar_system.png.webp 58w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/solar_system-24x24.png 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/solar_system-36x36.png 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/solar_system-48x48.png 48w" sizes="(max-width: 58px) 100vw, 58px" /></noscript>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-html fl-node-0rcyht3wn287 hueBreadCrumbs" data-node="0rcyht3wn287">
+<div class="fl-module-content fl-node-content">
+<div class="fl-html">
+<span><span class="breadcrumb_last" aria-current="page">The Key UI / UX Terms Every Marketer Should Know</span></span></div>
+</div>
+</div>
+<div id="post-content" class="fl-module fl-module-rich-text fl-node-vayewl7kstrm rich-content-underlink dark-links rounded-images" data-node="vayewl7kstrm">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>If you have designers and developers within your organization, or if you have collaborated with an outside agency, you may feel like they&#8217;re speaking a different language.</p>
+<p>Customer journey map. High-fidelity mock-ups. 60-30-10 rule. What the hell does any of that even mean?</p>
+<p>Every industry has its jargon, but web design has a ton of it.</p>
+<p>If you&#8217;re working through a critical project—like a <a href="../../website-redesign-agency/index.html" target="_blank" rel="noreferrer noopener">website redesign</a>—successful communication between executive teams, marketing, sales, design, and development is paramount to its success.</p>
+<p>Luckily for you, we&#8217;ve taken the time to pull together common terminology we and our peers use into a single article. In this article we&#8217;re:</p>
+<span id="more-36220"></span>
+<ul>
+<li>Breaking down the terminology by project stage</li>
+<li>Providing concise explanations for each term</li>
+<li>Providing visual examples</li>
+</ul>
+<p>Ready to dive in?</p>
+<div class="ChapterFullwidth perfmatters-lazy" style="background-size:cover;background-position:center center;background-repeat:no-repeat" data-bg="../../../huemordev.b-cdn.net/wp-content/uploads/2023/04/galaxy_bgg.png"><div class="ChapterFullwitdh-wrapper"><div class="ChapterFullwitdh-form">
+<a id="chapter1"></a>
+</div><img decoding="async" width="30px" height="30px" class="ChapterFullwitdh-icons_chapter perfmatters-lazy" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;30px&#039;%20height=&#039;30px&#039;%20viewBox=&#039;0%200%2030px%2030px&#039;%3E%3C/svg%3E" data-src="https://huemordev.b-cdn.net/wp-content/uploads/2023/04/solarSystem.png.webp" /><noscript><img decoding="async" width="30px" height="30px" class="ChapterFullwitdh-icons_chapter" src="https://huemordev.b-cdn.net/wp-content/uploads/2023/04/solarSystem.png.webp"/></noscript><h5 class="ChapterFullwitdh-chaptersectiontitle">Chapter 1</h5><h2 class="ChapterFullwitdh-chaptertitle">Planning and Strategy UX Terms</h2></div></div>
+<h3 class="wp-block-heading" id="h-agile">Agile</h3>
+<p>Agile is a software development methodology in which the steps of the process are broken into smaller and more manageable parts. The website is continually improved through multiple iterations that add functionality. The ability to adapt and overcome new challenges is a key benefit to this flexible approach.</p>
+<figure class="wp-block-image size-full"><img decoding="async" width="1024" height="538" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;1024&#039;%20height=&#039;538&#039;%20viewBox=&#039;0%200%201024%20538&#039;%3E%3C/svg%3E" alt class="wp-image-35589 perfmatters-lazy" data-src="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/01-brand-book-example-min-1024x538.jpg.webp" data-srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/01-brand-book-example-min-1024x538.jpg.webp 1024w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/01-brand-book-example-min-1024x538-300x158.jpg.webp 300w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/01-brand-book-example-min-1024x538-768x404.jpg.webp 768w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/01-brand-book-example-min-1024x538-24x13.jpg 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/01-brand-book-example-min-1024x538-36x19.jpg 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/01-brand-book-example-min-1024x538-48x25.jpg 48w" data-sizes="(max-width: 1024px) 100vw, 1024px" /><noscript><img decoding="async" loading="lazy" width="1024" height="538" src="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/01-brand-book-example-min-1024x538.jpg.webp" alt="" class="wp-image-35589" srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/01-brand-book-example-min-1024x538.jpg.webp 1024w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/01-brand-book-example-min-1024x538-300x158.jpg.webp 300w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/01-brand-book-example-min-1024x538-768x404.jpg.webp 768w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/01-brand-book-example-min-1024x538-24x13.jpg 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/01-brand-book-example-min-1024x538-36x19.jpg 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/01-brand-book-example-min-1024x538-48x25.jpg 48w" sizes="(max-width: 1024px) 100vw, 1024px" /></noscript></figure>
+<p></p>
+<h3 class="wp-block-heading" id="h-brand-book">Brand Book</h3>
+<p>The Brand Book is the document that ensures the message and design of your website to uphold your brand’s standards. This information is crucial to establish the identity of your brand and will help inform many design decisions.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-corporate-identity-guideline">Corporate Identity Guideline</h3>
+<p>Corporate Identity Guidelines help define how your company is presented to the public. Perhaps similar to a more far-reaching brand book, this guideline includes the design parameters that a website must adhere to. Among other things, it will provide rules for color palettes, logo use, and the typography to be used.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-customer-journey-map-cjm">Customer Journey Map (CJM)</h3>
+<p>The UX term, &#8220;Customer Journey Map&#8221; is a diagram used to illustrate how customers will interact with your website. Researching this behavior to fill in the CJM will help you understand how to best improve the user experience and address any problems that users might have with your website.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-design-thinking">Design Thinking</h3>
+<p>This is a 5-step method that may help you overcome problems in the design process. Contextualizing the challenge in these discrete steps may help clarify the best course of action for you and your team to carry out.</p>
+<ol>
+<li>Empathize: Understand the problem that users are experiencing.</li>
+<li>Define: Pinpoint the root of the problem.</li>
+<li>Ideate: Brainstorm ways to solve the problem.</li>
+<li>Prototype: Experiment with potential solutions to the problem.</li>
+<li>Test: Test the solutions you come up with and iterate upon them as needed.</li>
+</ol>
+<figure class="wp-block-image size-full"><img decoding="async" width="1024" height="538" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;1024&#039;%20height=&#039;538&#039;%20viewBox=&#039;0%200%201024%20538&#039;%3E%3C/svg%3E" alt class="wp-image-35590 perfmatters-lazy" data-src="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/02-fishbone-diagram-example-min-1024x538.jpg.webp" data-srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/02-fishbone-diagram-example-min-1024x538.jpg.webp 1024w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/02-fishbone-diagram-example-min-1024x538-300x158.jpg.webp 300w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/02-fishbone-diagram-example-min-1024x538-768x404.jpg.webp 768w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/02-fishbone-diagram-example-min-1024x538-24x13.jpg 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/02-fishbone-diagram-example-min-1024x538-36x19.jpg 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/02-fishbone-diagram-example-min-1024x538-48x25.jpg 48w" data-sizes="(max-width: 1024px) 100vw, 1024px" /><noscript><img decoding="async" loading="lazy" width="1024" height="538" src="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/02-fishbone-diagram-example-min-1024x538.jpg.webp" alt="" class="wp-image-35590" srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/02-fishbone-diagram-example-min-1024x538.jpg.webp 1024w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/02-fishbone-diagram-example-min-1024x538-300x158.jpg.webp 300w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/02-fishbone-diagram-example-min-1024x538-768x404.jpg.webp 768w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/02-fishbone-diagram-example-min-1024x538-24x13.jpg 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/02-fishbone-diagram-example-min-1024x538-36x19.jpg 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/02-fishbone-diagram-example-min-1024x538-48x25.jpg 48w" sizes="(max-width: 1024px) 100vw, 1024px" /></noscript></figure>
+<p></p>
+<h3 class="wp-block-heading" id="h-fishbone-diagram">Fishbone Diagram</h3>
+<p>This diagram is another way to visualize a problem and the causes that lead up to it. The problem is written on the “head” of the fish, while its causes and the factors leading up to it are written along its spine.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-flowchart">Flowchart</h3>
+<p>Flowcharts are used to outline the procedure for a given task on a project. This diagram is useful in visualizing the conditions that need to be fulfilled in order to move forward through subsequent steps.</p>
+<figure class="wp-block-image size-full"><img decoding="async" width="1024" height="538" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;1024&#039;%20height=&#039;538&#039;%20viewBox=&#039;0%200%201024%20538&#039;%3E%3C/svg%3E" alt class="wp-image-35591 perfmatters-lazy" data-src="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/04-gamification-example-min-1024x538.jpg.webp" data-srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/04-gamification-example-min-1024x538.jpg.webp 1024w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/04-gamification-example-min-1024x538-300x158.jpg.webp 300w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/04-gamification-example-min-1024x538-768x404.jpg.webp 768w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/04-gamification-example-min-1024x538-24x13.jpg 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/04-gamification-example-min-1024x538-36x19.jpg 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/04-gamification-example-min-1024x538-48x25.jpg 48w" data-sizes="(max-width: 1024px) 100vw, 1024px" /><noscript><img decoding="async" loading="lazy" width="1024" height="538" src="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/04-gamification-example-min-1024x538.jpg.webp" alt="" class="wp-image-35591" srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/04-gamification-example-min-1024x538.jpg.webp 1024w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/04-gamification-example-min-1024x538-300x158.jpg.webp 300w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/04-gamification-example-min-1024x538-768x404.jpg.webp 768w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/04-gamification-example-min-1024x538-24x13.jpg 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/04-gamification-example-min-1024x538-36x19.jpg 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/04-gamification-example-min-1024x538-48x25.jpg 48w" sizes="(max-width: 1024px) 100vw, 1024px" /></noscript></figure>
+<p></p>
+<h3 class="wp-block-heading" id="h-gamification">Gamification</h3>
+<p>Using ideas and concepts borrowed from game design, gamification is a useful tool to increase user engagement. The idea is to provide some additional motivation that lets users better enjoy your site. This might include some sort of incentivization, such as providing points or goals that users can strive for.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-gestalt-principles">Gestalt Principles</h3>
+<p>The principles of gestalt theory can apply to design on a broader spectrum but are definitely relevant to UX. This principle establishes that people often visually perceive items as part of a whole rather than individual parts. They tend to observe things in the context of their similarity or difference to their surroundings. With this in mind, consider how all the visual elements of your website interact with each other.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-human-computer-interaction">Human-Computer Interaction</h3>
+<p>This field explores how people design and interact with computer technology. Studying how we use them can provide the basis for exploring different modes of interaction with your site.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-mental-model">Mental Model</h3>
+<p>The mental model is a diagram used to chart a user’s perception of how something works. Keep in mind, a product that more closely resembles this thought process will be easier to use.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-mindmap">Mindmap</h3>
+<p>The mindmap is another way to organize information, often around a central idea. Both words and images can be used in this diagram to visualize concepts related to this idea. This can also show how they relate to each other and encourage new ideas to branch out from that initial concept.</p>
+<figure class="wp-block-image size-full"><img decoding="async" width="1024" height="538" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;1024&#039;%20height=&#039;538&#039;%20viewBox=&#039;0%200%201024%20538&#039;%3E%3C/svg%3E" alt class="wp-image-35592 perfmatters-lazy" data-src="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/05-persona-example-min-1024x538.jpg.webp" data-srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/05-persona-example-min-1024x538.jpg.webp 1024w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/05-persona-example-min-1024x538-300x158.jpg.webp 300w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/05-persona-example-min-1024x538-768x404.jpg.webp 768w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/05-persona-example-min-1024x538-24x13.jpg 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/05-persona-example-min-1024x538-36x19.jpg 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/05-persona-example-min-1024x538-48x25.jpg 48w" data-sizes="(max-width: 1024px) 100vw, 1024px" /><noscript><img decoding="async" loading="lazy" width="1024" height="538" src="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/05-persona-example-min-1024x538.jpg.webp" alt="" class="wp-image-35592" srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/05-persona-example-min-1024x538.jpg.webp 1024w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/05-persona-example-min-1024x538-300x158.jpg.webp 300w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/05-persona-example-min-1024x538-768x404.jpg.webp 768w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/05-persona-example-min-1024x538-24x13.jpg 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/05-persona-example-min-1024x538-36x19.jpg 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/05-persona-example-min-1024x538-48x25.jpg 48w" sizes="(max-width: 1024px) 100vw, 1024px" /></noscript></figure>
+<p></p>
+<h3 class="wp-block-heading" id="h-persona">Persona</h3>
+<p>The term &#8220;Persona&#8221; is common across a few different job focuses (Marketing, Sales, Customer Service, and UX). Personas are essentially mock user profiles to help you imagine what your audience wants. Research helps establish a target audience for you to build your design around. It practically goes without saying, but different groups of people have different goals and interests that they’re seeking, and a bland or generalist design won’t cut it. Having a design that appeals to your audience increases their engagement with your site.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-scrum">Scrum</h3>
+<p>Scrum is a type of Agile project methodology. It emphasizes iteration and testing, much like Agile, but it typically includes the particulars of how a project will be completed. Assignments are often doled out across short phases (see “Sprints” below as well), and typically, specific goals are established during each one. Having this structure in your project management can help keep it on track; each sprint of work provides an opportunity to review and iterate on what came before it.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-site-map">Site map</h3>
+<p>A site map is a basic visualization of the structure of a website that lists the pages and hierarchy therein. You&#8217;ll see this often referenced amongst SEO&#8217;s, but is equally important for UX designers.&nbsp;</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-sketching">Sketching</h3>
+<p>Light freehand drawings can help visualize ideas and start brainstorming ways to design your product. They can help communicate what you’re thinking, but this early in the planning process, they aren’t meant to be very detailed or polished.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-slack">Slack</h3>
+<p>Slack is a popular platform for internal communications. Tools like Slack are incredibly useful in keeping everyone in the loop with the information they need.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-sprints">Sprints</h3>
+<p>A defined length of time for an assignment within a project. Particular goals are established in advance, and this period typically lasts a couple of weeks. At the end of a sprint, you can review the work done to acknowledge successes and course-correct any issues that came up. Often times this term is synonymous with software development, but can also be used amongst ux design teams when trying to rapidly solve specific problems for a product or service.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-storyboard">Storyboard</h3>
+<p>Often a critical tool for a UX designer, storyboards are a way to visually communicate how a user might experience a product. By exploring the circumstances that might bring a user to your website, for example, you can plan your design around a solution to their situation.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-task-analysis">Task Analysis</h3>
+<p>Analyzing the list of steps it takes a user to complete a given task provides insight into their experience and identifies problems in completing that test. Doing this early in product development lets you plan your design to offer solutions to those problems.</p>
+<figure class="wp-block-image size-full"><img decoding="async" width="1024" height="538" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;1024&#039;%20height=&#039;538&#039;%20viewBox=&#039;0%200%201024%20538&#039;%3E%3C/svg%3E" alt class="wp-image-35593 perfmatters-lazy" data-src="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/06-userflow-example-min-1024x538.jpg.webp" data-srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/06-userflow-example-min-1024x538.jpg.webp 1024w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/06-userflow-example-min-1024x538-300x158.jpg.webp 300w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/06-userflow-example-min-1024x538-768x404.jpg.webp 768w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/06-userflow-example-min-1024x538-24x13.jpg 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/06-userflow-example-min-1024x538-36x19.jpg 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/06-userflow-example-min-1024x538-48x25.jpg 48w" data-sizes="(max-width: 1024px) 100vw, 1024px" /><noscript><img decoding="async" loading="lazy" width="1024" height="538" src="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/06-userflow-example-min-1024x538.jpg.webp" alt="" class="wp-image-35593" srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/06-userflow-example-min-1024x538.jpg.webp 1024w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/06-userflow-example-min-1024x538-300x158.jpg.webp 300w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/06-userflow-example-min-1024x538-768x404.jpg.webp 768w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/06-userflow-example-min-1024x538-24x13.jpg 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/06-userflow-example-min-1024x538-36x19.jpg 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/06-userflow-example-min-1024x538-48x25.jpg 48w" sizes="(max-width: 1024px) 100vw, 1024px" /></noscript></figure>
+<p></p>
+<h3 class="wp-block-heading" id="h-user-flow">User Flow</h3>
+<p>This is another key tool for any UX designer. The user flow displays the intended motions of a user completing a task. Each step is laid out so that there is a logical progression that’s easy to follow. Establishing a clear user flow creates a strong experience to design around as development carries on.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-user-research">User Research</h3>
+<p>To best understand your target audience, user research is crucial. It includes any sort of investigation you do when you set out on your project. Qualitative and quantitative data are both useful, and together they can give you a great picture of your users’ behavior.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-user-customer-journey-maps">User/Customer Journey Maps</h3>
+<p>User/Customer journey maps encompass the entire experience a user has with a product. By fleshing out the journey from beginning to end, developers can start planning how they would realize and enhance this experience.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-user-stories">User Stories</h3>
+<p>User stories are examples that describe the goals and ideas from the perspective of the user. Creating a clear idea of who this user is by putting yourself in their place is one method of establishing a target audience.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-user-scenarios">User Scenarios</h3>
+<p>Creating user scenarios—essentially short stories—can help explain how a customer is going to use it. They’re typically used to describe the situation or context a customer might be in that will lead them to the product. Knowing customers’ goals can help steer the direction of your team’s design.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-whiteboard-interview">Whiteboard Interview</h3>
+<p>Whiteboard interviews, as the name suggests, are tests in which candidates are given a whiteboard to develop the solution to a given problem. This type of interview tests the knowledge and problem-solving skills of the candidate without them relying on a computer.&nbsp;</p>
+<div class="ChapterFullwidth perfmatters-lazy" style="background-size:cover;background-position:center center;background-repeat:no-repeat" data-bg="../../../huemordev.b-cdn.net/wp-content/uploads/2023/04/galaxy_bgg.png"><div class="ChapterFullwitdh-wrapper"><div class="ChapterFullwitdh-form">
+<a id="chapter2"></a>
+</div><img decoding="async" width="30px" height="30px" class="ChapterFullwitdh-icons_chapter perfmatters-lazy" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;30px&#039;%20height=&#039;30px&#039;%20viewBox=&#039;0%200%2030px%2030px&#039;%3E%3C/svg%3E" data-src="https://huemordev.b-cdn.net/wp-content/uploads/2023/04/solarSystem.png.webp" /><noscript><img decoding="async" width="30px" height="30px" class="ChapterFullwitdh-icons_chapter" src="https://huemordev.b-cdn.net/wp-content/uploads/2023/04/solarSystem.png.webp"/></noscript><h5 class="ChapterFullwitdh-chaptersectiontitle">chapter 2</h5><h2 class="ChapterFullwitdh-chaptertitle">Visual Design UI/UX Terms</h2></div></div>
+<h3 class="wp-block-heading" id="h-3-click-rule">3-click Rule</h3>
+<p>In UX, the 3-click rule is the concept that a user is going to leave your website if they can’t accomplish their goal in 3 mouse clicks. If something on your site takes more than 3 clicks to find, it should be worth revisiting the design to make the relevant content easier to access.</p>
+<div class="hs-embed-wrapper" style="position: relative; overflow: hidden; width: 100%; height: auto; padding: 0; max-width: 640px; max-height: 360px; min-width: 256px; display: block; margin: auto;" data-service="vimeo" data-responsive="true">
+<div class="hs-embed-content-wrapper">
+<div style="position: relative; overflow: hidden; max-width: 100%; padding-bottom: 56.25%; margin: 0px;"><iframe loading="lazy" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; border: none;" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen" data-mce-src="https://player.vimeo.com/video/420454547?background=1" data-mce-style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; border: none;" class="perfmatters-lazy" data-src="https://player.vimeo.com/video/420454547?background=1"></iframe><noscript><iframe loading="lazy" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; border: none;" src="https://player.vimeo.com/video/420454547?background=1" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen" data-mce-src="https://player.vimeo.com/video/420454547?background=1" data-mce-style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; border: none;"></iframe></noscript></div>
+</div>
+</div>
+<p></p>
+<h3 class="wp-block-heading" id="h-5-second-test">5-Second Test</h3>
+<p>The 5-second test is another way of gauging the effectiveness of a website’s design. In the first 5 seconds of viewing a webpage, the user makes judgments about the page based on their first impressions. Effective UX and design will be able to communicate its essentials within these first few seconds.</p>
+<figure class="wp-block-image size-full"><img decoding="async" width="1024" height="538" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;1024&#039;%20height=&#039;538&#039;%20viewBox=&#039;0%200%201024%20538&#039;%3E%3C/svg%3E" alt class="wp-image-35594 perfmatters-lazy" data-src="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/09-603010-rule-example-min-1-1024x538.jpg.webp" data-srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/09-603010-rule-example-min-1-1024x538.jpg.webp 1024w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/09-603010-rule-example-min-1-1024x538-300x158.jpg.webp 300w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/09-603010-rule-example-min-1-1024x538-768x404.jpg.webp 768w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/09-603010-rule-example-min-1-1024x538-24x13.jpg 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/09-603010-rule-example-min-1-1024x538-36x19.jpg 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/09-603010-rule-example-min-1-1024x538-48x25.jpg 48w" data-sizes="(max-width: 1024px) 100vw, 1024px" /><noscript><img decoding="async" loading="lazy" width="1024" height="538" src="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/09-603010-rule-example-min-1-1024x538.jpg.webp" alt="" class="wp-image-35594" srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/09-603010-rule-example-min-1-1024x538.jpg.webp 1024w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/09-603010-rule-example-min-1-1024x538-300x158.jpg.webp 300w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/09-603010-rule-example-min-1-1024x538-768x404.jpg.webp 768w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/09-603010-rule-example-min-1-1024x538-24x13.jpg 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/09-603010-rule-example-min-1-1024x538-36x19.jpg 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/09-603010-rule-example-min-1-1024x538-48x25.jpg 48w" sizes="(max-width: 1024px) 100vw, 1024px" /></noscript></figure>
+<p></p>
+<h3 class="wp-block-heading" id="h-60-30-10-rule">60-30-10 Rule</h3>
+<p>The 60-30-10 rule is a classic method of designing a color palette. The numbers represent the proportionate amount of color in a given space: 60% for the main color, 30% for the secondary, and the last 10% for a tertiary accent.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-80-20-rule">80/20 Rule</h3>
+<p>In website design, the 80/20 rule is the theory that 80% of the actions that take place on your website occur from only 20% of the site’s total features.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-accessibility">Accessibility</h3>
+<p>Accessibility is how easily a website can be used by someone with one or more disabilities. Designing with accessibility in mind is an important part of the design process and absolutely essential for UX.</p>
+<figure class="wp-block-image size-full"><img decoding="async" width="1024" height="538" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;1024&#039;%20height=&#039;538&#039;%20viewBox=&#039;0%200%201024%20538&#039;%3E%3C/svg%3E" alt class="wp-image-35595 perfmatters-lazy" data-src="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/10-adaptive-design-example-min-1024x538.jpg.webp" data-srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/10-adaptive-design-example-min-1024x538.jpg.webp 1024w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/10-adaptive-design-example-min-1024x538-300x158.jpg.webp 300w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/10-adaptive-design-example-min-1024x538-768x404.jpg.webp 768w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/10-adaptive-design-example-min-1024x538-24x13.jpg 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/10-adaptive-design-example-min-1024x538-36x19.jpg 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/10-adaptive-design-example-min-1024x538-48x25.jpg 48w" data-sizes="(max-width: 1024px) 100vw, 1024px" /><noscript><img decoding="async" loading="lazy" width="1024" height="538" src="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/10-adaptive-design-example-min-1024x538.jpg.webp" alt="" class="wp-image-35595" srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/10-adaptive-design-example-min-1024x538.jpg.webp 1024w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/10-adaptive-design-example-min-1024x538-300x158.jpg.webp 300w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/10-adaptive-design-example-min-1024x538-768x404.jpg.webp 768w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/10-adaptive-design-example-min-1024x538-24x13.jpg 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/10-adaptive-design-example-min-1024x538-36x19.jpg 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/10-adaptive-design-example-min-1024x538-48x25.jpg 48w" sizes="(max-width: 1024px) 100vw, 1024px" /></noscript></figure>
+<p></p>
+<h3 class="wp-block-heading" id="h-adaptive-responsive">Adaptive/Responsive</h3>
+<p>If a website or interface is described as “adaptive,” or &#8220;responsive&#8221; it typically means that it contains designs that are tailored to different devices. Such websites can detect the platform they’re on, so you would see the relevant version of the site when you access it. This design concept is similar to responsive web design, but adaptive design features distinct layouts for different devices, while responsive design features a single one that adjusts to the size of a given screen.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-affordance">Affordance</h3>
+<p>Affordances are indicators of the function of different design elements on your site. They’re typically implemented to make the user experience more intuitive. There are numerous examples of affordances on any given website, including things such as labels or icons over interactive buttons.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-android">Android</h3>
+<p>Android is one operating system you’ll see in mobile devices and is developed by Google. The operating system of a device is a piece of software that carries out its core functions.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-api">API</h3>
+<p>API stands for Application Programming Interface. They’re functions created to enable software to access information from other sources, such as the operating system or other applications.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-avatar">Avatar</h3>
+<p>The Avatar is an image that represents users on a website, perhaps in the absence of a photo of the user themselves. You’ll typically see them in forums or places designed for community interaction.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-back-and-front-end-development">Back and Front-End Development</h3>
+<p>Back-end development refers to work done in areas that an average user wouldn’t see. This includes organizing and storing the data for a website and measures to make sure everything is working on the front end.</p>
+<p>Speaking of which, front-end development is the work done for the user-facing website. In other words, front-end development is concerned with how a site functions and how a user interacts with it.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-backlog">Backlog</h3>
+<p>A backlog is simply the collection of tasks yet to be done. Naturally, it’s important to organize these remaining tasks to complete them efficiently.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-beacon">Beacon</h3>
+<p>The beacon in this capacity refers to the small Bluetooth transmitters that allow compatible devices to communicate with each other. One common implementation is that of smartphones and the various wireless accessories you might connect with them.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-breadcrumbs">Breadcrumbs</h3>
+<p>Breadcrumbs are an enduring design concept that helps users navigate different levels of a website. They’ll show the user where they are within it as well as provide a clear path back from where they came.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-bug">Bug</h3>
+<p>Bugs are mistakes or problems in a piece of software that can cause it to behave in unintended ways. Of course, careful work and testing should be carried out to minimize the effects any of these mistakes might have.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-cache">Cache</h3>
+<p>Cache memory is data temporarily saved from websites. Accessing sites with already cached data allows your browser to load the page faster, as only new or updated parts of the site need to be retrieved from the site.</p>
+<figure class="wp-block-image size-full"><img decoding="async" width="1024" height="538" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;1024&#039;%20height=&#039;538&#039;%20viewBox=&#039;0%200%201024%20538&#039;%3E%3C/svg%3E" alt class="wp-image-35596 perfmatters-lazy" data-src="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/11-call-to-action-example-min-1024x538.jpg.webp" data-srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/11-call-to-action-example-min-1024x538.jpg.webp 1024w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/11-call-to-action-example-min-1024x538-300x158.jpg.webp 300w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/11-call-to-action-example-min-1024x538-768x404.jpg.webp 768w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/11-call-to-action-example-min-1024x538-24x13.jpg 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/11-call-to-action-example-min-1024x538-36x19.jpg 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/11-call-to-action-example-min-1024x538-48x25.jpg 48w" data-sizes="(max-width: 1024px) 100vw, 1024px" /><noscript><img decoding="async" loading="lazy" width="1024" height="538" src="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/11-call-to-action-example-min-1024x538.jpg.webp" alt="" class="wp-image-35596" srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/11-call-to-action-example-min-1024x538.jpg.webp 1024w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/11-call-to-action-example-min-1024x538-300x158.jpg.webp 300w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/11-call-to-action-example-min-1024x538-768x404.jpg.webp 768w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/11-call-to-action-example-min-1024x538-24x13.jpg 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/11-call-to-action-example-min-1024x538-36x19.jpg 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/11-call-to-action-example-min-1024x538-48x25.jpg 48w" sizes="(max-width: 1024px) 100vw, 1024px" /></noscript></figure>
+<p></p>
+<h3 class="wp-block-heading" id="h-call-to-action-cta">Call to Action (CTA)</h3>
+<p>The Call to Action is the short phrase or word that beckons the user to interact with a site or product. You might also have a CTA button, a link, or another interactive element that lets users perform the given interaction.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-card-sorting-method">Card Sorting Method</h3>
+<p>The card sorting method is a way to help designers arrange website elements for easy navigation. Organizing a set of items that are each written out on paper cards lets a designer visualize how to logically group those that are similar to each other.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-chatbot">Chatbot</h3>
+<p>A chatbot is a software interface with which a user can carry out their queries. They can carry out a text “conversation” and are set up to provide answers in the field they were designed for.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-color-contrast">Color Contrast</h3>
+<p>Simply put, color contrast refers to the difference between two colors and can be differentiated by value, hue, or saturation. It’s another effective tool in website design that helps make elements visually distinct.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-color-wheel">Color Wheel</h3>
+<p>The color wheel is a circle that visually represents the colors and their relationships with each other. It can be a useful reference while determining the color palette of your website.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-data-driven-design">Data-Driven Design</h3>
+<p>Data-driven design is exactly what it sounds like: a design that’s backed up by all the studies and research at your disposal. The data helps designers discover new trends and reveals potential challenges that they can focus on overcoming.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-design-debt">Design Debt</h3>
+<p>Design debt refers to elements in a project that need to be fixed or adjusted later in production. Initial haphazard implementation of any given element, which can happen for any number of reasons, usually creates this debt. Of course, it’s always something to be wary of since design debt will ultimately require more work to resolve.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-dots-per-inch-dpi">Dots Per Inch (DPI)</h3>
+<p>Dots per inch is a method of measuring the density of an image. Measuring how many dots can fit into a square inch of an image is an indicator of its resolution and size. When adjusting images on a website to be clear and effective, the DPI of the images is one factor that a designer must be aware of.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-experience-architecture">Experience Architecture</h3>
+<p>Experience Architecture is a visual representation of how a user will carry out their task, from the beginning to completion. It encompasses the various systems and functions that a user would interact with as well as the data and analysis to explain each step of their process.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-fitts-law">Fitts’ Law</h3>
+<p>Fitts’ Law states that the further away and the smaller an object is from a pointer on a screen, the longer it takes for someone to move the pointer to the object. So, users are much more likely to interact with the larger or more prominent elements of a website.</p>
+<figure class="wp-block-image size-full"><img decoding="async" width="1024" height="538" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;1024&#039;%20height=&#039;538&#039;%20viewBox=&#039;0%200%201024%20538&#039;%3E%3C/svg%3E" alt class="wp-image-35597 perfmatters-lazy" data-src="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/12-flat-design-example-min-1024x538.jpg.webp" data-srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/12-flat-design-example-min-1024x538.jpg.webp 1024w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/12-flat-design-example-min-1024x538-300x158.jpg.webp 300w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/12-flat-design-example-min-1024x538-768x404.jpg.webp 768w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/12-flat-design-example-min-1024x538-24x13.jpg 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/12-flat-design-example-min-1024x538-36x19.jpg 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/12-flat-design-example-min-1024x538-48x25.jpg 48w" data-sizes="(max-width: 1024px) 100vw, 1024px" /><noscript><img decoding="async" loading="lazy" width="1024" height="538" src="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/12-flat-design-example-min-1024x538.jpg.webp" alt="" class="wp-image-35597" srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/12-flat-design-example-min-1024x538.jpg.webp 1024w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/12-flat-design-example-min-1024x538-300x158.jpg.webp 300w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/12-flat-design-example-min-1024x538-768x404.jpg.webp 768w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/12-flat-design-example-min-1024x538-24x13.jpg 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/12-flat-design-example-min-1024x538-36x19.jpg 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/12-flat-design-example-min-1024x538-48x25.jpg 48w" sizes="(max-width: 1024px) 100vw, 1024px" /></noscript></figure>
+<p></p>
+<h3 class="wp-block-heading" id="h-flat-design">Flat Design</h3>
+<p>Creating a UI with a flat design entails a minimalistic approach. One benefit of flat design is that clean 2D visuals look appealing without distracting from the content itself.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-f-shaped-pattern">F-Shaped Pattern</h3>
+<p>A website with an F-shaped pattern utilizes a user’s tendency to read content horizontally first to catch the headline or the first few lines of a piece of content, then down the left side of the page to quickly scan for other eye-catching elements. When something catches their eye, they read along the line horizontally before resuming the scan down the left side.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-github">GitHub</h3>
+<p>GitHub is a platform used by developers to remotely collaborate, share files, and ensure proper version control.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-golden-ratio">Golden Ratio</h3>
+<p>The golden ratio is a frequently referred-to mathematical concept that, when applied to graphic design, can help create appealing layouts.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-grid">Grid</h3>
+<p>A grid is one way to provide a structure to your design. Aligning elements along vertical and horizontal lines is a common way to make your design appear efficient and consistent.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-hardware">Hardware</h3>
+<p>Hardware is another term for the physical components of your computer.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-html">HTML</h3>
+<p>HTML, or Hypertext Markup Language, is the primary programming language that is used to create websites. It provides the structure for various elements that a site contains.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-hybrid-app">Hybrid App</h3>
+<p>A hybrid app has access to both native and web functions. Usually, a web app is essentially given a native shell than can be installed on a device.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-information-architecture-ia">Information Architecture (IA)</h3>
+<p>Information architecture refers to how content is arranged in a product or website. Ideally, this content is organized logically and easily understood for the best possible user experience.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-interaction-design-ixd">Interaction Design (IXD)</h3>
+<p>Interaction Design concerns the creation and consideration of interactive experiences. It determines how users access and experience a given interface.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-ios">iOS</h3>
+<p>iOS is the operating system for mobile devices developed by Apple The operating system of a device is a piece of software that carries out its core functions.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-ip-address">IP Address</h3>
+<p>The “IP” in IP address stands for Internet Protocol. Essentially, the address is a number unique to a given device that utilizes this protocol for communication.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-iterative-design">Iterative Design</h3>
+<p>&#8220;Iterative design&#8221; is ux terminology that emphasizes building, testing, and revising your product in cycles to continuously improve towards users’ needs. Each iteration is designed to bring incremental improvements over what came before.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-javascript">Javascript</h3>
+<p>Javascript is a programming language used for websites, most frequently used to create a site’s interactive elements.</p>
+<figure class="wp-block-image size-full"><img decoding="async" width="1024" height="538" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;1024&#039;%20height=&#039;538&#039;%20viewBox=&#039;0%200%201024%20538&#039;%3E%3C/svg%3E" alt class="wp-image-35598 perfmatters-lazy" data-src="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/13-landing-page-example-min-1024x538.jpg.webp" data-srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/13-landing-page-example-min-1024x538.jpg.webp 1024w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/13-landing-page-example-min-1024x538-300x158.jpg.webp 300w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/13-landing-page-example-min-1024x538-768x404.jpg.webp 768w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/13-landing-page-example-min-1024x538-24x13.jpg 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/13-landing-page-example-min-1024x538-36x19.jpg 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/13-landing-page-example-min-1024x538-48x25.jpg 48w" data-sizes="(max-width: 1024px) 100vw, 1024px" /><noscript><img decoding="async" loading="lazy" width="1024" height="538" src="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/13-landing-page-example-min-1024x538.jpg.webp" alt="" class="wp-image-35598" srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/13-landing-page-example-min-1024x538.jpg.webp 1024w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/13-landing-page-example-min-1024x538-300x158.jpg.webp 300w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/13-landing-page-example-min-1024x538-768x404.jpg.webp 768w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/13-landing-page-example-min-1024x538-24x13.jpg 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/13-landing-page-example-min-1024x538-36x19.jpg 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/13-landing-page-example-min-1024x538-48x25.jpg 48w" sizes="(max-width: 1024px) 100vw, 1024px" /></noscript></figure>
+<p></p>
+<h3 class="wp-block-heading" id="h-landing-page">Landing Page</h3>
+<p>The landing page is what the user will first “land on” when they find your site. By design, it’s going to be the one that comes up in search results or ads, and it’s often very important for producing conversion goals you might have.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-lean-ux">Lean UX</h3>
+<p>Lean UX is an Agile methodology that emphasizes iteration and collaboration to achieve its results. It eschews set-in-stone documentation for short iterative production cycles where the project’s needs can continually be reassessed.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-material-design">Material Design</h3>
+<p>This design language was developed by Google for use in Android devices. It may also be referred to as Material.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-micro-copy">Micro-Copy</h3>
+<p>Micro-copy on webpages are the short pieces of text that informs your interaction with it. It can come in many forms, but they’re always designed to make clear the functionality of their associated elements.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-mobile-web">Mobile Web</h3>
+<p>The mobile web just refers to the accessing of the internet from a mobile device. The actual websites available are the same, of course, but the layout of webpages might change depending on the specific device.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-mockup">Mockup</h3>
+<p>A mockup is a representation of a website’s final design, although it isn’t interactive. Essentially a picture of the final product, its purpose is to show off what the end-product will look like.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-mood-board">Mood Board</h3>
+<p>Mood boards are useful tools to define the artistic direction of the project. A collection of different types of media can all be used as inspiration. Because working on a mood board is such an open-ended process, this is the time to explore a wide variety of ideas to see where they lead.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-onboarding">Onboarding</h3>
+<p>Onboarding is the experience created by a developer for the purpose of attracting and easing new users into what their product has to offer.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-pairing-development-pairing-programming">Pairing Development/Pairing Programming</h3>
+<p>Pairing development or programming is the practice of two programmers taking turns to write code and reviewing each other’s work. The goal is to both prevent mistakes and create solutions that are only discovered because of the collaborative effort.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-pixel">Pixel</h3>
+<p>The pixel is the smallest discrete element of an image that can be independently adjusted.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-prototype">Prototype</h3>
+<p>A prototype is an early model of a product in development that’s used for testing. It should show how site features would function and how a user would interact with it.&nbsp;</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-pull-request">Pull Request</h3>
+<p>While using GitHub, a pull request lets developers share their latest code with their coworkers on the project.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-refactoring">Refactoring</h3>
+<p>Refactoring is a technique to clean up code while maintaining its functionality. It’s done incrementally during the project’s development so that it can more easily be built upon later.&nbsp;</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-responsive-web-design-rwd">Responsive Web Design (RWD)</h3>
+<p>Websites designed to be responsive can adjust the size and layout of their content to fit a variety of devices. It’s somewhat like adaptive websites, but RWD features one flexible page whereas adaptive designs sport distinct versions for different devices.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-software-as-a-service-saas">Software as a Service (SaaS)</h3>
+<p>Software as a Service is a distribution model that offers the product as a subscription on external servers through the web. This allows users to access a service through the internet instead of needing to install it locally on their computer.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-scalable-vector-graphics-svg">Scalable Vector Graphics (SVG)</h3>
+<p>SVG is a widely used vector image format that can be adjusted with code. It’s particularly useful in responsive web design because the size of the image can be increased or decreased without losing the image’s quality.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-software">Software</h3>
+<p>Software simply refers to the programs on your computer rather than its physical components (the hardware).</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-software-development-kit-sdk">Software Development Kit (SDK)</h3>
+<p>SDKs are collections of tools used to create products for a given platform or operating system. An SDK comes “pre-packaged” with the essentials of everything a developer needs to start creating for the given platform. Without an SDK, program development would have to start from scratch.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-technical-debt">Technical Debt</h3>
+<p>Coding solutions that technically work but are actually messy or inefficient will create technical debt. Any number of factors can force these problems to occur, but eventually, they’ll need to be resolved.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-user-centered-design-ucd">User-Centered Design (UCD)</h3>
+<p>User-centered design maintains the end-user as the focal point of development. Questions asked during work revolve around how they would experience the product and how the experience can be improved.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-user-experience-ux">User Experience (UX)</h3>
+<p>Broadly speaking, user experience is the sum of a user’s time spent interfacing with a product. It’s what they feel and thinks while using a product.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-user-experience-design-uxd">User Experience Design (UXD)</h3>
+<p>User experience design, as the name suggests, is the practice of designing end-user products that are appealing to them. UXD is relevant at just about every step of a product’s development; how a user is going to respond to an element is an ever-present question in the process.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-user-interface-ui-or-graphical-user-interface-gui">User Interface (UI), or Graphical User Interface (GUI)</h3>
+<p>UI or GUI are the terms for what the user sees on their screen; they include everything the user interacts with.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-vertical-rhythm">Vertical Rhythm</h3>
+<p>Vertical rhythm is the practice of making the size of vertical spaces consistent between different elements of the page.&nbsp;</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-waterfall">Waterfall</h3>
+<p>Waterfall development requires each stage of the process to be complete before moving onto the next. This highly structured approach runs counter to more recent Agile methods, but this structure might still be a boon for certain projects or teams.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-widget">Widget</h3>
+<p>A widget is a UI element that the user can interact with. They can come in many shapes and sizes but can include buttons or contact forms.</p>
+<figure class="wp-block-image size-full"><img decoding="async" width="1024" height="538" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;1024&#039;%20height=&#039;538&#039;%20viewBox=&#039;0%200%201024%20538&#039;%3E%3C/svg%3E" alt class="wp-image-35599 perfmatters-lazy" data-src="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/14-wireframe-example-min-1024x538.jpg.webp" data-srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/14-wireframe-example-min-1024x538.jpg.webp 1024w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/14-wireframe-example-min-1024x538-300x158.jpg.webp 300w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/14-wireframe-example-min-1024x538-768x404.jpg.webp 768w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/14-wireframe-example-min-1024x538-24x13.jpg 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/14-wireframe-example-min-1024x538-36x19.jpg 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/14-wireframe-example-min-1024x538-48x25.jpg 48w" data-sizes="(max-width: 1024px) 100vw, 1024px" /><noscript><img decoding="async" loading="lazy" width="1024" height="538" src="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/14-wireframe-example-min-1024x538.jpg.webp" alt="" class="wp-image-35599" srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/14-wireframe-example-min-1024x538.jpg.webp 1024w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/14-wireframe-example-min-1024x538-300x158.jpg.webp 300w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/14-wireframe-example-min-1024x538-768x404.jpg.webp 768w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/14-wireframe-example-min-1024x538-24x13.jpg 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/14-wireframe-example-min-1024x538-36x19.jpg 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/14-wireframe-example-min-1024x538-48x25.jpg 48w" sizes="(max-width: 1024px) 100vw, 1024px" /></noscript></figure>
+<p></p>
+<h3 class="wp-block-heading" id="h-wireframe">Wireframe</h3>
+<p>A wireframe is a simplified visualization of your website used to show off only its essential information. The most important elements of your product should be present, but overall, it’s still a bare-bones representation.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-white-or-negative-space">White or Negative Space</h3>
+<p>Empty white or negative space can be used to effectively guide users to focus on the important content on the page. If there isn’t enough white space, the page might feel cluttered and end up distracting the user away from your message.</p>
+<div class="ChapterFullwidth perfmatters-lazy" style="background-size:cover;background-position:center center;background-repeat:no-repeat" data-bg="../../../huemordev.b-cdn.net/wp-content/uploads/2023/04/galaxy_bgg.png"><div class="ChapterFullwitdh-wrapper"><div class="ChapterFullwitdh-form">
+<a id="chapter3"></a>
+</div><img decoding="async" width="30px" height="30px" class="ChapterFullwitdh-icons_chapter perfmatters-lazy" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;30px&#039;%20height=&#039;30px&#039;%20viewBox=&#039;0%200%2030px%2030px&#039;%3E%3C/svg%3E" data-src="https://huemordev.b-cdn.net/wp-content/uploads/2023/04/solarSystem.png.webp" /><noscript><img decoding="async" width="30px" height="30px" class="ChapterFullwitdh-icons_chapter" src="https://huemordev.b-cdn.net/wp-content/uploads/2023/04/solarSystem.png.webp"/></noscript><h5 class="ChapterFullwitdh-chaptersectiontitle">chapter 3</h5><h2 class="ChapterFullwitdh-chaptertitle">Performance and Reporting Terms</h2></div></div>
+<h3 class="wp-block-heading" id="h-a-b-testing">A/B Testing</h3>
+<p>A/B testing displays two options for an audience to discover which one is better received. Subsequently, the testers can use this data to proceed and iterate upon the more successful design.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-customer-experience-cx">Customer Experience (CX)</h3>
+<p>The customer experience is the total summation of interactions that a customer participates in with a brand or product they enjoy. One might consider examining CX as user experience with a more explicitly sales-oriented approach.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-clickstream">Clickstream</h3>
+<p>Analyzing the clickstream, or the tracking of visits to a website enables developers to respond to users’ behavior, improve their site, and address pain points that customers might be experiencing.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-commits">Commits</h3>
+<p>Commits in the context of web development refer to the act of saving permanent changes to a set of codes. Just in case, it’s in your best interest to maintain clear version control and backups for your work.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-context-of-use-analysis">Context of Use Analysis</h3>
+<p>Context of use analysis is the practice of observing users’ behavior on a website. This data can then be used to improve the website.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-conversion-rate">Conversion Rate</h3>
+<p>Conversion rate is the percentage of users that perform a specific action or transaction on a website. A number of factors can affect conversion, including the design of the website itself or an additional marketing campaign.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-customer-relationship-management-crm-software">Customer Relationship Management (CRM) Software</h3>
+<p>CRM software is an important tool in managing the various business processes of a company’s online presence, such as sales or customer interactions.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-data-science">Data Science</h3>
+<p>Data science is the practice of interpreting numbers and data into meaningful statistics that helps developers make more informed decisions. It ultimately serves as another important tool that helps determine users’ behavior.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-diary-study">Diary Study</h3>
+<p>Approaching data collection from a qualitative perspective, diary studies request that participant users write about their experiences in relation to the subject at hand over a given period of time. The value of such studies is that they can sometimes paint a more vivid picture for a developer’s research, at least compared to dry empirical data.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-end-users">End Users</h3>
+<p>The end-user is who the developer is making the product for. In one way or another, the entire development of a project comes back to them.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-eye-tracking">Eye Tracking</h3>
+<p>Specialized tools exist that can measure eye activity when using certain devices. The data generated by these tools let developers know where their designs are most strongly leading the eyes—and thus, the user’s attention. Heat maps are typically used to display specific areas that are looked at more than others.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-focus-group">Focus Group</h3>
+<p>A focus group might be hosted to test a subject or an aspect of a product. Questions guide the discussion toward how users might feel toward a product or how they’d interact with it. Regardless of the exact questions or setting, the main goal is to gain information to further iterate upon the product.</p>
+<figure class="wp-block-image size-full"><img decoding="async" width="1024" height="538" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;1024&#039;%20height=&#039;538&#039;%20viewBox=&#039;0%200%201024%20538&#039;%3E%3C/svg%3E" alt class="wp-image-35600 perfmatters-lazy" data-src="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/15-heatmap-example-min-1024x538.jpg.webp" data-srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/15-heatmap-example-min-1024x538.jpg.webp 1024w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/15-heatmap-example-min-1024x538-300x158.jpg.webp 300w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/15-heatmap-example-min-1024x538-768x404.jpg.webp 768w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/15-heatmap-example-min-1024x538-24x13.jpg 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/15-heatmap-example-min-1024x538-36x19.jpg 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/15-heatmap-example-min-1024x538-48x25.jpg 48w" data-sizes="(max-width: 1024px) 100vw, 1024px" /><noscript><img decoding="async" loading="lazy" width="1024" height="538" src="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/15-heatmap-example-min-1024x538.jpg.webp" alt="" class="wp-image-35600" srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/03/15-heatmap-example-min-1024x538.jpg.webp 1024w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/15-heatmap-example-min-1024x538-300x158.jpg.webp 300w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/15-heatmap-example-min-1024x538-768x404.jpg.webp 768w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/15-heatmap-example-min-1024x538-24x13.jpg 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/15-heatmap-example-min-1024x538-36x19.jpg 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/03/15-heatmap-example-min-1024x538-48x25.jpg 48w" sizes="(max-width: 1024px) 100vw, 1024px" /></noscript></figure>
+<p></p>
+<h3 class="wp-block-heading" id="h-heat-maps">Heat Maps</h3>
+<p>A visual representation that shows points of interest on a webpage and usually color-coded to represent magnitude. One popular use of heat maps happens in conjunction with eye-tracking software; spots that cause the eyes to linger on a webpage appear more intense.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-key-performance-indicators-kpi">Key Performance Indicators (KPI)</h3>
+<p>Key performance indicators are measurements that reveal how well a product is doing. Certain data points on how users are interacting with your site can provide valuable information on what your team is doing well and what they can improve upon.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-minimum-viable-product-mvp">Minimum Viable Product (MVP)</h3>
+<p>The MVP is a product with all its important features implemented and typically signifies that the project is ready to launch. Of course, just because it can launch doesn’t mean it can’t or won’t be improved upon—hence the “minimum” in the name.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-pain-points">Pain Points</h3>
+<p>Pain points refer to the issues that users have when interacting with a website. There are numerous ways to track and look out for pain points in your design, and they are something that a developer always needs to be aware of. Pain points that aren’t resolved will make it more difficult for users to interact with your website and will eventually stop people from coming back.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-search-engine-optimization-seo">Search Engine Optimization (SEO)</h3>
+<p>SEO is the practice of making a website more visible on the web through organic search results. Relevant and useful content with frequently searched phrases helps the website place higher in those search results. If done effectively, traffic to the website will increase as its SEO improves because more people will be able to find the site.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-usability-testing">Usability Testing</h3>
+<p>One method of gauging how easy a product is to use is to conduct usability testing. Gathering a group of users to test this can prove how hard or easy it is and whether the product needs further iteration.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-user-engagement">User Engagement</h3>
+<p>User engagement is a representation of how they interact with a website. The site needs to provide suitable value for the user in order to maintain or increase engagement.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-unit-testing">Unit Testing</h3>
+<p>Unit testing is the process of testing separate small sections of an app to make sure it’s functioning properly. This testing is especially important because if you forego testing and later get an error, it’s going to be much more difficult to find the true source of the mistake.</p>
+<p></p>
+<h3 class="wp-block-heading" id="h-web-analytics">Web Analytics</h3>
+<p>Web analytics is the practice of measuring and analyzing internet activity to optimize its usage. It’s one more resource that helps determine users’ behavior.</p>
+<div class="ChapterFullwidth perfmatters-lazy" style="background-size:cover;background-position:center center;background-repeat:no-repeat" data-bg="../../../huemordev.b-cdn.net/wp-content/uploads/2023/04/galaxy_bgg.png"><div class="ChapterFullwitdh-wrapper"><div class="ChapterFullwitdh-form">
+<a id="chapter4"> </a>
+</div><img decoding="async" width="30px" height="30px" class="ChapterFullwitdh-icons_chapter perfmatters-lazy" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;30px&#039;%20height=&#039;30px&#039;%20viewBox=&#039;0%200%2030px%2030px&#039;%3E%3C/svg%3E" data-src="https://huemordev.b-cdn.net/wp-content/uploads/2023/04/solarSystem.png.webp" /><noscript><img decoding="async" width="30px" height="30px" class="ChapterFullwitdh-icons_chapter" src="https://huemordev.b-cdn.net/wp-content/uploads/2023/04/solarSystem.png.webp"/></noscript><h5 class="ChapterFullwitdh-chaptersectiontitle">CHAPTER four</h5><h2 class="ChapterFullwitdh-chaptertitle">Wrapping Up</h2></div></div>
+<p>There you have it. If you read through this list of design terminology, UX terms, and UI terms start-to-finish, congratulations—there’s certainly a lot of information to take in.&nbsp;</p>
+<p>Now, beyond expanding your vocabulary, using these terms should help convey your ideas without having to later explain, “Wait, this is what I actually meant.” If you’ve ever caught yourself in this situation, keep this list of ux terms as a handy guide to stay ahead of the game.</p>
+<p>After you master the lingo and impress people with your knowledge of ux definitions, there’ll certainly be more questions to answer and problems to solve.</p>
+<p>But we’re here to help.&nbsp;</p>
+<p>Is there anything else you’d like to find out? Have any questions? Send us an email or let us know in the comment section!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-col fl-node-19tugfs07iwd fl-col-small fl-visible-desktop fl-visible-large sticky top-20" data-node="19tugfs07iwd">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-table-of-contents fl-node-z07bfxgtyq3c" data-node="z07bfxgtyq3c">
+<div class="fl-module-content fl-node-content">
+<div class="TableOfContents TableOfContents-light TableOfContents-fixed" id="TableOfContents-z07bfxgtyq3c">
+<div class="TableOfContents-wrapper">
+<div class="TableOfContents-toc">
+<div class="accordion" id="TableOfContentsAccordion-z07bfxgtyq3c">
+<div class="card panel">
+<div class="card-header" id="headingOne">
+<button class="btn btn-link toggle desktop-disabled " data-parent="#TableOfContentsAccordion-z07bfxgtyq3c" type="button" data-toggle="collapse" data-target="#tocOne" aria-expanded="false" aria-controls="tocOne">
+<i class="fl-accordion-button-icon fl-accordion-button-icon-right dashicons-arrow-down-alt2 dashicons dashicons-before"><span class="sr-only">Expand</span></i>
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.125 10h13.75M10 3.125v13.75" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</button>
+</div>
+<div id="tocOne" class="collapse in" aria-labelledby="headingOne" data-parent="#TableOfContentsAccordion-z07bfxgtyq3c">
+<div class="card-body">
+<ul class="TableOfContents-list" id="TableOfContents-list-z07bfxgtyq3c">
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="post-footer" class="fl-row fl-row-full-width fl-row-bg-photo fl-node-vw20aehrubqo fl-row-default-height fl-row-align-center fl-row-bg-overlay" data-node="vw20aehrubqo">
+<div class="fl-row-content-wrap">
+<div class="fl-row-content fl-row-fixed-width fl-node-content">
+<div class="fl-col-group fl-node-0i51e8dwgbka" data-node="0i51e8dwgbka">
+<div class="fl-col fl-node-2t3id0rgvxhu fl-col-has-cols" data-node="2t3id0rgvxhu">
+<div class="fl-col-content fl-node-content"><div class="fl-col-group fl-node-q6wxzm42ap95 fl-col-group-nested fl-col-group-custom-width" data-node="q6wxzm42ap95">
+<div class="fl-col fl-node-y3c8j4uzms1o fl-col-small fl-col-small-custom-width" data-node="y3c8j4uzms1o">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-photo fl-node-7v36cj0akyt9 author-box-avatar" data-node="7v36cj0akyt9">
+<div class="fl-module-content fl-node-content">
+<div class="fl-photo fl-photo-align-center" itemscope itemtype="https://schema.org/ImageObject">
+<div class="fl-photo-content fl-photo-img-png&#038;r=g">
+<img decoding="async" class="fl-photo-img wp-image-1406 perfmatters-lazy" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;0&#039;%20height=&#039;0&#039;%20viewBox=&#039;0%200%200%200&#039;%3E%3C/svg%3E" alt="Huemor-Logo-Black@2x-1-e1674490603267" itemprop="image" title="Huemor-Logo-Black@2x-1-e1674490603267" data-src="https://secure.gravatar.com/avatar/12f6535a8d7adc5a7ffc81ec45a5f070?s=100&amp;d=https%3A%2F%2Fhuemor.rocks%2Fwp-content%2Fuploads%2F2023%2F03%2Fhuemor-symbol-compressor-150x150.png&amp;r=g" /><noscript><img decoding="async" class="fl-photo-img wp-image-1406" src="https://secure.gravatar.com/avatar/12f6535a8d7adc5a7ffc81ec45a5f070?s=100&amp;d=https%3A%2F%2Fhuemor.rocks%2Fwp-content%2Fuploads%2F2023%2F03%2Fhuemor-symbol-compressor-150x150.png&amp;r=g" alt="Huemor-Logo-Black@2x-1-e1674490603267" itemprop="image" title="Huemor-Logo-Black@2x-1-e1674490603267"  /></noscript>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-col fl-node-4mfp1byukqdh fl-col-small fl-col-small-custom-width" data-node="4mfp1byukqdh">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-ebga670hicyl" data-node="ebga670hicyl">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>Ahmad Jorban</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-5mlxw2k4hoiv" data-node="5mlxw2k4hoiv">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>President of Jorban</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-button fl-node-eqybd0vtfcl6 custom-button custom-button-dark no-border icon-color" data-node="eqybd0vtfcl6">
+<div class="fl-module-content fl-node-content">
+<div class="fl-button-wrap fl-button-width-auto fl-button-left fl-button-has-icon">
+<a href="https://www.linkedin.com/in/jeffrey-gapinski/" target="_blank" class="fl-button" rel="noopener">
+<span class="fl-button-text">LinkedIn</span>
+<i class="fl-button-icon fl-button-icon-after dashicons dashicons-before dashicons-arrow-right-alt" aria-hidden="true"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-col fl-node-s2831g9ebtrq" data-node="s2831g9ebtrq">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-t5wu0j3ks7zd author-box-title" data-node="t5wu0j3ks7zd">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>Author</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-ya86ejnzsf3o" data-node="ya86ejnzsf3o">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>Ahmad Jorban is the President of Jorbanwhere he helps plan the long-term strategic growth of the agency. Jeff is passionate about UI/UX, demand generation, and digital strategy.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-col fl-node-qfzl7t3md2su fl-col-small fl-visible-desktop fl-visible-large" data-node="qfzl7t3md2su">
+<div class="fl-col-content fl-node-content"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-b10imtne8x3g fl-row-default-height fl-row-align-center fl-row-bg-overlay" data-node="b10imtne8x3g">
+<div class="fl-row-content-wrap">
+<div class="fl-row-content fl-row-fixed-width fl-node-content">
+<div class="fl-col-group fl-node-158fngk32iuh fl-col-group-custom-width" data-node="158fngk32iuh">
+<div class="fl-col fl-node-7qxw1l4p5m2c fl-col-small-custom-width" data-node="7qxw1l4p5m2c">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-heading fl-node-a4391ec5db2y" data-node="a4391ec5db2y">
+<div class="fl-module-content fl-node-content">
+<h2 class="fl-heading">
+<span class="fl-heading-text">What Do You Think?</span>
+</h2>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-7fc3eldvq8p1" data-node="7fc3eldvq8p1">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>Have feedback? Maybe some questions? Whatever it is, we'd love to hear from you.</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-fl-comments fl-node-oivkacbwf5u0 blog-inner-comments" data-node="oivkacbwf5u0">
+<div class="fl-module-content fl-node-content">
+<section class="Comments Comments--empty"><p>No comments found</p></section>
+<section class="Comments-form"> <div id="respond" class="comment-respond">
+<h3 id="reply-title" class="Comments-form_title">Leave a Comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="index.html#respond" style="display:none;">Cancel Reply</a></small></h3><form action="https://huemor.rocks/wp-comments-post.php?wpe-comment-post=huejuicyfruit" method="post" id="fl-comment-form" class="Comments-form_inner"><p class="Comments-form_notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><label for="fl-author">Name (required)</label>
+<input type="text" id="fl-author" name="author" class="form-control" value tabindex="1" aria-required="true" /><br/>
+<label for="fl-email">Email (will not be published) (required)</label>
+<input type="text" id="fl-email" name="email" class="form-control" value tabindex="2" aria-required="true" /><br/>
+<div class="Comments-form_comment FormItem">
+<label for="comment">Comment<span class="required">*</span></label>
+<textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
+</div><div class="FormItem--actions"><input name="submit" type="submit" id="fl-comment-form-submit" class="FormItem-action FormItem-action--primary Comments-submit_action" value="Submit Comment" /> <input type="hidden" name="comment_post_ID" value="36220" id="comment_post_ID" />
+<input type="hidden" name="comment_parent" id="comment_parent" value="0" />
+</div><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="500570e046" /></p><p style="display: none !important;"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="46" /><script type="rocketlazyloadscript">document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form> </div>
+</section> </div>
+</div>
+</div>
+</div>
+<div class="fl-col fl-node-2fzm69cbh85p fl-col-small fl-visible-desktop fl-visible-large" data-node="2fzm69cbh85p">
+<div class="fl-col-content fl-node-content"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="fl-builder-content fl-builder-content-197 fl-builder-global-templates-locked" data-post-id="197" data-type="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter"><div class="fl-row fl-row-full-width fl-row-bg-gradient fl-node-c7ou2dj1zfq4 fl-row-default-height fl-row-align-center" data-node="c7ou2dj1zfq4">
+<div class="fl-row-content-wrap">
+<div class="fl-row-content fl-row-fixed-width fl-node-content">
+<div class="fl-col-group fl-node-xt1rabo3hc5s" data-node="xt1rabo3hc5s">
+<div class="fl-col fl-node-ins6gt2f3ze5 fl-col-small" data-node="ins6gt2f3ze5">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-photo fl-node-c0gtwklqhnse" data-node="c0gtwklqhnse">
+<div class="fl-module-content fl-node-content">
+<div class="fl-photo fl-photo-align-left" itemscope itemtype="https://schema.org/ImageObject">
+<div class="fl-photo-content fl-photo-img-webp">
+<img decoding="async" class="fl-photo-img wp-image-1406 size-full perfmatters-lazy" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;83&#039;%20height=&#039;80&#039;%20viewBox=&#039;0%200%2083%2080&#039;%3E%3C/svg%3E" alt="Huemor-Logo-Black@2x-1-e1674490603267" itemprop="image" height="80" width="83" title="Huemor-Logo-Black@2x-1-e1674490603267" data-src="../../wp-content/uploads/2023/02/logo.png" data-srcset="../../wp-content/uploads/2023/02/logo.png 83w, https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@2x-1-e1674490603267-24x24.webp 24w, https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@2x-1-e1674490603267-36x36.webp 36w, https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@2x-1-e1674490603267-48x46.webp 48w" data-sizes="(max-width: 83px) 100vw, 83px" /><noscript><img decoding="async" class="fl-photo-img wp-image-1406 size-full" src="../../wp-content/uploads/2023/02/logo.png" alt="Huemor-Logo-Black@2x-1-e1674490603267" itemprop="image" height="80" width="83" title="Huemor-Logo-Black@2x-1-e1674490603267" srcset="../../wp-content/uploads/2023/02/logo.png 83w, https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@2x-1-e1674490603267-24x24.webp 24w, https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@2x-1-e1674490603267-36x36.webp 36w, https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@2x-1-e1674490603267-48x46.webp 48w" sizes="(max-width: 83px) 100vw, 83px" /></noscript>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-col fl-node-qczey80dr719 fl-col-small" data-node="qczey80dr719">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-button fl-node-mps3bwr1z64c custom-button fully-bordered" data-node="mps3bwr1z64c">
+<div class="fl-module-content fl-node-content">
+<div class="fl-button-wrap fl-button-width-auto fl-button-right fl-button-has-icon">
+<a href="../../support-request/index.html" target="_self" class="fl-button">
+<span class="fl-button-text">Client Support</span>
+<i class="fl-button-icon fl-button-icon-after dashicons dashicons-before dashicons-arrow-right-alt" aria-hidden="true"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-col-group fl-node-jle5cxr78syg fl-col-group-custom-width" data-node="jle5cxr78syg">
+<div class="fl-col fl-node-o39a470ldvwj fl-col-small fl-col-small-custom-width" data-node="o39a470ldvwj">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-button fl-node-enubltfycdpa custom-button no-border icon-color" data-node="enubltfycdpa">
+<div class="fl-module-content fl-node-content">
+<div class="fl-button-wrap fl-button-width-auto fl-button-left fl-button-has-icon">
+<a href="../../website-platforms/index.html" target="_self" class="fl-button">
+<span class="fl-button-text">Website Platforms</span>
+<i class="fl-button-icon fl-button-icon-after dashicons dashicons-before dashicons-arrow-right-alt" aria-hidden="true"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-x3n5bg76rich links-hover" data-node="x3n5bg76rich">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p><a href="../../wordpress-agency/index.html">WordPress Website</a></p>
+<p><a href="../../shopify-agency/index.html">Shopify Website</a></p>
+<p><a href="../../hubspot-agency/index.html">Hubspot Website</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-col fl-node-283npusmy5cx fl-col-small fl-col-small-custom-width" data-node="283npusmy5cx">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-button fl-node-tbg0d2flayq7 custom-button no-border icon-color" data-node="tbg0d2flayq7">
+<div class="fl-module-content fl-node-content">
+<div class="fl-button-wrap fl-button-width-auto fl-button-left fl-button-has-icon">
+<a href="../../services/index.html" target="_self" class="fl-button">
+<span class="fl-button-text">Website Services</span>
+<i class="fl-button-icon fl-button-icon-after dashicons dashicons-before dashicons-arrow-right-alt" aria-hidden="true"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-3e07jof6hl8v links-hover" data-node="3e07jof6hl8v">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p><a href="../../web-design-agency/index.html">Web Design</a></p>
+<p><a href="../../web-development-agency/index.html">Web Development</a></p>
+<p><a href="../../website-maintenance-and-support/index.html">Website Maintenance &amp; Support</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-col fl-node-zfk0velincjx fl-col-small fl-col-small-custom-width" data-node="zfk0velincjx">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-button fl-node-keh2p57it10y custom-button no-border icon-color" data-node="keh2p57it10y">
+<div class="fl-module-content fl-node-content">
+<div class="fl-button-wrap fl-button-width-auto fl-button-left fl-button-has-icon">
+<a href="../../industries/index.html" target="_self" class="fl-button">
+<span class="fl-button-text">Clients We Serve</span>
+<i class="fl-button-icon fl-button-icon-after dashicons dashicons-before dashicons-arrow-right-alt" aria-hidden="true"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-ikvyg69qe2wb links-hover" data-node="ikvyg69qe2wb">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p><a href="../../web-design-agency/saas/index.html">SaaS Website</a></p>
+<p><a href="../../web-design-agency/b2b/index.html">Corporate Website</a></p>
+<p><a href="../../ecommerce-website-agency/index.html">Ecommerce Website</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="fl-col fl-node-nq3dgx02smby fl-col-small fl-col-small-custom-width" data-node="nq3dgx02smby">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-button fl-node-i6ovpgj28tk1 custom-button no-border icon-color" data-node="i6ovpgj28tk1">
+<div class="fl-module-content fl-node-content">
+<div class="fl-button-wrap fl-button-width-auto fl-button-left fl-button-has-icon">
+<a href="../../agency/index.html" target="_self" class="fl-button">
+<span class="fl-button-text">About Us</span>
+<i class="fl-button-icon fl-button-icon-after dashicons dashicons-before dashicons-arrow-right-alt" aria-hidden="true"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-yg97dei3hk2v links-hover" data-node="yg97dei3hk2v">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p><a href="../../agency/careers/index.html">Careers</a></p>
+<p><a href="../../agency/partners/index.html">Partners</a></p>
+<p><a href="../../agency/news/index.html">News</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-col-group fl-node-bu9t5r4w1eqn" data-node="bu9t5r4w1eqn">
+<div class="fl-col fl-node-iaskwzxo0r3t fl-col-has-cols" data-node="iaskwzxo0r3t">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-separator fl-node-qsrljodvnti8" data-node="qsrljodvnti8">
+<div class="fl-module-content fl-node-content">
+<div class="fl-separator"></div>
+</div>
+</div>
+<div class="fl-col-group fl-node-f46crmzue1jw fl-col-group-nested fl-col-group-custom-width fl-col-group-responsive-reversed" data-node="f46crmzue1jw">
+<div class="fl-col fl-node-slkfnorbtm39 fl-col-small-custom-width" data-node="slkfnorbtm39">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-ygrvibzk9fw3" data-node="ygrvibzk9fw3">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>Follow Us</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-p2vx0o359j7k fl-visible-desktop fl-visible-large fl-visible-medium links-with-icons" data-node="p2vx0o359j7k">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p><a href="https://www.linkedin.com/in/ahmad-jorban-308702216/" target="_blank" rel="noopener">LinkedIn</a>           <a href="https://www.instagram.com/jorbanwebdesign/" target="_blank" rel="noopener">Instagram </a>    </p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-gzo9tlcad2wu fl-visible-mobile links-with-icons" data-node="gzo9tlcad2wu">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p><a href="https://www.linkedin.com/in/ahmad-jorban-308702216/" target="_blank" rel="noopener">LinkedIn</a>      <a href="https://dribbble.com/huemor" target="_blank" rel="noopener">Dribbble</a></p>
+<p>&nbsp;</p>
+<p><a href="https://www.instagram.com/jorbanwebdesign/" target="_blank" rel="noopener">Instagram </a>    </p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-ly4h86ovxq9k" data-node="ly4h86ovxq9k">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>Home Base: Israel</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-pwmibl14xdnf" data-node="pwmibl14xdnf">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>2 Alkana st, Jiser Az Zarqa - 3785800</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-zrgk3n9w2oy4 fl-visible-mobile" data-node="zrgk3n9w2oy4">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>Copyright 2023 Jorban LLC.</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-80v1q2gs4ul5 fl-visible-mobile links-with-icons" data-node="80v1q2gs4ul5">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p><a href="../../privacy-policy/index.html">Privacy Policy</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-col fl-node-s0g2ahe4zlqm fl-col-small fl-col-small-custom-width" data-node="s0g2ahe4zlqm">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-xrvhkabycsp3" data-node="xrvhkabycsp3">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>We'd love to hear from you</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-iha2qpwtrj4e links-with-icons" data-node="iha2qpwtrj4e">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p><a href="tel:+972 0539527635">+972 0539527635</a>      <a href="../jorbanaahmad@gmail.com#ed9e8c948584ad85988880829fc39f828e869e"><span  data-cfemail="7f0c1e0617163f170a1a12100d510d101c140c">jorbanaahmad@gmail.com</span></a></p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-izyvpsqrhe0o fl-visible-desktop fl-visible-large fl-visible-medium links-with-icons" data-node="izyvpsqrhe0o">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>Copyright 2023 Jorban LLC.  <a href="../../privacy-policy/index.html">Privacy Policy</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="rocketlazyloadscript">(function(){var s=document.createElement('script');e = !document.body ? document.querySelector('head'):document.body;s.src='../../../acsbapp.com/apps/app/dist/js/app.js';s.defer=true;s.onload=function(){acsbJS.init({
+            statementLink     : '',
+            feedbackLink      : '',
+            footerHtml        : '',
+            hideMobile        : false,
+            hideTrigger       : false,
+            language          : 'en',
+            position          : 'left',
+            leadColor         : '#146FF8',
+            triggerColor      : '#146FF8',
+            triggerRadius     : '50%',
+            triggerPositionX  : 'right',
+            triggerPositionY  : 'bottom',
+            triggerIcon       : 'people',
+            triggerSize       : 'medium',
+            triggerOffsetX    : 20,
+            triggerOffsetY    : 20,
+            mobile            : {
+                triggerSize       : 'small',
+                triggerPositionX  : 'right',
+                triggerPositionY  : 'bottom',
+                triggerOffsetX    : 0,
+                triggerOffsetY    : 0,
+                triggerRadius     : '50%'
+            }
+        });
+    };
+    e.appendChild(s);}());</script>
+
+<aside id="moove_gdpr_cookie_info_bar" class="moove-gdpr-info-bar-hidden moove-gdpr-align-center moove-gdpr-dark-scheme gdpr_infobar_postion_bottom" aria-label="GDPR Cookie Banner" style="display: none;">
+<div class="moove-gdpr-info-bar-container">
+<div class="moove-gdpr-info-bar-content">
+<div class="moove-gdpr-cookie-notice">
+<p>We are using cookies to give you the best experience on our website.</p>
+<p>You can find out more about which cookies we are using or switch them off in <span role="button" data-href="#moove_gdpr_cookie_modal" class="change-settings-button">settings</span>.</p>
+</div>
+
+<div class="moove-gdpr-button-holder">
+<button class="mgbutton moove-gdpr-infobar-allow-all gdpr-fbo-0" aria-label="Accept">Accept</button>
+<button class="mgbutton moove-gdpr-infobar-reject-btn gdpr-fbo-1 " aria-label="Reject">Reject</button>
+</div>
+ </div>
+
+</div>
+
+</aside>
+
+
+<script data-minify="1" type="text/javascript" src="../../wp-content/cache/min/1/jquery.validation/1.16.0/jquery.validate.minc350.js?ver=1692186405" defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">window.addEventListener('DOMContentLoaded', function() {
+            jQuery(document).ready(function($) {
+                $('#commentform').validate({
+                    onfocusout: function(element) {
+                        this.element(element);
+                    },
+                    rules: {
+                        author: {
+                            required: true,
+                            minlength: 2,
+                            normalizer: function(value) { return $.trim(value); }
+                        },
+                        email: {
+                            required: true,
+                            email: true
+                        },
+                        comment: {
+                            required: true,
+                            minlength: 20,
+                            normalizer: function(value) { return $.trim(value); }
+                        }
+                    },
+                    messages: {
+                        author: "Please enter in your name.",
+                        email: "Please enter a valid email address.",
+                        comment: "Message box can't be empty!"
+                    },
+                    errorElement: "div",
+                    errorPlacement: function(error, element) {
+                        element.before(error);
+                    }
+                });
+            });
+        });</script>
+<link rel="stylesheet" id="fl-builder-google-fonts-5fe326283f9dbe55e1d7f086e1d3a196-css" href="https://fonts.googleapis.com/css?family=Archivo%3A300%2C400%2C700%2C700&amp;ver=6.2.2" media="all" />
+<link rel="stylesheet" id="fl-builder-google-fonts-4a7f575e24a07d59a28ac0757ca33512-css" href="https://fonts.googleapis.com/css?family=Inter%3A400&amp;ver=6.2.2" media="all" />
+<link rel="stylesheet" id="fl-builder-google-fonts-185fdae0b9278ea229e16f4ed05ab169-css" href="https://fonts.googleapis.com/css?family=Poppins%3A600&amp;ver=6.2.2" media="all" />
+<script src="../../wp-includes/js/comment-reply.min3781.js?ver=6.2.2" id="comment-reply-js" defer></script>
+<script id="leadin-script-loader-js-js-extra">
+var leadin_wordpress = {"userRole":"visitor","pageType":"post","leadinPluginVersion":"10.1.30"};
+</script>
+<script data-minify="1" src="../../wp-content/cache/min/1/66065567d2e.js?ver=1692186404" async defer id="hs-script-loader"></script>
+<script id="wpil-frontend-script-js-extra">
+var wpilFrontend = {"ajaxUrl":"\/wp-admin\/admin-ajax.php","postId":"36220","postType":"post","openInternalInNewTab":"0","openExternalInNewTab":"0","disableClicks":"0","openLinksWithJS":"0","trackAllElementClicks":"0","clicksI18n":{"imageNoText":"Image in link: No Text","imageText":"Image Title: ","noText":"No Anchor Text Found"}};
+</script>
+<script src="../../wp-content/plugins/link-whisper-premium/js/frontend.min1ccf.js?ver=1689318398" id="wpil-frontend-script-js" defer></script>
+<script src="../../wp-content/plugins/bb-plugin/js/jquery.ba-throttle-debounce.mina77c.js?ver=2.7.1.1" id="jquery-throttle-js" defer></script>
+<script data-minify="1" src="../../wp-content/cache/min/1/wp-content/uploads/bb-plugin/cache/ab07f57391c42443b684b3321ddfb2e2-layout-bundlec350.js?ver=1692186405" id="fl-builder-layout-bundle-ab07f57391c42443b684b3321ddfb2e2-js" defer></script>
+<script id="scripts-js-extra">
+var scripts_data = [];
+</script>
+<script data-minify="1" src="../../wp-content/cache/min/1/wp-content/themes/beaverwarrior/build/script7d2e.js?ver=1692186404" id="scripts-js" defer></script>
+<script src="../../wp-content/themes/beaverwarrior/assets/vendor/slick/slick/slick.min.js" id="slick-slider-js" defer></script>
+<script data-minify="1" src="../../wp-content/cache/min/1/wp-content/themes/beaverwarrior/assets/custom7d2e.js?ver=1692186404" id="scroll-custom-js-js" defer></script>
+<script id="perfmatters-lazy-load-js-before">
+window.lazyLoadOptions={elements_selector:"img[data-src],.perfmatters-lazy,.perfmatters-lazy-css-bg",thresholds:"0px 0px",class_loading:"pmloading",class_loaded:"pmloaded",callback_loaded:function(element){if(element.tagName==="IFRAME"){if(element.classList.contains("pmloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener("LazyLoad::Initialized",function(e){var lazyLoadInstance=e.detail.instance;var target=document.querySelector("body");var observer=new MutationObserver(function(mutations){lazyLoadInstance.update()});var config={childList:!0,subtree:!0};observer.observe(target,config);});
+</script>
+<script async src="../../wp-content/plugins/perfmatters/js/lazyload.min4c71.js?ver=2.1.3" id="perfmatters-lazy-load-js"></script>
+<script id="moove_gdpr_frontend-js-extra">
+var moove_frontend_gdpr_scripts = {"ajaxurl":"https:\/\/huemor.rocks\/wp-admin\/admin-ajax.php","post_id":"36220","plugin_dir":"https:\/\/huemordev.b-cdn.net\/wp-content\/plugins\/gdpr-cookie-compliance","show_icons":"all","is_page":"","ajax_cookie_removal":"false","strict_init":"3","enabled_default":{"third_party":1,"advanced":1},"geo_location":"true","force_reload":"false","is_single":"1","hide_save_btn":"false","current_user":"0","cookie_expiration":"365","script_delay":"2000","close_btn_action":"1","close_btn_rdr":"","scripts_defined":"{\"cache\":true,\"header\":\"\",\"body\":\"\",\"footer\":\"\",\"thirdparty\":{\"header\":\"<!-- Google Tag Manager -->\\r\\n<script data-gdpr>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\\r\\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\\r\\nj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\\r\\n'https:\\\/\\\/www.googletagmanager.com\\\/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\\r\\n})(window,document,'script','dataLayer','GTM-PMZ7CZF');<\\\/script>\\r\\n<!-- End Google Tag Manager -->\",\"body\":\"<!-- Google Tag Manager (noscript) -->\\r\\n<noscript><iframe src=\\\"https:\\\/\\\/www.googletagmanager.com\\\/ns.html?id=GTM-PMZ7CZF\\\"\\r\\nheight=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"><\\\/iframe><\\\/noscript>\\r\\n<!-- End Google Tag Manager (noscript) -->\",\"footer\":\"\"},\"advanced\":{\"header\":\"\",\"body\":\"\",\"footer\":\"\"}}","gdpr_scor":"true","wp_lang":"","geo_debug":"","display_cookie_banner":"false","gdpr_consent_version":"1","gdpr_uvid":"631a8050b7bb692732f5b96c7d3a4b26","stats_enabled":"","gdpr_aos_hide":["0","1","2"],"consent_log_enabled":"","enable_on_scroll":"true","gdpr_aos_hide_seconds":"10"};
+</script>
+<script data-minify="1" src="../../wp-content/cache/min/1/wp-content/plugins/gdpr-cookie-compliance/dist/scripts/main7d2e.js?ver=1692186404" id="moove_gdpr_frontend-js" defer></script>
+<script id="moove_gdpr_frontend-js-after">
+var gdpr_consent__strict = "true"
+var gdpr_consent__thirdparty = "true"
+var gdpr_consent__advanced = "false"
+var gdpr_consent__cookies = "strict|thirdparty"
+</script>
+<script data-minify="1" src="../../wp-content/cache/min/1/wp-content/plugins/gdpr-cookie-compliance-addon/assets/js/gdpr_cc_addon7d2e.js?ver=1692186404" id="gdpr_cc_addon_frontend-js" defer></script>
+<script src="../../wp-content/plugins/bb-plugin/js/jquery.magnificpopup.mina77c.js?ver=2.7.1.1" id="jquery-magnificpopup-js" defer></script>
+<script src="../../wp-content/plugins/bb-plugin/js/jquery.fitvids.min62ea.js?ver=1.2" id="jquery-fitvids-js" defer></script>
+<script src="../../wp-content/themes/bb-theme/js/bootstrap.mine96c.js?ver=1.7.13" id="bootstrap-js" defer></script>
+<script id="fl-automator-js-extra">
+var themeopts = {"medium_breakpoint":"992","mobile_breakpoint":"768","scrollTopPosition":"800"};
+</script>
+<script src="../../wp-content/themes/bb-theme/js/theme.mine96c.js?ver=1.7.13" id="fl-automator-js" defer></script>
+<script data-minify="1" async data-no-optimize="1" src="../../wp-content/cache/min/1/wp-content/plugins/perfmatters/vendor/instant-page/instantpage7d2e.js?ver=1692186404" id="perfmatters-instant-page-js"></script>
+<script data-minify="1" defer src="../../wp-content/cache/min/1/wp-content/plugins/akismet/_inc/akismet-frontendc350.js?ver=1692186405" id="akismet-frontend-js"></script>
+
+
+<div id="moove_gdpr_cookie_modal" class="gdpr_lightbox-hide" role="complementary" aria-label="GDPR Settings Screen">
+<div class="moove-gdpr-modal-content moove-clearfix logo-position-left moove_gdpr_modal_theme_v1">
+<button class="moove-gdpr-modal-close" aria-label="Close GDPR Cookie Settings">
+<span class="gdpr-sr-only">Close GDPR Cookie Settings</span>
+<span class="gdpr-icon moovegdpr-arrow-close"></span>
+</button>
+<div class="moove-gdpr-modal-left-content">
+<div class="moove-gdpr-company-logo-holder">
+<img width="507" height="120" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;507&#039;%20height=&#039;120&#039;%20viewBox=&#039;0%200%20507%20120&#039;%3E%3C/svg%3E" alt="Huemor" class="img-responsive perfmatters-lazy" data-src="https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@3x.webp?ver" /><noscript><img width="507" height="120" src="https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@3x.webp?ver" alt="Huemor"     class="img-responsive" /></noscript>
+</div>
+ <ul id="moove-gdpr-menu">
+<li class="menu-item-on menu-item-privacy_overview menu-item-selected">
+<button data-href="#privacy_overview" class="moove-gdpr-tab-nav" aria-label="Privacy Overview">
+<span class="gdpr-nav-tab-title">Privacy Overview</span>
+</button>
+</li>
+<li class="menu-item-off menu-item-third_party_cookies">
+<button data-href="#third_party_cookies" class="moove-gdpr-tab-nav" aria-label="3rd Party Cookies">
+<span class="gdpr-nav-tab-title">3rd Party Cookies</span>
+</button>
+</li>
+</ul>
+<div class="moove-gdpr-branding-cnt">
+<a href="https://wordpress.org/plugins/gdpr-cookie-compliance/" rel="noopener noreferrer" target="_blank" class="moove-gdpr-branding">Powered by&nbsp; <span>GDPR Cookie Compliance</span></a>
+</div>
+ </div>
+
+<div class="moove-gdpr-modal-right-content">
+<div class="moove-gdpr-modal-title">
+</div>
+
+<div class="main-modal-content">
+<div class="moove-gdpr-tab-content">
+<div id="privacy_overview" class="moove-gdpr-tab-main">
+<span class="tab-title">Privacy Overview</span>
+<div class="moove-gdpr-tab-main-content">
+<p>This website uses cookies so that we can provide you with the best user experience possible. Cookie information is stored in your browser and performs functions such as recognising you when you return to our website and helping our team to understand which sections of the website you find most interesting and useful.</p>
+</div>
+
+</div>
+
+<div id="third_party_cookies" class="moove-gdpr-tab-main" style="display:none">
+<span class="tab-title">3rd Party Cookies</span>
+<div class="moove-gdpr-tab-main-content">
+<p>This website uses Piwik and Clearbit to collect anonymous information such as the number of visitors to the site, and the most popular pages.</p>
+<p>Keeping this cookie enabled helps us to improve our website.</p>
+<div class="moove-gdpr-status-bar">
+<div class="gdpr-cc-form-wrap">
+<div class="gdpr-cc-form-fieldset">
+<label class="cookie-switch" for="moove_gdpr_performance_cookies">
+<span class="gdpr-sr-only">Enable or Disable Cookies</span>
+<input type="checkbox" aria-label="3rd Party Cookies" value="check" name="moove_gdpr_performance_cookies" id="moove_gdpr_performance_cookies">
+<span class="cookie-slider cookie-round" data-text-enable="Enabled" data-text-disabled="Disabled"></span>
+</label>
+</div>
+
+</div>
+
+</div>
+
+<div class="moove-gdpr-strict-secondary-warning-message" style="margin-top: 10px; display: none;">
+<p>Please enable Strictly Necessary Cookies first so that we can save your preferences!</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="moove-gdpr-modal-footer-content">
+<div class="moove-gdpr-button-holder">
+<button class="mgbutton moove-gdpr-modal-allow-all button-visible" aria-label="Enable All">Enable All</button>
+<button class="mgbutton moove-gdpr-modal-save-settings button-visible" aria-label="Save Settings">Save Settings</button>
+</div>
+ </div>
+
+</div>
+
+<div class="moove-clearfix"></div>
+</div>
+
+</div>
+
+
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="wpsp-script-frontend"></script>
+</body>
+
+<!-- Mirrored from Jorban.rocks/blog/key-ui-ux-terms/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Aug 2023 13:27:55 GMT -->
+</html>
+

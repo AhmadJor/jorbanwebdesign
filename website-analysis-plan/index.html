@@ -1,0 +1,1567 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<!-- Mirrored from Jorban.rocks/website-analysis-plan/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Aug 2023 12:28:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head><meta charset="UTF-8" /><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(){this.v="1.2.3",this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",t=>{this.persisted=t.persisted}),window.addEventListener("DOMContentLoaded",()=>{this._preconnect3rdParties()}),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}_addUserInteractionListener(t){if(document.hidden){t._triggerListener();return}this.triggerEvents.forEach(e=>window.addEventListener(e,t.userEventHandler,{passive:!0})),window.addEventListener("touchstart",t.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",t.touchStartHandler),document.addEventListener("visibilitychange",t.userEventHandler)}_removeUserInteractionListener(){this.triggerEvents.forEach(t=>window.removeEventListener(t,this.userEventHandler,{passive:!0})),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(t){"HTML"!==t.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),t.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"onclick","rocket-onclick"),this._pendingClickStarted())}_onTouchMove(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),t.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"rocket-onclick","onclick"),this._pendingClickFinished()}_onTouchEnd(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(t){t.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"rocket-onclick","onclick"),this.interceptedClicks.push(t),t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),this._pendingClickFinished()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach(t=>{t.target.dispatchEvent(new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0}))})}_waitForPendingClicks(){return new Promise(t=>{this._isClickPending?this._pendingClickFinished=t:t()})}_pendingClickStarted(){this._isClickPending=!0}_pendingClickFinished(){this._isClickPending=!1}_renameDOMAttribute(t,e,r){t.hasAttribute&&t.hasAttribute(e)&&(event.target.setAttribute(r,event.target.getAttribute(e)),event.target.removeAttribute(e))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let t=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach(e=>{if(e.hasAttribute("src")){let r=new URL(e.html).origin;r!==location.origin&&t.push({src:r,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}}),t=[...new Map(t.map(t=>[JSON.stringify(t),t])).values()],this._batchInjectResourceHints(t,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(this),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(t){console.error(t)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._waitForPendingClicks().then(()=>{this._replayClicks()}),this._emptyTrash()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach(t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)})}async _transformScript(t){return new Promise((await this._littleBreath(),navigator.userAgent.indexOf("Firefox/index.html")>0||""===navigator.vendor)?e=>{let r=document.createElement("script");[...t.attributes].forEach(t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),r.setAttribute(e,t.nodeValue))}),t.text&&(r.text=t.text),r.hasAttribute("src")?(r.addEventListener("load",e),r.addEventListener("error",e)):(r.text=t.text,e());try{t.parentNode.replaceChild(r,t)}catch(i){e()}}:async e=>{function r(){t.setAttribute("data-rocket-status","failed"),e()}try{let i=t.getAttribute("data-rocket-type"),n=t.getAttribute("data-rocket-src");t.text,i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",function r(){t.setAttribute("data-rocket-status","executed"),e()}),t.addEventListener("error",r),n?(t.removeAttribute("data-rocket-src"),t.src=n):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}catch(s){r()}})}async _loadScriptsFromList(t){let e=t.shift();return e&&e.isConnected?(await this._transformScript(e),this._loadScriptsFromList(t)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(t,e){var r=document.createDocumentFragment();t.forEach(t=>{let i=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(i){let n=document.createElement("link");n.href=i,n.rel=e,"preconnect"!==e&&(n.as="script"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),r.appendChild(n),this.trash.push(n)}}),document.head.appendChild(r)}_delayEventListeners(t){let e={};function r(t,r){!function t(r){!e[r]&&(e[r]={originalFunctions:{add:r.addEventListener,remove:r.removeEventListener},eventsToRewrite:[]},r.addEventListener=function(){arguments[0]=i(arguments[0]),e[r].originalFunctions.add.apply(r,arguments)},r.removeEventListener=function(){arguments[0]=i(arguments[0]),e[r].originalFunctions.remove.apply(r,arguments)});function i(t){return e[r].eventsToRewrite.indexOf(t)>=0?"rocket-"+t:t}}(t),e[t].eventsToRewrite.push(r)}function i(t,e){let r=t[e];Object.defineProperty(t,e,{get:()=>r||function(){},set(i){t["rocket"+e]=r=i}})}r(document,"DOMContentLoaded"),r(window,"DOMContentLoaded"),r(window,"load"),r(window,"pageshow"),r(document,"readystatechange"),i(document,"onreadystatechange"),i(window,"onload"),i(window,"onpageshow")}_delayJQueryReady(t){let e;function r(r){if(r&&r.fn&&!t.allJQueries.includes(r)){r.fn.ready=r.fn.init.prototype.ready=function(e){return t.domReadyFired?e.bind(document)(r):document.addEventListener("rocket-DOMContentLoaded",()=>e.bind(document)(r)),r([])};let i=r.fn.on;r.fn.on=r.fn.init.prototype.on=function(){if(this[0]===window){function t(t){return t.split(" ").map(t=>"load"===t||0===t.indexOf("load.")?"rocket-jquery-load":t).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=t(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach(e=>{let r=arguments[0][e];delete arguments[0][e],arguments[0][t(e)]=r})}return i.apply(this,arguments),this},t.allJQueries.push(r)}e=r}r(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){r(t)}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach(t=>t(window).trigger("rocket-jquery-load")),await this._littleBreath();let t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){let t=new Map;document.write=document.writeln=function(e){let r=document.currentScript;r||console.error("WPRocket unable to document.write this: "+e);let i=document.createRange(),n=r.parentElement,s=t.get(r);void 0===s&&(s=r.nextSibling,t.set(r,s));let a=document.createDocumentFragment();i.setStart(a,0),a.appendChild(i.createContextualFragment(e)),n.insertBefore(a,s)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise(t=>setTimeout(t)):new Promise(t=>requestAnimationFrame(t))}_emptyTrash(){this.trash.forEach(t=>t.remove())}static run(){let t=new RocketLazyLoadScripts;t._addUserInteractionListener(t)}}RocketLazyLoadScripts.run();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<meta name="format-detection" content="telephone=no" />
+<link rel="pingback" href="../xmlrpc.php" />
+<script type="rocketlazyloadscript" data-rocket-src="https://app.splithero.com/api/js?r=https://huemor.rocks/website-analysis-plan/&wpliu=false" nitro-exclude defer></script><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+<title>Website Analysis &amp; Action Plan</title><link rel="preload" href="https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@2x.webp" as="image" imagesrcset="https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@2x.webp 338w, ../wp-content/uploads/2023/02/logo.png 300w, https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@2x-24x6.webp 24w, https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@2x-36x9.webp 36w, https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@2x-48x11.webp 48w" imagesizes="(max-width: 338px) 100vw, 338px" />
+<meta name="description" content="Discover the secrets to unlocking your website&#039;s full potential with our in-depth analysis and action plan." />
+<link rel="canonical" href="index.html" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Website Analysis &amp; Action Plan" />
+<meta property="og:description" content="Discover the secrets to unlocking your website&#039;s full potential with our in-depth analysis and action plan." />
+<meta property="og:url" content="https://huemor.rocks/website-analysis-plan/" />
+<meta property="og:site_name" content="Huemor" />
+<meta property="article:modified_time" content="2023-08-13T21:18:41+00:00" />
+<meta property="og:image" content="https://huemordev.b-cdn.net/wp-content/uploads/2023/06/homepage-featured-img-landscape.jpg" />
+<meta property="og:image:width" content="1400" />
+<meta property="og:image:height" content="966" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@HuemorDesigns" />
+<meta name="twitter:label1" content="Est. reading time" />
+<meta name="twitter:data1" content="20 minutes" />
+<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://huemor.rocks/website-analysis-plan/","url":"https://huemor.rocks/website-analysis-plan/","name":"Website Analysis & Action Plan","isPartOf":{"@id":"https://huemor.rocks/#website"},"primaryImageOfPage":{"@id":"https://huemor.rocks/website-analysis-plan/#primaryimage"},"image":{"@id":"https://huemor.rocks/website-analysis-plan/#primaryimage"},"thumbnailUrl":"https://huemordev.b-cdn.net/wp-content/uploads/2023/06/homepage-featured-img-landscape.jpg","datePublished":"2023-05-22T09:51:40+00:00","dateModified":"2023-08-13T21:18:41+00:00","description":"Discover the secrets to unlocking your website's full potential with our in-depth analysis and action plan.","inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://huemor.rocks/website-analysis-plan/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://huemor.rocks/website-analysis-plan/#primaryimage","url":"https://huemordev.b-cdn.net/wp-content/uploads/2023/06/homepage-featured-img-landscape.jpg","contentUrl":"https://huemordev.b-cdn.net/wp-content/uploads/2023/06/homepage-featured-img-landscape.jpg","width":1400,"height":966},{"@type":"WebSite","@id":"https://huemor.rocks/#website","url":"https://huemor.rocks/","name":"Huemor","description":"Award-Winning Web Agency, based in USA","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://huemor.rocks/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"}]}</script>
+
+<link rel="dns-prefetch" href="http://js.hs-scripts.com/" />
+<link rel="dns-prefetch" href="http://browser.sentry-cdn.com/" />
+<link rel="dns-prefetch" href="http://fonts.googleapis.com/" />
+<link href="https://fonts.gstatic.com/" crossorigin rel="preconnect" />
+<link rel="alternate" type="application/rss+xml" title="Jorban&raquo; Feed" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Jorban&raquo; Comments Feed" href="../comments/feed/index.html" />
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="wp-block-library-css" href="../wp-includes/css/dist/block-library/style.min3781.css?ver=6.2.2" media="all" />
+<style id="wp-block-library-theme-inline-css">
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id="create-block-chapter-fullwidth-style-inline-css">
+.ChapterFullwidth{margin-bottom:60px;margin-top:60px;padding:150px 20px}@media(max-width:767px){.ChapterFullwidth{padding:75px 20px}}.ChapterFullwidth .ChapterFullwitdh-wrapper{margin:0 auto;max-width:850px;text-align:center}@media(max-width:991px){.ChapterFullwidth .ChapterFullwitdh-wrapper{max-width:850px!important;padding:0 40px}}@media(max-width:767px){.ChapterFullwidth .ChapterFullwitdh-wrapper{padding:0 15px}}.ChapterFullwidth .ChapterFullwitdh-icons_chapter{-ms-interpolation-mode:nearest-neighbor;display:flex;height:30px;image-rendering:-moz-crisp-edges;image-rendering:pixelated;image-rendering:-webkit-optimize-contrast;margin:0 auto 15px;width:30px}.ChapterFullwidth .ChapterFullwitdh-chaptersectiontitle{color:#fff;font-family:Archivo;font-size:12px!important;font-weight:500;letter-spacing:1.2px;line-height:normal;margin:0;opacity:.7;text-align:center;text-transform:uppercase}.ChapterFullwidth .ChapterFullwitdh-chaptertitle{color:#fff;font-size:48px!important;font-weight:700;line-height:1.2;margin:25px 0 0;text-align:center;text-transform:capitalize}@media(max-width:767px){.ChapterFullwidth .ChapterFullwitdh-chaptertitle{font-size:36px!important;letter-spacing:normal;line-height:1.35!important}}.ChapterFullwidth p{color:#fff;font-size:18px;letter-spacing:normal;line-height:32px;opacity:.85;text-align:center}@media(max-width:767px){.ChapterFullwidth p{font-size:16px;letter-spacing:normal;line-height:26px}}
+
+</style>
+<style id="create-block-huemor-multi-column-style-inline-css">
+.HuemorMultiColumn-container{justify-content:space-evenly;padding:53px 0 20px;text-align:center}@media(min-width:870px){.HuemorMultiColumn-container{display:flex}}.HuemorMultiColumn-container h2{color:#222;font-size:24px;font-weight:700;line-height:36px;margin-bottom:15px;margin-top:30px!important}.HuemorMultiColumn-container p{color:#040404;font-size:18px;font-weight:300;letter-spacing:0;line-height:32px;margin-bottom:10px;opacity:.6;text-align:center}.HuemorMultiColumn-container .HuemorMultiColumn-button a{color:#000;font-size:17px}.HuemorMultiColumn-column{background:#f5f6fa;margin:0 20px 30px;min-width:260px;padding:40px 20px}.HuemorMultiColumn-image_container{align-items:center;display:flex;flex-direction:column;justify-content:center}.HuemorMultiColumn-image{max-width:200px!important}
+
+</style>
+<style id="create-block-huemor-protip-gb-style-inline-css">
+.huemorProtip-container{background-color:#f5f6fa;border-radius:3px;margin:30px 0;padding:53px;text-align:center}.huemorProtip-container .huemorProtip-title{font-size:24px;line-height:36px;margin:0 0 5px}.huemorProtip-container .huemorProtip-description{font-size:18px;line-height:30px;margin:auto auto 20px;max-width:482px}.huemorProtip-container .huemorProtip-button .wp-block-button .wp-block-button__link{background:#e0345b;border:1px solid #e0345b;border-radius:3px;color:#fff;font-size:12px;font-weight:600;letter-spacing:1px;line-height:22px;padding:15px 56px;text-decoration:none;text-transform:uppercase}.huemorProtip-container .huemorProtip-button .wp-block-button .wp-block-button__link:hover{background:#940e71;border:1px solid #940e71}
+
+</style>
+<link rel="stylesheet" id="classic-theme-styles-css" href="../wp-includes/css/classic-themes.min3781.css?ver=6.2.2" media="all" />
+<link data-minify="1" rel="stylesheet" id="dashicons-css" href="../wp-content/cache/min/1/wp-includes/css/dashicons.min6d38.css?ver=1692186403" media="all" />
+<link data-minify="1" rel="stylesheet" id="fl-builder-layout-40245-css" href="../wp-content/cache/min/1/wp-content/uploads/bb-plugin/cache/40245-layout97e8.css?ver=1692186639" media="all" />
+<link data-minify="1" rel="stylesheet" id="command-module-vendoredslick-css" href="../wp-content/cache/min/1/wp-content/plugins/space-station-command-module/vendor/slick-1.8.1/slick/slick6d38.css?ver=1692186403" media="all" />
+<link data-minify="1" rel="stylesheet" id="fl-builder-layout-bundle-9e41ce439099ee41718d0350ab7841f8-css" href="../wp-content/cache/min/1/wp-content/uploads/bb-plugin/cache/9e41ce439099ee41718d0350ab7841f8-layout-bundle5c85.css?ver=1692186634" media="all" />
+<link data-minify="1" rel="stylesheet" id="space-station-customCss-css" href="../wp-content/cache/min/1/wp-content/themes/beaverwarrior/assets/customCss6d38.css?ver=1692186403" media="all" />
+<link data-minify="1" rel="stylesheet" id="space-station-globalcss-css" href="../wp-content/cache/min/1/wp-content/themes/beaverwarrior/assets/cssglobal6d38.css?ver=1692186403" media="all" />
+<link data-minify="1" rel="stylesheet" id="bootstrap-css" href="../wp-content/cache/min/1/wp-content/themes/bb-theme/css/bootstrap.min6d38.css?ver=1692186403" media="all" />
+<link data-minify="1" rel="stylesheet" id="space-station-main-css" href="../wp-content/cache/min/1/wp-content/uploads/beaverwarrior/skin-64dcb41c9c3706d38.css?ver=1692186403" media="all" />
+<link data-minify="1" rel="stylesheet" id="slick-slider-css" href="../wp-content/cache/min/1/wp-content/themes/beaverwarrior/assets/vendor/slick/slick/slick6d38.css?ver=1692186403" media="all" />
+<link data-minify="1" rel="stylesheet" id="moove_gdpr_frontend-css" href="../wp-content/cache/min/1/wp-content/plugins/gdpr-cookie-compliance/dist/styles/gdpr-main-nf7d2e.css?ver=1692186404" media="all" />
+<style id="moove_gdpr_frontend-inline-css">
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main h3.tab-title, 
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main span.tab-title,
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li a, 
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li button,
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content .moove-gdpr-branding-cnt a,
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder a.mgbutton, 
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton,
+				#moove_gdpr_cookie_modal .cookie-switch .cookie-slider:after, 
+				#moove_gdpr_cookie_modal .cookie-switch .slider:after, 
+				#moove_gdpr_cookie_modal .switch .cookie-slider:after, 
+				#moove_gdpr_cookie_modal .switch .slider:after,
+				#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content p, 
+				#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content p a,
+				#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton, 
+				#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton,
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main .moove-gdpr-tab-main-content h1, 
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main .moove-gdpr-tab-main-content h2, 
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main .moove-gdpr-tab-main-content h3, 
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main .moove-gdpr-tab-main-content h4, 
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main .moove-gdpr-tab-main-content h5, 
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main .moove-gdpr-tab-main-content h6,
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content.moove_gdpr_modal_theme_v2 .moove-gdpr-modal-title .tab-title,
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content.moove_gdpr_modal_theme_v2 .moove-gdpr-tab-main h3.tab-title, 
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content.moove_gdpr_modal_theme_v2 .moove-gdpr-tab-main span.tab-title,
+				#moove_gdpr_cookie_modal .moove-gdpr-modal-content.moove_gdpr_modal_theme_v2 .moove-gdpr-branding-cnt a {
+				 	font-weight: inherit				}
+			#moove_gdpr_cookie_modal,#moove_gdpr_cookie_info_bar,.gdpr_cookie_settings_shortcode_content{font-family:Archivo,sans-serif}#moove_gdpr_save_popup_settings_button{background-color:#373737;color:#fff}#moove_gdpr_save_popup_settings_button:hover{background-color:#000}#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton,#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton{background-color:#7f60f9}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder a.mgbutton,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton,.gdpr_cookie_settings_shortcode_content .gdpr-shr-button.button-green{background-color:#7f60f9;border-color:#7f60f9}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder a.mgbutton:hover,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton:hover,.gdpr_cookie_settings_shortcode_content .gdpr-shr-button.button-green:hover{background-color:#fff;color:#7f60f9}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close span.gdpr-icon{background-color:#7f60f9;border:1px solid #7f60f9}#moove_gdpr_cookie_info_bar span.change-settings-button.focus-g,#moove_gdpr_cookie_info_bar span.change-settings-button:focus{-webkit-box-shadow:0 0 1px 3px #7f60f9;-moz-box-shadow:0 0 1px 3px #7f60f9;box-shadow:0 0 1px 3px #7f60f9}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close i:hover,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close span.gdpr-icon:hover,#moove_gdpr_cookie_info_bar span[data-href]>u.change-settings-button{color:#7f60f9}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li.menu-item-selected a span.gdpr-icon,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li.menu-item-selected button span.gdpr-icon{color:inherit}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li a span.gdpr-icon,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li button span.gdpr-icon{color:inherit}#moove_gdpr_cookie_modal .gdpr-acc-link{line-height:0;font-size:0;color:transparent;position:absolute}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close:hover i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li a,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li button,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li button i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li a i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main .moove-gdpr-tab-main-content a:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content span.change-settings-button:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content u.change-settings-button:hover,#moove_gdpr_cookie_info_bar span[data-href]>u.change-settings-button,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content span.change-settings-button.focus-g,span.change-settings-button:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content u.change-settings-button.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content u.change-settings-button:focus{color:#7f60f9}#moove_gdpr_cookie_modal.gdpr_lightbox-hide{display:none}#moove_gdpr_cookie_info_bar.gdpr-full-screen-infobar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content .moove-gdpr-cookie-notice p a{color:#7f60f9!important}#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton,#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder a.mgbutton,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton,.gdpr-shr-button,#moove_gdpr_cookie_info_bar .moove-gdpr-infobar-close-btn{border-radius:0}
+</style>
+<link data-minify="1" rel="stylesheet" id="gdpr_cc_addon_frontend-css" href="../wp-content/cache/min/1/wp-content/plugins/gdpr-cookie-compliance-addon/assets/css/gdpr_cc_addon7d2e.css?ver=1692186404" media="all" />
+<link rel="stylesheet" id="jquery-magnificpopup-css" href="../wp-content/plugins/bb-plugin/css/jquery.magnificpopup.mina77c.css?ver=2.7.1.1" media="all" />
+<link rel="stylesheet" id="fl-automator-skin-css" href="../wp-content/uploads/bb-theme/skin-64dcb41df17bce96c.css?ver=1.7.13" media="all" />
+<link rel="stylesheet" id="fl-builder-google-fonts-e1f015e406cc7a441616a66cdeccdfc8-css" href="http://fonts.googleapis.com/css?family=Archivo%3A700%2C500%2C600%2C400%2C300%2C800%7CInter%3A400%7CPoppins%3A600&amp;ver=6.2.2" media="all" />
+<script src="../wp-includes/js/jquery/jquery.min5aed.js?ver=3.6.4" id="jquery-core-js" defer></script>
+<script src="../wp-includes/js/jquery/jquery-migrate.min6b00.js?ver=3.4.0" id="jquery-migrate-js" defer></script>
+<script src="../wp-includes/js/imagesloaded.min3781.js?ver=6.2.2" id="imagesloaded-js" defer></script>
+<script data-minify="1" src="../wp-content/cache/min/1/wp-content/plugins/space-station-command-module/build/EVABehaviors7d2e.js?ver=1692186404" id="command-module-EVABehaviors-js" defer></script>
+<script data-minify="1" src="../wp-content/cache/min/1/wp-content/plugins/space-station-command-module/build/SSCMSlider7d2e.js?ver=1692186404" id="command-module-SSCMSlider-js" defer></script>
+<script src="../wp-content/plugins/space-station-command-module/vendor/slick-1.8.1/slick/slick.mina1f3.js?ver=1.8.1-1687247922" id="command-module-vendoredslick-js" defer></script>
+<script src="../wp-content/plugins/space-station-command-module/vendor/gsap-3.11.3/gsap.min76a7.js?ver=3.11.3-1687247922" id="command-module-gsapMinified-js" defer></script>
+<script src="../wp-content/plugins/space-station-command-module/vendor/gsap-3.11.3/ScrollToPlugin.min76a7.js?ver=3.11.3-1687247922" id="command-module-scrollToPlugin-js" defer></script>
+<script src="../wp-content/plugins/space-station-command-module/vendor/gsap-3.11.3/ScrollTrigger.min76a7.js?ver=3.11.3-1687247922" id="command-module-scrollTrigger-js" defer></script>
+<script id="sentry-io-js-extra">
+var sentry_data = {"url":"https:\/\/huemor.rocks","environment":""};
+</script>
+<script data-minify="1" src="../wp-content/cache/min/1/5.2.0/bundle.min7d2e.js?ver=1692186404" id="sentry-io-js" defer></script>
+<link rel="https://api.w.org/" href="../wp-json/index.html" /><link rel="alternate" type="application/json" href="../wp-json/wp/v2/pages/40245.json" /><link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embed26b9.json?url=https%3A%2F%2Fhuemor.rocks%2Fwebsite-analysis-plan%2F" />
+<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed629f?url=https%3A%2F%2Fhuemor.rocks%2Fwebsite-analysis-plan%2F&amp;format=xml" />
+
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" class="hsq-set-content-id" data-content-id="standard-page">
+				var _hsq = _hsq || [];
+				_hsq.push(["setContentType", "standard-page"]);
+			</script>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Website Analysis And Action Plan","serviceType":null,"image":{"@type":"ImageObject","url":"https://huemordev.b-cdn.net/wp-content/uploads/2023/06/homepage-featured-img-landscape.jpg","width":1400,"height":966},"provider":{"@type":"LocalBusiness","name":"Huemor","telephone":null,"priceRange":null},"description":null}</script><script type="application/ld+json">[]</script><script type="application/ld+json">{"@context":"https:\/\/schema.org","@graph":[{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"How We Help","url":"#"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Website Redesign","url":"https:\/\/huemor.rocks\/website-redesign-agency\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Key Skills:","url":"#"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Web Design","url":"https:\/\/huemor.rocks\/web-design-agency\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Web Development","url":"https:\/\/huemor.rocks\/web-development-agency\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"WordPress","url":"https:\/\/huemor.rocks\/wordpress-agency\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Shopify","url":"https:\/\/huemor.rocks\/shopify-agency\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Website Support","url":"https:\/\/huemor.rocks\/website-maintenance-and-support\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"CRO","url":"https:\/\/huemor.rocks\/conversion-rate-optimization\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Landing Pages","url":"https:\/\/huemor.rocks\/custom-landing-pages\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Website Analysis","url":"https:\/\/huemor.rocks\/website-analysis-plan\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Work","url":"https:\/\/huemor.rocks\/case-studies\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"About","url":"https:\/\/huemor.rocks\/agency\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Resources","url":"https:\/\/huemor.rocks\/resources\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"col1","url":"#"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Blog","url":"https:\/\/huemor.rocks\/blog\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Project Calculator","url":"https:\/\/huemor.rocks\/website-cost-calculator\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"ROI Calculator","url":"https:\/\/huemor.rocks\/roi-calculator\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"col3","url":"#"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Featured Resource","url":"\/blog\/website-redesign-project-plan\/"}]}</script><script type="rocketlazyloadscript">
+        var filter_articles_url = "../wp-admin/admin-ajax.html";
+    </script> <style id="wpsp-style-frontend"></style>
+<link rel="icon" href="../../huemordev.b-cdn.net/wp-content/uploads/2023/06/cropped-huemor-icon-32x32.png" sizes="32x32" />
+<link rel="icon" href="../../huemordev.b-cdn.net/wp-content/uploads/2023/06/cropped-huemor-icon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="../../huemordev.b-cdn.net/wp-content/uploads/2023/06/cropped-huemor-icon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://huemordev.b-cdn.net/wp-content/uploads/2023/06/cropped-huemor-icon-270x270.png" />
+<style id="wp-custom-css">
+			/** caching issue: validation message styling. Will be removed once cache settles**/
+.calculatorForm .gfield_validation_message{
+    margin-top: -10px;
+    margin-bottom: 25px;
+    color: #7759f8!important;
+    font-weight: 300!important;
+}
+/** email field **/
+#validation_message_6_18 {
+    padding-top: 0;
+    margin-top: -25px;
+    margin-bottom: 25px;
+    color: #7759f8!important;
+    font-weight: 300!important;
+}
+#gform_wrapper_6 .gfield_validation_message {
+    display: block!important;
+}
+
+/** end: validation message styling **/
+
+/** fix button double tap issue on mobile **/
+.hs_submit span.hiddenValue {
+		display: none!important;
+}
+
+.hs_submit .actions {
+		width: 100%!important;
+		height: 55px;
+}
+
+.hs_submit svg{
+		position: absolute;
+		right: calc(50% - 50px);
+}
+ /**end: fix button double tap issue on mobile **/
+
+
+.position-realitive {
+	position: relative;
+}
+
+.overlap {
+	position: relative;
+	z-index: 1;
+}
+
+.hide--field {
+	display: none;
+}
+
+.blog--content--advanced-styling p {
+    padding: 10px 0px 10px 0px;
+}
+
+.SSCMSlider-content_prev:focus, .SSCMSlider-content_next:focus {
+    position: absolute;
+    top: 50%;
+}		</style>
+<noscript><style>.perfmatters-lazy[data-src]{display:none !important;}</style></noscript><style>.perfmatters-lazy.pmloaded,.perfmatters-lazy.pmloaded>img,.perfmatters-lazy>img.pmloaded,.perfmatters-lazy[data-ll-status=entered]{animation:500ms pmFadeIn}@keyframes pmFadeIn{0%{opacity:0}100%{opacity:1}}body .perfmatters-lazy-css-bg:not([data-ll-status=entered]),body .perfmatters-lazy-css-bg:not([data-ll-status=entered]) *,body .perfmatters-lazy-css-bg:not([data-ll-status=entered])::before,body .perfmatters-lazy-css-bg:not([data-ll-status=entered])::after{background-image:none!important;will-change:transform;transition:opacity 0.025s ease-in,transform 0.025s ease-in!important;}</style> <script id="piwik-snippet" type="text/javascript">
+(function(window, document, dataLayerName, id) {
+window[dataLayerName]=window[dataLayerName]||[],window[dataLayerName].push({start:(new Date).getTime(),event:"stg.start"});var scripts=document.getElementsByTagName('script')[0],tags=document.createElement('script');
+function stgCreateCookie(a,b,c){var d="";if(c){var e=new Date;e.setTime(e.getTime()+24*c*60*60*1e3),d="; expires="+e.toUTCString()}document.cookie=a+"="+b+d+"; path=/"}
+var isStgDebug=(window.location.href.match("stg_debug")||document.cookie.match("stg_debug"))&&!window.location.href.match("stg_disable_debug");stgCreateCookie("stg_debug",isStgDebug?1:"",isStgDebug?14:-1);
+var qP=[];dataLayerName!=="dataLayer"&&qP.push("data_layer_name="+dataLayerName),isStgDebug&&qP.push("stg_debug");var qPString=qP.length>0?("?"+qP.join("&")):"";
+tags.async=!0,tags.src="https://huemor.containers.piwik.pro/"+id+".js"+qPString,scripts.parentNode.insertBefore(tags,scripts);
+!function(a,n,i){a[n]=a[n]||{};for(var c=0;c<i.length;c++)!function(i){a[n][i]=a[n][i]||{},a[n][i].api=a[n][i].api||function(){var a=[].slice.call(arguments,0);"string"==typeof a[0]&&window[dataLayerName].push({event:n+"."+i+":"+a[0],parameters:[].slice.call(arguments,1)})}}(i[c])}(window,"ppms",["tm","cm"]);
+})(window, document, 'dataLayer', 'd0f2b54a-f496-496c-95ea-57993e45f838');
+</script>
+</head>
+<body class="page-template-default page page-id-40245 page-parent fl-builder wp-schema-pro-2.7.9 fl-theme-builder-footer fl-theme-builder-footer-5-column-footer fl-theme-builder-header fl-theme-builder-header-header-logo-center fl-framework-bootstrap fl-preset-default fl-full-width fl-search-active" itemscope="itemscope" itemtype="http://schema.org/WebPage" data-offcanvas-hover-min data-utmpreserve-preserve="true" data-utmpreserve-forminject="true">
+<a aria-label="Skip to content" class="fl-screen-reader-text" href="#fl-main-content">Skip to content</a>
+<div class="fl-page Page ">
+<header class="fl-builder-content fl-builder-content-29474 fl-builder-global-templates-locked" data-post-id="29474" data-type="header" data-sticky="0" data-sticky-on data-sticky-breakpoint="medium" data-shrink="0" data-overlay="1" data-overlay-bg="default" data-shrink-image-height="50px" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader"><div class="fl-row fl-row-full-width fl-row-bg-none fl-node-ls1o4kvwgc5y fl-row-default-height fl-row-align-center" data-node="ls1o4kvwgc5y">
+<div class="fl-row-content-wrap">
+<div class="fl-row-content fl-row-fixed-width fl-node-content">
+<div class="fl-col-group fl-node-f938otqbdaiz" data-node="f938otqbdaiz">
+<div class="fl-col fl-node-2cvy3zfgosw9" data-node="2cvy3zfgosw9">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-photo fl-node-ul4oqyg0sfn1" data-node="ul4oqyg0sfn1">
+<div class="fl-module-content fl-node-content">
+<div class="fl-photo fl-photo-align-center" itemscope itemtype="https://schema.org/ImageObject">
+<div class="fl-photo-content fl-photo-img-webp">
+<a href="../index.html" target="_self" itemprop="url">
+<img data-perfmatters-preload decoding="async" class="fl-photo-img wp-image-1405 size-full" src="https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@2x.webp" alt="Huemor-Logo-Black@2x" itemprop="image" height="80" width="338" title="Huemor-Logo-Black@2x" data-no-lazy="1" srcset="https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@2x.webp 338w, ../wp-content/uploads/2023/02/logo.png 300w, https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@2x-24x6.webp 24w, https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@2x-36x9.webp 36w, https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@2x-48x11.webp 48w" sizes="(max-width: 338px) 100vw, 338px" />
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="fl-page-content" itemprop="mainContentOfPage">
+<div class="fl-content-full container">
+<div class="row">
+<div class="fl-content col-md-12">
+<article class="fl-post post-40245 page type-page status-publish has-post-thumbnail hentry" id="fl-post-40245" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+<div class="fl-post-content clearfix" itemprop="text">
+<div class="fl-builder-content fl-builder-content-40245 fl-builder-content-primary fl-builder-global-templates-locked" data-post-id="40245"><div id="free-action-plan" class="fl-row fl-row-full-width fl-row-bg-video fl-node-59jch81fum7l fl-row-default-height fl-row-align-center fixed-video video-top" data-node="59jch81fum7l">
+<div class="fl-row-content-wrap">
+<div class="fl-bg-video" data-video-mobile="no" data-fallback data-mp4="https://huemordev.b-cdn.net/wp-content/uploads/2023/06/rocket-buddy-left-float.mp4" data-mp4-type="video/mp4" data-webm data-webm-type="video/webm"></div>
+<div class="fl-row-content fl-row-fixed-width fl-node-content">
+<div class="fl-col-group fl-node-gk59c2o7q0br fl-col-group-custom-width" data-node="gk59c2o7q0br">
+<div class="fl-col fl-node-kh3zwd5armyg fl-col-small-custom-width" data-node="kh3zwd5armyg">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-photo fl-node-pyqbrkougdis" data-node="pyqbrkougdis">
+<div class="fl-module-content fl-node-content">
+<div class="fl-photo fl-photo-align-left" itemscope itemtype="https://schema.org/ImageObject">
+<div class="fl-photo-content fl-photo-img-png">
+<img decoding="async" class="fl-photo-img wp-image-1519 size-full perfmatters-lazy" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;58&#039;%20height=&#039;58&#039;%20viewBox=&#039;0%200%2058%2058&#039;%3E%3C/svg%3E" alt="solar system" itemprop="image" height="58" width="58" title="solar system" data-src="https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system.png.webp" data-srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system.png.webp 58w,https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system-24x24.png.webp 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system-36x36.png.webp 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system-48x48.png.webp 48w" data-sizes="(max-width: 58px) 100vw, 58px" /><noscript><img decoding="async" class="fl-photo-img wp-image-1519 size-full" src="https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system.png.webp" alt="solar system" itemprop="image" height="58" width="58" title="solar system" srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system.png.webp 58w,https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system-24x24.png.webp 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system-36x36.png.webp 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system-48x48.png.webp 48w" sizes="(max-width: 58px) 100vw, 58px" /></noscript>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-heading fl-node-els6nvthif01" data-node="els6nvthif01">
+<div class="fl-module-content fl-node-content">
+<h1 class="fl-heading">
+<span class="fl-heading-text">Analysis Of A Website</span>
+</h1>
+</div>
+</div>
+<div class="fl-module fl-module-heading fl-node-2aowki5yne4b" data-node="2aowki5yne4b">
+<div class="fl-module-content fl-node-content">
+<h2 class="fl-heading">
+<span class="fl-heading-text">what's killing your conversions?</span>
+</h2>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-rv592wf6kqco" data-node="rv592wf6kqco">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>Request a free website action and analysis plan to receive:</p>
+<ul>
+<li>No generic advice; it's 100% specific to your website</li>
+<li>Quick wins that will instantly improve leads or sales</li>
+<li>Tips to improve website nagivation</li>
+<li>Tips to improve web page layouts</li>
+<li>Tips to improve copy</li>
+<li>Tips to improve page speed</li>
+<li>Tips to improve technical SEO</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-col fl-node-ik6dv7swh9ag fl-col-small fl-col-small-custom-width fl-col-has-cols" data-node="ik6dv7swh9ag">
+<div class="fl-col-content fl-node-content"><div class="fl-col-group fl-node-5uv0df1w6h73 fl-col-group-nested fl-col-group-equal-height fl-col-group-align-top" data-node="5uv0df1w6h73">
+<div class="fl-col fl-node-581ez2ujxnct" data-node="581ez2ujxnct">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-heading fl-node-xvmuga3jzr68" data-node="xvmuga3jzr68">
+<div class="fl-module-content fl-node-content">
+<h4 class="fl-heading">
+<span class="fl-heading-text">100+ Personalized, Actionable Tips To Improve Your Website (For Free)</span>
+</h4>
+</div>
+</div>
+<div class="fl-module fl-module-html fl-node-o74huyg3iazc hue-contact" data-node="o74huyg3iazc">
+<div class="fl-module-content fl-node-content">
+<div class="fl-html">
+<script charset="utf-8" type="text/javascript" src="../../js.hsforms.net/forms/embed/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    region: "na1",
+    portalId: "6606556",
+    formId: "0e32c671-f1a6-450e-bbb5-26af897eeb68"
+  });
+</script></div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-sy61dr84okn0" data-node="sy61dr84okn0">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>Each one of these website analyses takes serious time and effort for our team to produce. We complete these on a first-come, first-serve basis.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-row fl-row-full-width fl-row-bg-none fl-node-z0adxj8o5frk fl-row-default-height fl-row-align-center" data-node="z0adxj8o5frk">
+<div class="fl-row-content-wrap">
+<div class="fl-row-content fl-row-fixed-width fl-node-content">
+<div class="fl-col-group fl-node-30qaz7wtlm6p" data-node="30qaz7wtlm6p">
+<div class="fl-col fl-node-fyghpxbl2au7" data-node="fyghpxbl2au7">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-photo fl-node-e4kn15gi8x20" data-node="e4kn15gi8x20">
+<div class="fl-module-content fl-node-content">
+<div class="fl-photo fl-photo-align-left" itemscope itemtype="https://schema.org/ImageObject">
+<div class="fl-photo-content fl-photo-img-png">
+<img decoding="async" class="fl-photo-img wp-image-1519 size-full perfmatters-lazy" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;58&#039;%20height=&#039;58&#039;%20viewBox=&#039;0%200%2058%2058&#039;%3E%3C/svg%3E" alt="solar system" itemprop="image" height="58" width="58" title="solar system" data-src="https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system.png.webp" data-srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system.png.webp 58w,https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system-24x24.png.webp 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system-36x36.png.webp 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system-48x48.png.webp 48w" data-sizes="(max-width: 58px) 100vw, 58px" /><noscript><img decoding="async" class="fl-photo-img wp-image-1519 size-full" src="https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system.png.webp" alt="solar system" itemprop="image" height="58" width="58" title="solar system" srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system.png.webp 58w,https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system-24x24.png.webp 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system-36x36.png.webp 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system-48x48.png.webp 48w" sizes="(max-width: 58px) 100vw, 58px" /></noscript>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-col-group fl-node-bqkmdg17a6i8" data-node="bqkmdg17a6i8">
+<div class="fl-col fl-node-8euom1xlyp7a fl-col-small" data-node="8euom1xlyp7a">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-v5mx1k8uy7j0" data-node="v5mx1k8uy7j0">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>FAQS</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-col fl-node-yitg98k3w0fc" data-node="yitg98k3w0fc">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-heading fl-node-19set0nmciwa" data-node="19set0nmciwa">
+<div class="fl-module-content fl-node-content">
+<h2 class="fl-heading">
+<span class="fl-heading-text">Let's get into the details.</span>
+</h2>
+</div>
+</div>
+<div class="fl-module fl-module-bw-hue-faq fl-node-do7rftw1hk0p" data-node="do7rftw1hk0p">
+<div class="fl-module-content fl-node-content">
+<section class="HueFAQ ">
+<div class="HueFAQ-Content">
+<div class="HueFAQ-Item">
+<div class="HueFAQ-Item_top">
+<div class="HueFAQ-Item_top_heading">
+
+<h3>Is the website analysis free?</h3>
+</div>
+<span class="HueFAQ-Item_toggle">
+<span class="HueFAQ-Item_plus">
+<span class="HueFAQ-Item_plus_line"></span>
+<span class="HueFAQ-Item_plus_line HueFAQ-Item_plus_line--two"></span>
+</span>
+</span>
+</div>
+<div class="HueFAQ-Item_desc"><p>&nbsp;</p>
+<p>Yes, this website analysis and action plan is free.</p>
+<p> </p>
+<p>If you'd like assistance with implementing the changes, we can discuss what options are available to make them a reality. </p>
+</div>
+</div>
+<div class="HueFAQ-Item">
+<div class="HueFAQ-Item_top">
+<div class="HueFAQ-Item_top_heading">
+
+<h3>What happens after I request my website analysis?</h3>
+</div>
+<span class="HueFAQ-Item_toggle">
+<span class="HueFAQ-Item_plus">
+<span class="HueFAQ-Item_plus_line"></span>
+<span class="HueFAQ-Item_plus_line HueFAQ-Item_plus_line--two"></span>
+</span>
+</span>
+</div>
+<div class="HueFAQ-Item_desc"><p>&nbsp;</p>
+<p><strong>Step 1</strong><br/>We analyze your website's design, user experience, and technical performance for improvement opportunities.</p>
+<p><strong>Step 2</strong><br/>We book a call to present our findings to your team and answer any lingering questions you may have.</p>
+<p><strong>Step 3</strong><br/>We provide you with a copy of our findings, no strings attached.</p>
+</div>
+</div>
+<div class="HueFAQ-Item">
+<div class="HueFAQ-Item_top">
+<div class="HueFAQ-Item_top_heading">
+
+<h3>Can you help us implement the improvements you discover?</h3>
+</div>
+<span class="HueFAQ-Item_toggle">
+<span class="HueFAQ-Item_plus">
+<span class="HueFAQ-Item_plus_line"></span>
+<span class="HueFAQ-Item_plus_line HueFAQ-Item_plus_line--two"></span>
+</span>
+</span>
+</div>
+<div class="HueFAQ-Item_desc"><p>&nbsp;</p>
+<p>We'd be happy to help you make the improvements we find a reality.</p>
+<p>In general, we partner with clients in two main ways: improving their existing website, or building a new, better-optimized website.</p>
+</div>
+</div>
+<div class="HueFAQ-Item">
+<div class="HueFAQ-Item_top">
+<div class="HueFAQ-Item_top_heading">
+
+<h3>What does your average support retainer cost?</h3>
+</div>
+<span class="HueFAQ-Item_toggle">
+<span class="HueFAQ-Item_plus">
+<span class="HueFAQ-Item_plus_line"></span>
+<span class="HueFAQ-Item_plus_line HueFAQ-Item_plus_line--two"></span>
+</span>
+</span>
+</div>
+<div class="HueFAQ-Item_desc"><p>&nbsp;</p>
+<p>Our support retainers designed to improve existing websites begin at $3,000/month and scale up based on the number of improvements you want to accomplish each month.</p>
+</div>
+</div>
+<div class="HueFAQ-Item">
+<div class="HueFAQ-Item_top">
+<div class="HueFAQ-Item_top_heading">
+
+<h3>What does your average project cost?</h3>
+</div>
+<span class="HueFAQ-Item_toggle">
+<span class="HueFAQ-Item_plus">
+<span class="HueFAQ-Item_plus_line"></span>
+<span class="HueFAQ-Item_plus_line HueFAQ-Item_plus_line--two"></span>
+</span>
+</span>
+</div>
+<div class="HueFAQ-Item_desc"><p>&nbsp;</p>
+<p>Our average website re-build averages $75,000-$150,000. This is a one-time, fixed fee cost that includes:</p>
+<ul>
+<li>Digital Strategy</li>
+<li>UI/UX Design</li>
+<li>Full-Stack Web Development</li>
+<li>Copywriting</li>
+<li>Graphic + Asset Creation</li>
+<li>Data Entry + Migration</li>
+<li>Technical SEO Optimization</li>
+<li>Analytics + Goal Setup</li>
+<li>UI/UX Guidelines</li>
+<li>Editors Guidelines</li>
+<li>Full Ownership of Design + Development Upon Completion</li>
+<li>2 Weeks Post-Launch Support</li>
+</ul>
+<p>If you're curious about what your project may cost, check out our <a href="../project-calculator/index.html">project calculator</a>.</p>
+</div>
+</div>
+<div class="HueFAQ-Item">
+<div class="HueFAQ-Item_top">
+<div class="HueFAQ-Item_top_heading">
+
+<h3>What types of companies do you work with?</h3>
+</div>
+<span class="HueFAQ-Item_toggle">
+<span class="HueFAQ-Item_plus">
+<span class="HueFAQ-Item_plus_line"></span>
+<span class="HueFAQ-Item_plus_line HueFAQ-Item_plus_line--two"></span>
+</span>
+</span>
+</div>
+<div class="HueFAQ-Item_desc"><p>&nbsp;</p>
+<p>Our typical customer is a mid-market business making $25-$250m / year.</p>
+<p>We most often work in the following industries:</p>
+<ul>
+<li>Construction</li>
+<li>Education</li>
+<li>FinTech</li>
+<li>Healthcare</li>
+<li>Professional Services</li>
+<li>Retail + Consumer Goods</li>
+<li>SaaS</li>
+</ul>
+</div>
+</div>
+<div class="HueFAQ-Item">
+<div class="HueFAQ-Item_top">
+<div class="HueFAQ-Item_top_heading">
+
+<h3>How long does it take to build a website?</h3>
+</div>
+<span class="HueFAQ-Item_toggle">
+<span class="HueFAQ-Item_plus">
+<span class="HueFAQ-Item_plus_line"></span>
+<span class="HueFAQ-Item_plus_line HueFAQ-Item_plus_line--two"></span>
+</span>
+</span>
+</div>
+<div class="HueFAQ-Item_desc"><p>&nbsp;</p>
+<p>From start to finish, our average full website re-build takes 6 months to complete.</p>
+</div>
+</div>
+<div class="HueFAQ-Item">
+<div class="HueFAQ-Item_top">
+<div class="HueFAQ-Item_top_heading">
+
+<h3>What results can I expect?</h3>
+</div>
+<span class="HueFAQ-Item_toggle">
+<span class="HueFAQ-Item_plus">
+<span class="HueFAQ-Item_plus_line"></span>
+<span class="HueFAQ-Item_plus_line HueFAQ-Item_plus_line--two"></span>
+</span>
+</span>
+</div>
+<div class="HueFAQ-Item_desc"><p>&nbsp;</p>
+<p>Results will vary based on specific goals and your industry.</p>
+<p>However, on average, our websites...</p>
+<ul>
+<li>Are effective for 56% longer</li>
+<li>Convert 82% better</li>
+<li>Create a 24% lift in organic search results</li>
+</ul>
+</div>
+</div>
+<div class="HueFAQ-Item">
+<div class="HueFAQ-Item_top">
+<div class="HueFAQ-Item_top_heading">
+
+<h3>Do you offer support after the website has launched?</h3>
+</div>
+<span class="HueFAQ-Item_toggle">
+<span class="HueFAQ-Item_plus">
+<span class="HueFAQ-Item_plus_line"></span>
+<span class="HueFAQ-Item_plus_line HueFAQ-Item_plus_line--two"></span>
+</span>
+</span>
+</div>
+<div class="HueFAQ-Item_desc"><p>&nbsp;</p>
+<p>Yes. We have a dedicated support team in-house that can handle anything from routine support updates to full-feature launches for existing websites.</p>
+</div>
+</div>
+</div>
+</section> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-xk7vs0f9q32e fl-row-default-height fl-row-align-center fl-row-bg-overlay" data-node="xk7vs0f9q32e">
+<div class="fl-row-content-wrap">
+<div class="fl-row-content fl-row-fixed-width fl-node-content">
+<div class="fl-col-group fl-node-ya65gexdvm12" data-node="ya65gexdvm12">
+<div class="fl-col fl-node-6at7sobfzwvx" data-node="6at7sobfzwvx">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-photo fl-node-edz05igsvyho fl-animation fl-fade-up" data-node="edz05igsvyho" data-animation-delay="0" data-animation-duration=".3">
+<div class="fl-module-content fl-node-content">
+<div class="fl-photo fl-photo-align-center" itemscope itemtype="https://schema.org/ImageObject">
+<div class="fl-photo-content fl-photo-img-png">
+<img decoding="async" class="fl-photo-img wp-image-1519 size-full perfmatters-lazy" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;58&#039;%20height=&#039;58&#039;%20viewBox=&#039;0%200%2058%2058&#039;%3E%3C/svg%3E" alt="solar system" itemprop="image" height="58" width="58" title="solar system" data-src="https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system.png.webp" data-srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system.png.webp 58w,https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system-24x24.png.webp 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system-36x36.png.webp 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system-48x48.png.webp 48w" data-sizes="(max-width: 58px) 100vw, 58px" /><noscript><img decoding="async" class="fl-photo-img wp-image-1519 size-full" src="https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system.png.webp" alt="solar system" itemprop="image" height="58" width="58" title="solar system" srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system.png.webp 58w,https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system-24x24.png.webp 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system-36x36.png.webp 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system-48x48.png.webp 48w" sizes="(max-width: 58px) 100vw, 58px" /></noscript>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-prbg1o4ns83z fl-animation fl-fade-up" data-node="prbg1o4ns83z" data-animation-delay="0" data-animation-duration=".3">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>Results</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-heading fl-node-r3gj0yekqtm8 fl-animation fl-fade-up" data-node="r3gj0yekqtm8" data-animation-delay="0" data-animation-duration=".3">
+<div class="fl-module-content fl-node-content">
+<h2 class="fl-heading">
+<span class="fl-heading-text">Anyone can give you promises, we can deliver results</span>
+</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-05gc8a7pzd6q fl-row-default-height fl-row-align-center fl-row-bg-overlay" data-node="05gc8a7pzd6q">
+<div class="fl-row-content-wrap">
+<div class="fl-row-content fl-row-fixed-width fl-node-content">
+<div class="fl-col-group fl-node-pminged7tbqf fl-col-group-equal-height fl-col-group-align-center fl-col-group-custom-width fl-col-group-responsive-reversed" data-node="pminged7tbqf">
+<div class="fl-col fl-node-qkzedw379arc fl-col-small fl-col-small-custom-width" data-node="qkzedw379arc">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-dv9hp2zr4eyc fl-animation fl-fade-up" data-node="dv9hp2zr4eyc" data-animation-delay="0" data-animation-duration=".3">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>"Something I found most unique about Jorbanis how much they care [about] the success of the project."</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-photo fl-node-3klsuv712jiw fl-animation fl-fade-up" data-node="3klsuv712jiw" data-animation-delay="0" data-animation-duration=".3">
+<div class="fl-module-content fl-node-content">
+<div class="fl-photo fl-photo-crop-circle fl-photo-align-left" itemscope itemtype="https://schema.org/ImageObject">
+<div class="fl-photo-content fl-photo-img-jpeg">
+<img decoding="async" class="fl-photo-img wp-image-38816 size-full perfmatters-lazy" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;800&#039;%20height=&#039;800&#039;%20viewBox=&#039;0%200%20800%20800&#039;%3E%3C/svg%3E" alt="BetterCloud_Jenny-Lee" itemprop="image" height="800" width="800" title="BetterCloud_Jenny-Lee" data-src="https://huemordev.b-cdn.net/wp-content/uploads/bb-plugin/cache/BetterCloud_Jenny-Lee-circle-ef28ac15528238a0b88685875b692a7e-3klsuv712jiw.jpeg" /><noscript><img decoding="async" class="fl-photo-img wp-image-38816 size-full" src="../../huemordev.b-cdn.net/wp-content/uploads/bb-plugin/cache/BetterCloud_Jenny-Lee-circle-ef28ac15528238a0b88685875b692a7e-3klsuv712jiw.jpg" alt="BetterCloud_Jenny-Lee" itemprop="image" height="800" width="800" title="BetterCloud_Jenny-Lee"  /></noscript>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-dragvf30y2kt fl-animation fl-fade-up" data-node="dragvf30y2kt" data-animation-delay="0" data-animation-duration=".3">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>Jenny Lee, Creative Director at BetterCloud</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-button fl-node-o238e10d7fh6 fl-animation fl-fade-up custom-button custom-button-dark no-border icon-color" data-node="o238e10d7fh6" data-animation-delay="0" data-animation-duration=".3">
+<div class="fl-module-content fl-node-content">
+<div class="fl-button-wrap fl-button-width-auto fl-button-left fl-button-has-icon">
+<a href="#free-action-plan" target="_self" class="fl-button">
+<span class="fl-button-text">Get Your Free Action Plan</span>
+<i class="fl-button-icon fl-button-icon-after dashicons dashicons-before dashicons-arrow-right-alt" aria-hidden="true"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-col fl-node-05bcv8wtuj9s fl-col-small fl-col-small-custom-width" data-node="05bcv8wtuj9s">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-photo fl-node-w39lesyt8z1p" data-node="w39lesyt8z1p">
+<div class="fl-module-content fl-node-content">
+<div class="fl-photo fl-photo-align-center" itemscope itemtype="https://schema.org/ImageObject">
+<div class="fl-photo-content fl-photo-img-jpeg">
+<img decoding="async" class="fl-photo-img wp-image-40476 size-full perfmatters-lazy" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;1440&#039;%20height=&#039;920&#039;%20viewBox=&#039;0%200%201440%20920&#039;%3E%3C/svg%3E" alt="better-cloud-lp-featured-optimized" itemprop="image" height="920" width="1440" title="better-cloud-lp-featured-optimized" data-src="https://huemordev.b-cdn.net/wp-content/uploads/2023/05/better-cloud-lp-featured-optimized.jpeg.webp" data-srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/05/better-cloud-lp-featured-optimized.jpeg.webp 1440w,https://huemordev.b-cdn.net/wp-content/uploads/2023/05/better-cloud-lp-featured-optimized-300x192.jpeg.webp 300w,https://huemordev.b-cdn.net/wp-content/uploads/2023/05/better-cloud-lp-featured-optimized-1024x654.jpeg.webp 1024w,https://huemordev.b-cdn.net/wp-content/uploads/2023/05/better-cloud-lp-featured-optimized-768x491.jpeg.webp 768w" data-sizes="(max-width: 1440px) 100vw, 1440px" /><noscript><img decoding="async" class="fl-photo-img wp-image-40476 size-full" src="https://huemordev.b-cdn.net/wp-content/uploads/2023/05/better-cloud-lp-featured-optimized.jpeg.webp" alt="better-cloud-lp-featured-optimized" itemprop="image" height="920" width="1440" title="better-cloud-lp-featured-optimized" srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/05/better-cloud-lp-featured-optimized.jpeg.webp 1440w,https://huemordev.b-cdn.net/wp-content/uploads/2023/05/better-cloud-lp-featured-optimized-300x192.jpeg.webp 300w,https://huemordev.b-cdn.net/wp-content/uploads/2023/05/better-cloud-lp-featured-optimized-1024x654.jpeg.webp 1024w,https://huemordev.b-cdn.net/wp-content/uploads/2023/05/better-cloud-lp-featured-optimized-768x491.jpeg.webp 768w" sizes="(max-width: 1440px) 100vw, 1440px" /></noscript>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-SSCMMarquee fl-node-coiudtya4q9j" data-node="coiudtya4q9j">
+<div class="fl-module-content fl-node-content">
+<div class="SSCMMarquee" id="SSCMMarquee-coiudtya4q9j">
+<div class="SSCMMarquee-slick  SSCMMarquee-original">
+<div class="SSCMMarquee-content">
+<div class="SSCMMarquee-metrics">
+<p class="SSCMMarquee-metrics--number">
++<span data-roll="50.5">50.5</span>% </p>
+<p class="SSCMMarquee-metrics--subtitle">Demo Requests</p>
+</div>
+</div> <div class="SSCMMarquee-content">
+<div class="SSCMMarquee-metrics">
+<p class="SSCMMarquee-metrics--number">
+-<span data-roll="17.4">17.4</span>% </p>
+<p class="SSCMMarquee-metrics--subtitle">Time On Page</p>
+</div>
+</div> <div class="SSCMMarquee-content">
+<div class="SSCMMarquee-metrics">
+<p class="SSCMMarquee-metrics--number">
++<span data-roll="49.8">49.8</span>% </p>
+<p class="SSCMMarquee-metrics--subtitle">Pages Per Session</p>
+</div>
+</div> </div>
+</div> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-ghdbvw32y5q1 fl-row-default-height fl-row-align-center fl-row-bg-overlay" data-node="ghdbvw32y5q1">
+<div class="fl-row-content-wrap">
+<div class="fl-row-content fl-row-fixed-width fl-node-content">
+<div class="fl-col-group fl-node-ube4lp8wkafj" data-node="ube4lp8wkafj">
+<div class="fl-col fl-node-vzpu14mbf3oq" data-node="vzpu14mbf3oq">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-separator fl-node-fwicrqo7vjzy" data-node="fwicrqo7vjzy">
+<div class="fl-module-content fl-node-content">
+<div class="fl-separator"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-col-group fl-node-ymtoe9vxc4a1 fl-col-group-equal-height fl-col-group-align-center fl-col-group-custom-width" data-node="ymtoe9vxc4a1">
+<div class="fl-col fl-node-ds836tmku14b fl-col-small fl-col-small-custom-width" data-node="ds836tmku14b">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-photo fl-node-5o367ctk4fvw" data-node="5o367ctk4fvw">
+<div class="fl-module-content fl-node-content">
+<div class="fl-photo fl-photo-align-center" itemscope itemtype="https://schema.org/ImageObject">
+<div class="fl-photo-content fl-photo-img-jpeg">
+<img decoding="async" class="fl-photo-img wp-image-40429 size-full perfmatters-lazy" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;1440&#039;%20height=&#039;920&#039;%20viewBox=&#039;0%200%201440%20920&#039;%3E%3C/svg%3E" alt="hitt-thumbnail-homepage-optimized" itemprop="image" height="920" width="1440" title="hitt-thumbnail-homepage-optimized" data-src="https://huemordev.b-cdn.net/wp-content/uploads/2023/05/hitt-thumbnail-homepage-optimized.jpeg.webp" data-srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/05/hitt-thumbnail-homepage-optimized.jpeg.webp 1440w,https://huemordev.b-cdn.net/wp-content/uploads/2023/05/hitt-thumbnail-homepage-optimized-300x192.jpeg.webp 300w,https://huemordev.b-cdn.net/wp-content/uploads/2023/05/hitt-thumbnail-homepage-optimized-1024x654.jpeg.webp 1024w,https://huemordev.b-cdn.net/wp-content/uploads/2023/05/hitt-thumbnail-homepage-optimized-768x491.jpeg.webp 768w" data-sizes="(max-width: 1440px) 100vw, 1440px" /><noscript><img decoding="async" class="fl-photo-img wp-image-40429 size-full" src="https://huemordev.b-cdn.net/wp-content/uploads/2023/05/hitt-thumbnail-homepage-optimized.jpeg.webp" alt="hitt-thumbnail-homepage-optimized" itemprop="image" height="920" width="1440" title="hitt-thumbnail-homepage-optimized" srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/05/hitt-thumbnail-homepage-optimized.jpeg.webp 1440w,https://huemordev.b-cdn.net/wp-content/uploads/2023/05/hitt-thumbnail-homepage-optimized-300x192.jpeg.webp 300w,https://huemordev.b-cdn.net/wp-content/uploads/2023/05/hitt-thumbnail-homepage-optimized-1024x654.jpeg.webp 1024w,https://huemordev.b-cdn.net/wp-content/uploads/2023/05/hitt-thumbnail-homepage-optimized-768x491.jpeg.webp 768w" sizes="(max-width: 1440px) 100vw, 1440px" /></noscript>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-SSCMMarquee fl-node-gielc8oqw67s" data-node="gielc8oqw67s">
+<div class="fl-module-content fl-node-content">
+<div class="SSCMMarquee" id="SSCMMarquee-gielc8oqw67s">
+<div class="SSCMMarquee-slick  SSCMMarquee-original">
+<div class="SSCMMarquee-content">
+<div class="SSCMMarquee-metrics">
+<p class="SSCMMarquee-metrics--number">
++<span data-roll="228.87">228.87</span>% </p>
+<p class="SSCMMarquee-metrics--subtitle">Qualified Leads</p>
+</div>
+</div> <div class="SSCMMarquee-content">
+<div class="SSCMMarquee-metrics">
+<p class="SSCMMarquee-metrics--number">
++<span data-roll="22.5">22.5</span>% </p>
+<p class="SSCMMarquee-metrics--subtitle">Time On Page</p>
+</div>
+</div> <div class="SSCMMarquee-content">
+<div class="SSCMMarquee-metrics">
+<p class="SSCMMarquee-metrics--number">
++<span data-roll="81.62">81.62</span>% </p>
+<p class="SSCMMarquee-metrics--subtitle">Pages Per Session</p>
+</div>
+</div> </div>
+</div> </div>
+</div>
+</div>
+</div>
+<div class="fl-col fl-node-te84qs20vai7 fl-col-small fl-col-small-custom-width" data-node="te84qs20vai7">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-s6tjw507mnbf fl-animation fl-fade-up" data-node="s6tjw507mnbf" data-animation-delay="0" data-animation-duration=".3">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>"Jorbanhas truly seen where we can take the website and make it look significantly different from all of our competitors."</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-photo fl-node-yp698nrqkuoe fl-animation fl-fade-up" data-node="yp698nrqkuoe" data-animation-delay="0" data-animation-duration=".3">
+<div class="fl-module-content fl-node-content">
+<div class="fl-photo fl-photo-crop-circle fl-photo-align-left" itemscope itemtype="https://schema.org/ImageObject">
+<div class="fl-photo-content fl-photo-img-jpg">
+<img decoding="async" class="fl-photo-img wp-image-39128 size-full perfmatters-lazy" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;200&#039;%20height=&#039;219&#039;%20viewBox=&#039;0%200%20200%20219&#039;%3E%3C/svg%3E" alt="scott_greenberg_hitt" itemprop="image" height="219" width="200" title="scott_greenberg_hitt" data-src="https://huemordev.b-cdn.net/wp-content/uploads/bb-plugin/cache/scott_greenberg_hitt-circle-42cfc06d78dc2f1afd2f3e2dde2f0329-yp698nrqkuoe.jpg" /><noscript><img decoding="async" class="fl-photo-img wp-image-39128 size-full" src="../../huemordev.b-cdn.net/wp-content/uploads/bb-plugin/cache/scott_greenberg_hitt-circle-42cfc06d78dc2f1afd2f3e2dde2f0329-yp698nrqkuoe.jpg" alt="scott_greenberg_hitt" itemprop="image" height="219" width="200" title="scott_greenberg_hitt"  /></noscript>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-c4kyj5gzt0s1 fl-animation fl-fade-up" data-node="c4kyj5gzt0s1" data-animation-delay="0" data-animation-duration=".3">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>Scott Greenberg, Former Director of Marketing at HITT</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-button fl-node-xfq8kw0c1ma3 fl-animation fl-fade-up custom-button custom-button-dark no-border icon-color" data-node="xfq8kw0c1ma3" data-animation-delay="0" data-animation-duration=".3">
+<div class="fl-module-content fl-node-content">
+<div class="fl-button-wrap fl-button-width-auto fl-button-left fl-button-has-icon">
+<a href="#free-action-plan" target="_self" class="fl-button">
+<span class="fl-button-text">Get Your Free Action Plan</span>
+<i class="fl-button-icon fl-button-icon-after dashicons dashicons-before dashicons-arrow-right-alt" aria-hidden="true"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-u4b8rv7wx5i0 fl-row-default-height fl-row-align-center fl-row-bg-overlay" data-node="u4b8rv7wx5i0">
+<div class="fl-row-content-wrap">
+<div class="fl-row-content fl-row-fixed-width fl-node-content">
+<div class="fl-col-group fl-node-o3fn461ah2vl" data-node="o3fn461ah2vl">
+<div class="fl-col fl-node-kcmsrunx2vga" data-node="kcmsrunx2vga">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-separator fl-node-kduiry3gt5z9" data-node="kduiry3gt5z9">
+<div class="fl-module-content fl-node-content">
+<div class="fl-separator"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-col-group fl-node-d8h9zimuabx1 fl-col-group-equal-height fl-col-group-align-center fl-col-group-custom-width fl-col-group-responsive-reversed" data-node="d8h9zimuabx1">
+<div class="fl-col fl-node-shl916rk7dw5 fl-col-small fl-col-small-custom-width" data-node="shl916rk7dw5">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-5r9dgb6wcz2s fl-animation fl-fade-up" data-node="5r9dgb6wcz2s" data-animation-delay="0" data-animation-duration=".3">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>"The site has truly helped bring in higher quality leads, even though we receive fewer leads than before. This allows our sales team to spend more timeline on clients that need our assistance, which is huge."</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-photo fl-node-yt6p83q2keav fl-animation fl-fade-up" data-node="yt6p83q2keav" data-animation-delay="0" data-animation-duration=".3">
+<div class="fl-module-content fl-node-content">
+<div class="fl-photo fl-photo-crop-circle fl-photo-align-left" itemscope itemtype="https://schema.org/ImageObject">
+<div class="fl-photo-content fl-photo-img-jpg">
+<img decoding="async" class="fl-photo-img wp-image-37720 size-full perfmatters-lazy" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;102&#039;%20height=&#039;101&#039;%20viewBox=&#039;0%200%20102%20101&#039;%3E%3C/svg%3E" alt="donya-fae-ag-america" itemprop="image" height="101" width="102" title="donya-fae-ag-america" data-src="https://huemordev.b-cdn.net/wp-content/uploads/bb-plugin/cache/donya-fae-ag-america-circle-af7c888d16e68e9cff2bf7c81845a93d-yt6p83q2keav.jpg" /><noscript><img decoding="async" class="fl-photo-img wp-image-37720 size-full" src="../../huemordev.b-cdn.net/wp-content/uploads/bb-plugin/cache/donya-fae-ag-america-circle-af7c888d16e68e9cff2bf7c81845a93d-yt6p83q2keav.jpg" alt="donya-fae-ag-america" itemprop="image" height="101" width="102" title="donya-fae-ag-america"  /></noscript>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-sv86f7jcupwd fl-animation fl-fade-up" data-node="sv86f7jcupwd" data-animation-delay="0" data-animation-duration=".3">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>Donya-Faye Wix, Senior Marketing Manager, AgAmerica</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-button fl-node-myf3bo5i1lth fl-animation fl-fade-up custom-button custom-button-dark no-border icon-color" data-node="myf3bo5i1lth" data-animation-delay="0" data-animation-duration=".3">
+<div class="fl-module-content fl-node-content">
+<div class="fl-button-wrap fl-button-width-auto fl-button-left fl-button-has-icon">
+<a href="#free-action-plan" target="_self" class="fl-button">
+<span class="fl-button-text">Get Your Free Action Plan</span>
+<i class="fl-button-icon fl-button-icon-after dashicons dashicons-before dashicons-arrow-right-alt" aria-hidden="true"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-col fl-node-f0pq1vb9iusw fl-col-small fl-col-small-custom-width" data-node="f0pq1vb9iusw">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-photo fl-node-c2zt8wk6b0ds" data-node="c2zt8wk6b0ds">
+<div class="fl-module-content fl-node-content">
+<div class="fl-photo fl-photo-align-center" itemscope itemtype="https://schema.org/ImageObject">
+<div class="fl-photo-content fl-photo-img-jpeg">
+<img decoding="async" class="fl-photo-img wp-image-40430 size-full perfmatters-lazy" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;1440&#039;%20height=&#039;920&#039;%20viewBox=&#039;0%200%201440%20920&#039;%3E%3C/svg%3E" alt="agamerica-homepage-thumbnail-optimized" itemprop="image" height="920" width="1440" title="agamerica-homepage-thumbnail-optimized" data-src="https://huemordev.b-cdn.net/wp-content/uploads/2023/05/agamerica-homepage-thumbnail-optimized.jpeg.webp" data-srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/05/agamerica-homepage-thumbnail-optimized.jpeg.webp 1440w,https://huemordev.b-cdn.net/wp-content/uploads/2023/05/agamerica-homepage-thumbnail-optimized-300x192.jpeg.webp 300w,https://huemordev.b-cdn.net/wp-content/uploads/2023/05/agamerica-homepage-thumbnail-optimized-1024x654.jpeg.webp 1024w,https://huemordev.b-cdn.net/wp-content/uploads/2023/05/agamerica-homepage-thumbnail-optimized-768x491.jpeg.webp 768w" data-sizes="(max-width: 1440px) 100vw, 1440px" /><noscript><img decoding="async" class="fl-photo-img wp-image-40430 size-full" src="https://huemordev.b-cdn.net/wp-content/uploads/2023/05/agamerica-homepage-thumbnail-optimized.jpeg.webp" alt="agamerica-homepage-thumbnail-optimized" itemprop="image" height="920" width="1440" title="agamerica-homepage-thumbnail-optimized" srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/05/agamerica-homepage-thumbnail-optimized.jpeg.webp 1440w,https://huemordev.b-cdn.net/wp-content/uploads/2023/05/agamerica-homepage-thumbnail-optimized-300x192.jpeg.webp 300w,https://huemordev.b-cdn.net/wp-content/uploads/2023/05/agamerica-homepage-thumbnail-optimized-1024x654.jpeg.webp 1024w,https://huemordev.b-cdn.net/wp-content/uploads/2023/05/agamerica-homepage-thumbnail-optimized-768x491.jpeg.webp 768w" sizes="(max-width: 1440px) 100vw, 1440px" /></noscript>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-SSCMMarquee fl-node-voq25pwh43lj" data-node="voq25pwh43lj">
+<div class="fl-module-content fl-node-content">
+<div class="SSCMMarquee" id="SSCMMarquee-voq25pwh43lj">
+<div class="SSCMMarquee-slick  SSCMMarquee-original">
+<div class="SSCMMarquee-content">
+<div class="SSCMMarquee-metrics">
+<p class="SSCMMarquee-metrics--number">
++<span data-roll="124.3">124.3</span>% </p>
+<p class="SSCMMarquee-metrics--subtitle">Qualified Leads</p>
+</div>
+</div> <div class="SSCMMarquee-content">
+<div class="SSCMMarquee-metrics">
+<p class="SSCMMarquee-metrics--number">
+-<span data-roll="17.2">17.2</span>% </p>
+<p class="SSCMMarquee-metrics--subtitle">Bounce Rate</p>
+</div>
+</div> <div class="SSCMMarquee-content">
+<div class="SSCMMarquee-metrics">
+<p class="SSCMMarquee-metrics--number">
++<span data-roll="23.9">23.9</span>% </p>
+<p class="SSCMMarquee-metrics--subtitle">Pages Per Session</p>
+</div>
+</div> </div>
+</div> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-row fl-row-full-width fl-row-bg-gradient fl-node-ximejk1yl3nf fl-row-default-height fl-row-align-center overflow-v" data-node="ximejk1yl3nf">
+<div class="fl-row-content-wrap">
+<div class="fl-row-content fl-row-fixed-width fl-node-content">
+<div class="fl-col-group fl-node-klpf3x014v27" data-node="klpf3x014v27">
+<div class="fl-col fl-node-i9yhgs3a146u" data-node="i9yhgs3a146u">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-separator fl-node-abr6je9w05vs" data-node="abr6je9w05vs">
+<div class="fl-module-content fl-node-content">
+<div class="fl-separator"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-col-group fl-node-rj0htd5fs1ge" data-node="rj0htd5fs1ge">
+<div id="seo-content" class="fl-col fl-node-qxjfrewvayp5" data-node="qxjfrewvayp5">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-photo fl-node-p5g1yb90k8tq" data-node="p5g1yb90k8tq">
+<div class="fl-module-content fl-node-content">
+<div class="fl-photo fl-photo-align-left" itemscope itemtype="https://schema.org/ImageObject">
+<div class="fl-photo-content fl-photo-img-png">
+<img decoding="async" class="fl-photo-img wp-image-1519 size-full perfmatters-lazy" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;58&#039;%20height=&#039;58&#039;%20viewBox=&#039;0%200%2058%2058&#039;%3E%3C/svg%3E" alt="solar system" itemprop="image" height="58" width="58" title="solar system" data-src="https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system.png.webp" data-srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system.png.webp 58w,https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system-24x24.png.webp 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system-36x36.png.webp 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system-48x48.png.webp 48w" data-sizes="(max-width: 58px) 100vw, 58px" /><noscript><img decoding="async" class="fl-photo-img wp-image-1519 size-full" src="https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system.png.webp" alt="solar system" itemprop="image" height="58" width="58" title="solar system" srcset="https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system.png.webp 58w,https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system-24x24.png.webp 24w,https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system-36x36.png.webp 36w,https://huemordev.b-cdn.net/wp-content/uploads/2023/02/solar-system-48x48.png.webp 48w" sizes="(max-width: 58px) 100vw, 58px" /></noscript>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-av4jp3t2n15i" data-node="av4jp3t2n15i">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>From Average to Awesome: Dissecting the Tactics Used by a Standout Website</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-n2ksfzxv68ol fl-animation fl-fade-up" data-node="n2ksfzxv68ol" data-animation-delay="0" data-animation-duration=".5">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>A strong online presence is essential for businesses of all sizes. One way to ensure your website stands out from the competition and meets user needs is through regular website analysis.</p>
+<p>This process involves evaluating your website's performance in areas such as search engine optimization (SEO), conversion rates, traffic, and user experience (UX).</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-8y5akorup7eq fl-animation fl-fade-in" data-node="8y5akorup7eq" data-animation-delay="0" data-animation-duration=".5">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<h2><strong>What Is Website Analysis?</strong></h2>
+<p>Website analysis is a comprehensive and systematic process of assessing a website's performance in various critical areas, such as search engine optimization (SEO), conversion rate optimization (CRO), traffic generation, and user experience (UX).</p>
+<p>This multidimensional approach provides valuable insights into the effectiveness of design elements, content quality, technical infrastructure and more - all with the aim of enhancing overall website functionality.</p>
+<p>A well-executed website analysis enables marketing managers to pinpoint areas where their online presence may be underperforming or providing suboptimal experiences for site visitors.</p>
+<p>Armed with this information, they can then make data-driven decisions that will ultimately bolster engagement levels and drive conversions. Consider a scenario wherein bounce rates are discovered to be higher than expected following an in-depth examination of user behavior analytics. – armed with these findings; companies can implement strategic changes designed specifically to improve user retention and rates among target audience segments.</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-cyxvljt62qzp fl-animation fl-fade-in" data-node="cyxvljt62qzp" data-animation-delay="0" data-animation-duration=".5">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<h2><strong>Benefits Of Website Analysis</strong></h2>
+<p>Website analysis provides numerous benefits, including improved conversion rates, identification of conversion blockers, enhanced site ranking in search results and discovery of competitor strategies.</p>
+<h3><strong>Improved Conversion Rates</strong></h3>
+<p>Improving conversion rates is a key objective for marketing managers, as it translates to increased leads, sales, and revenue for the company. By conducting an in-depth website analysis, you can uncover valuable insights into your site's performance and user behavior that allow you to optimize your website more effectively for conversions.</p>
+<p>For instance, analyzing heatmaps or session recordings could reveal where users are clicking most often on a page and how far they are scrolling down before leaving.</p>
+<p>One example of enhanced conversion rates through website analysis involves A/B testing different elements of a webpage to see which one drives higher engagement from visitors.</p>
+<p>This could include variations in color schemes, headlines, button text or placement – all factors that can impact conversion rates significantly when optimized correctly.</p>
+<p>Additionally, improving load times by addressing site speed issues plays another crucial role in boosting conversion rates since faster-loading pages reduce bounce rate and encourage users to stay longer exploring what the business has to offer.</p>
+<h3><strong>Identification Of Conversion Blockers</strong></h3>
+<p>One of the primary benefits of conducting a website analysis is identifying potential conversion blockers that might be preventing your prospects from completing desired actions, such as subscribing to your newsletter or making a purchase.</p>
+<p>These obstacles often result from poor user experience, broken links, unclear messaging, and technical glitches on your site.</p>
+<p>For instance, heatmaps can reveal areas where visitors tend to click most frequently or hover over without clicking at all. This information helps in pinpointing confusing navigation elements or CTAs that may require optimization for improved engagement.</p>
+<p>Similarly, session recordings allow you to observe user interactions in real-time, alerting you about any hiccups they encounter while browsing your website or mobile device.</p>
+<p>Another method of identifying conversion blockers involves soliciting feedback directly from users through on-site surveys or feedback widgets. Asking questions related to visitor satisfaction levels can highlight existing pain points encountered when interacting with your web pages.</p>
+<h3><strong>Enhanced Site Ranking In Search Results</strong></h3>
+<p>By conducting a website analysis, businesses can improve their website's ranking in the search engines' results through optimization of internal and external links, identification of popular keywords, and analysis of competitors' tactics.</p>
+<p>With the right web analytics tools such as Ubersuggest and SimilarWeb, businesses can also analyze competitor strategies to identify gaps in their own content strategy.</p>
+<p>Additionally, mobile optimization is crucial in ensuring better visibility on search engine result pages (SERPs). Using<a href="https://pagespeed.web.dev/"> Google PageSpeed Insights</a> or GTmetrix can help identify elements that may lead to slow website speeds resulting from poorly optimized images or large file sizes.</p>
+<h3><strong>Discovery Of Competitor Strategies</strong></h3>
+<p>Analyzing competitor strategies is an essential part of website analysis. By understanding competitive trends and identifying best practices, businesses can stay ahead of the game and create a unique value proposition for their user base.</p>
+<p>There are several ways to conduct a thorough competitor analysis: studying organic traffic, examining pay-per-click (PPC) strategies, analyzing competitors’ websites, and researching customer demographics.</p>
+<p>By using analytical tools like SEMRush or SimilarWeb, you can identify top keywords that competitors are ranking highly for on search engine results pages (SERPs).</p>
+<p>Another aspect to consider is PPC advertising campaigns; by analyzing how much money your competitors spend per click and what ads they're running, you can tailor your own paid marketing initiatives more effectively.</p>
+<p>Understanding customer demographics through analyzing social media engagement or market research data also provides valuable insights into tailoring messaging and ensuring effective communication with target audiences.</p>
+<p>In conclusion, conducting a comprehensive competitor analysis is critical for staying relevant in today's digital landscape.</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-u3rd9j7y4gis fl-animation fl-fade-in" data-node="u3rd9j7y4gis" data-animation-delay="0" data-animation-duration=".5">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<h2><strong>Types Of Website Analysis</strong></h2>
+<p>Website analysis can be broken down into three main categories: Search Engine Optimization (SEO), Conversion Rate Optimization (CRO), and Usability Analysis.</p>
+<h3><strong>Search Engine Optimization (SEO)</strong></h3>
+<p>Search Engine Optimization (SEO) is a crucial part of website analysis that improves your site's visibility and ranking in search engine results. By <a href="../blog/how-to-redesign-a-website-without-losing-seo/index.html">optimizing your website for relevant keywords</a>, you can attract more traffic to your site, leading to higher conversion rates and revenue.</p>
+<p>Conducting an SEO audit involves analyzing various factors like on-page optimization, off-page optimization, mobile-friendliness, page speed, page performance and, and meta description tags.</p>
+<p>By addressing these issues through effective SEO strategies like keyword research or building quality backlinks from authoritative sites in the industry niche while keeping up with Google algorithm updates businesses can enhance their online presence and deliver valuable information to their target audience.</p>
+<h3><strong>Conversion Rate Optimization (CRO)</strong></h3>
+<p>Conversion Rate Optimization (CRO) is a type of website analysis that focuses on increasing the percentage of visitors who take a desired action, such as making a purchase or filling out a form.</p>
+<p>By identifying and eliminating conversion blockers, CRO can help increase sales and revenue. This involves analyzing user behavior on the site to understand where users are dropping off in their journey towards conversion.</p>
+<p>For example, by analyzing data from<a href="https://analytics.google.com/"> Google Analytics</a> or Fullstory, marketers may discover that users tend to abandon their shopping carts at checkout due to complex forms or lack of payment options.</p>
+<p>By simplifying the forms or offering more payment options, they can increase the number of completed purchases on the site.</p>
+<p>Overall, CRO is an essential aspect of website analysis that directly impacts business results.</p>
+<h3><strong>Usability Analysis</strong></h3>
+<p>Usability analysis is a critical component of website analysis that focuses on improving the user experience (UX) of a website. The goal of usability analysis is to identify any roadblocks or hurdles users face when interacting with a website and address these issues to enhance the overall user experience.</p>
+<p>Usability tools like Userfeel and Crazy Egg assist in capturing user behavior patterns, heatmaps, and session recordings to evaluate how users interact and engage with your site.</p>
+<p>For instance, if you notice high drop-off rates at certain points in your funnel journey or low engagement for specific pages or products, it could be necessary to conduct usability analysis.</p>
+<p>By doing so, you will get insights into why users exit from certain stages or lose interest in specific content formats in time frames that are not satisfactory for them.</p>
+<p>By optimizing a company's website's usability through data-driven optimization techniques instead of assuming what works best based on opinions provides firm benefit worth acting upon since it can lead to superior customer satisfaction levels resulting from increased online sales revenue generated over time holistically rather than sporadic spikes due to seasonal promotions alone solely.</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-6mk13fsjau2z fl-animation fl-fade-in" data-node="6mk13fsjau2z" data-animation-delay="0" data-animation-duration=".5">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<h2><strong>Tools For Website Analysis</strong></h2>
+<p>SEO tools like Google Search Console and<a href="https://ahrefs.com/site-audit"> Ahrefs Site Audit Tool</a> help analyze and analyze a website for technical issues, keyword rankings, backlink profiles, and on-page optimization opportunities.</p>
+<p>CRO tools like<a href="https://analytics.google.com/"> Google Analytics</a> and Fullstory provide data on user behavior such as click behavior, scrolling patterns, and engagement metrics on pages.</p>
+<h3><strong>SEO Tools: Google Search Console,</strong> <a href="https://ahrefs.com/site-audit"><strong>Ahrefs Site Audit Tool</strong></a></h3>
+<p>Google Search Console and Ahrefs Site Audit Tool are essential SEO tools for any marketing manager looking to enhance their website's search engine ranking. With Google Search Console, businesses can monitor and analyze a website for top performance data, including clicks, impressions, and click-through rates from organic search results.</p>
+<p>It also enables webmasters to fix indexing issues that may negatively affect the site's ranking ranking.</p>
+<p>On the other hand, Ahrefs Site Audit Tool provides comprehensive technical SEO analysis of a website.</p>
+<p>By using these two powerful SEO tools together regularly, marketing managers can stay ahead of their competition online by constantly monitoring their website's health and optimizing it for higher rankings.</p>
+<p>Additionally, conducting regular SEO audits using Google Search Console and Ahrefs Site Audit Tool helps businesses track keyword rankings as well as identify new keyword opportunities while analyzing backlinks' quality pointing towards the business’s domain name.</p>
+<h3><strong>CRO Tools: Google Analytics, Fullstory</strong></h3>
+<p>Google Analytics and Fullstory are two of the most popular CRO tools for website analysis. Google Analytics provides marketers with a wealth of data points, including traffic sources, bounce rates, and goal completions, data that can impact conversion rates.</p>
+<p>Fullstory is another powerful web analytics tool that can help businesses understand how visitors interact with their website pages in real-time.</p>
+<p>Using these CRO tools together as part of an overall website analysis strategy can provide valuable insights into what drives clicks and conversions on your site while revealing pain points in the customer journey.</p>
+<h3><strong>Usability Tools: Userfeel, Crazy Egg</strong></h3>
+<p>User experience is paramount when it comes to website analysis.</p>
+<p>Userfeel offers seamless usability testing in over 40 languages, providing a high-quality tester panel that provides feedback through video recordings and written reports.</p>
+<p>Crazy Egg also offers an array of reports to help analyze user behavior on a website, including heatmaps and overlay reports that show click patterns and scrolling behaviors.</p>
+<p>By utilizing these types of usability tools, marketers can better understand what's working on their sites, what's not working, and most importantly - why.</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-8gmktl4z0wao fl-animation fl-fade-in" data-node="8gmktl4z0wao" data-animation-delay="0" data-animation-duration=".5">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<h2><strong>How To Conduct A Website Analysis</strong></h2>
+<p>To conduct a thorough website analysis, start by defining the focus and analysis goals first, creating an analysis roadmap, collecting and analyzing data, identifying and addressing loopholes, and making website analysis a habit.</p>
+<h3><strong>Define The Focus And Goals</strong></h3>
+<p>Before conducting a website analysis, it's vital to identify the focus and goals that your website needs to achieve. This involves doing user research and determining what your business hopes to gain from its online presence, such as attracting more visitors or increasing sales conversions.</p>
+<p>Identifying clear objectives will help ensure that the website analysis is tailored to meet specific needs. It also makes it easier to identify strengths and weaknesses in areas like search engine optimization (SEO), speed, traffic, and user experience (UX).</p>
+<p>For instance, if slow load times are reducing conversion rates on your site during peak periods of traffic flow under heavy competition with other eCommerce sites offering equally compelling experiences for users than swift page load times maybe essential.</p>
+<h3><strong>Create An Analysis Roadmap</strong></h3>
+<p>After defining the focus and goals for device type of website analysis, the next step is to create an analysis roadmap. This involves outlining analysis goal, a plan for collecting and analyzing data, identifying loopholes, and addressing them.</p>
+<p>One way to create an effective roadmap is by breaking down the analysis into specific sections such as SEO, CRO, usability testing, etc., then scheduling each section at different times.</p>
+<p>Another approach could be prioritizing certain elements based on their importance or urgency.</p>
+<p>Creating an analysis roadmap takes some effort initially but has long-term benefits: it ensures website performance optimization remains a priority within your marketing team's strategy while avoiding any "analysis paralysis" scenarios where you get bogged down with excessive information without clear direction on how to act upon it.</p>
+<h3><strong>Collect And Analyze Data</strong></h3>
+<p>Once you've defined your focus and goals in website analysis, the next step is to collect and analyze data. This involves gathering valuable insights about your website's performance using a range of web analytics tools, such as Google Analytics, Fullstory, Ahrefs Site Audit Tool, and Userfeel.</p>
+<p>One example of how collecting and analyzing data can improve website performance is by identifying pages with high bounce rates or low engagement levels. By reviewing user session recordings through tools like Full Story or Crazy Egg's heatmaps feature to understand where site visitors are clicking around on a page or where they're getting stuck in order to make targeted improvements.</p>
+<p>Another powerful tool for analysis involves competitive SEO research - this analysis goal includes identifying competitor search engine rankings for specific keywords and understanding what content strategies they utilize on their websites.</p>
+<h3><strong>Identify And Address Loopholes</strong></h3>
+<p>Identifying and addressing loopholes in a user driven website analysis is an essential step in conducting website analysis. Loopholes are areas of the website that are not performing as expected or hindering its ability to meet user needs.</p>
+<p>To address these loopholes effectively, it's crucial to have data you collect and analyze, data you collect from various sources like customer feedback tools and behavior analytics tools such as heat maps and session recordings.</p>
+<p>For instance, if a marketer conducts SEO analysis on their e-commerce site using Ahrefs or Google Search Console toolkits they might uncover technical errors affecting page speed which may negatively impact revenue through higher bounce rates.</p>
+<h3><strong>Make Website Analysis A Habit</strong></h3>
+<p>Conducting website analysis should become a habit for any marketing manager looking to improve their site's performance. Regularly reviewing key metrics, such as SEO, speed, traffic, and UX can help identify areas that need improvement.</p>
+<p>Moreover, feedback tools like polls and surveys can be used to gather real-time user feedback while heatmaps and session recordings can visualize user behavior for improved UX.</p>
+<p>Another essential aspect of regular website analysis is monitoring website speed. Slow load times negatively impact user experience and lead to higher bounce rates resulting rank higher amount in lost revenue.</p>
+<p>Therefore using relevant tools like Google Page Speed Insights or Pingdom helps identify elements causing slow load times so they can be addressed promptly.</p>
+<p>In conclusion - making website analysis a habit will not only effectively optimize the performance of your site but also provide valuable insights into enhancing customer satisfaction levels for converting potential leads into customers ultimately boosting sales through implementing effective digital marketing strategies based on gathered analytical report findings from content audit &amp; governance to using backlink analysis analyses across various platforms using available online software solutions at hand among the competitive landscape compared against auditing competitors analyzing organic traffic studies customer demographics examining PPC strategies improving engagement metrics via call-to-actions leading to the final goal of targeting precise buyer stages with related web content aimed towards funnel optimization once domain authority is obtained via link building opportunities discovered during audits after deploying competitive benchmarking SWOTs alongside performing continuous alignment between audience reception tied through analytics per platform utilized based on appropriate keywords researched within ideal landing pages while repurposing top-performing content further optimized by CTA conversions identified giving significant insight into what you determine aligns with your brand, customer perception preferences leading to future content calendar planning based on analysis outcomes.</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-j83hctufeb0g fl-animation fl-fade-in" data-node="j83hctufeb0g" data-animation-delay="0" data-animation-duration=".5">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<h2><strong>Competitor Analysis: Pros And Cons</strong></h2>
+<p>Analyzing competitors' organic traffic, studying their customer demographics, and examining their PPC strategies are some of the pros of conducting a competitor analysis; however, it can also be time-consuming and may lead to copying instead of innovating.</p>
+<h3><strong>Analyzing Organic Traffic</strong></h3>
+<p>Analyzing organic traffic associated with competitor analysis tool is fundamental to understanding website performance and identifying areas of improvement. Organic traffic refers to the number of visitors who come to your website from unpaid search results, making it crucial for improving your website's SEO strategy.</p>
+<p>By analyzing your competitors' organic traffic, you can identify what keywords they are ranking for and leverage opportunities that may have been previously overlooked.</p>
+<p>For instance, using tools like Ubersuggest or SimilarWeb enables you to compare competitor websites' total visits and their share of website traffic in comparison with yours.</p>
+<p>Such insights allow marketers to understand how much potential there is in attracting more visitors via SEO campaigns.</p>
+<p>Overall, regularly assessing organic traffic and analysis tools helps keep marketers up-to-date with current trends and technologies used by competitors while allowing them more control over optimizing their own strategies towards achieving increased visibility online.</p>
+<h3><strong>Studying Customer Demographics</strong></h3>
+<p>Studying customer demographics is an essential aspect of website analysis. Knowing who your customers are, their age, gender, location, income level and other relevant demographic information can help you tailor your marketing strategies to target them better.</p>
+<p>For example, suppose you run an e-commerce store selling beauty products targeting women in their 20s and 30s. In that case, analysing the customer demographics may reveal that most visitors to your site are women aged over 40.</p>
+<p>Overall understanding consumer behaviour from a demographic perspective will allow companies to further collect data and create more targeted outreach campaigns improving engagement while increasing conversions leading to greater revenue generation opportunities in the long term.</p>
+<h3><strong>Examining Pay-Per-Click (PPC) Strategies</strong></h3>
+<p>Pay-Per-Click (PPC) advertising is an effective way to reach potential customers and drive traffic to your website. However, a successful PPC strategy involves more than just creating ads and bidding on keywords.</p>
+<p>By examining the PPC strategies of your competitors, you can identify new keyword opportunities that might not have been on your radar before. You can also evaluate their ad copy and landing pages against yours to improve click-through rates and conversion rates.</p>
+<p>It's important to note that while competitor analysis is useful for gaining insights into industry trends and gaps in your own strategy, it should never be seen as a replacement for developing unique selling propositions that are tailored to the needs of your specific target audience.</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-db5fawqpoltn fl-animation fl-fade-in" data-node="db5fawqpoltn" data-animation-delay="0" data-animation-duration=".5">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<h2><strong>Conclusion</strong></h2>
+<p>In today's digital world, having a website that performs well is crucial for businesses to succeed. Conducting website analysis helps companies improve their online performance by identifying areas for improvement and addressing customer pain points.</p>
+<p>By focusing on key metrics like SEO, speed, traffic, and UX, marketing managers can optimize their websites to meet the needs of their customers. With the help of various tools such as Google Analytics, Fullstory, Userfeel and more; marketing managers can gather real-time feedback and gain a better understanding of user behavior on their website.</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-qzt8obvlnhru fl-animation fl-fade-in" data-node="qzt8obvlnhru" data-animation-delay="0" data-animation-duration=".5">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<h2><strong>FAQs</strong></h2>
+<p><strong>1. What is website analysis and why is it important for businesses?</strong></p>
+<p>Website analysis involves evaluating the performance of a website to identify areas for improvement. It helps businesses understand how visitors interact with different devices on their site, which pages are performing well and which need attention. This information can be leveraged to improve user experience, increase traffic and ultimately drive more conversions.</p>
+<p><strong>2. What are some common metrics that businesses should track when analyzing their website?</strong></p>
+<p>Metrics such as bounce rate, time on site, conversion rate, click-through rates (CTR), page load time, mobile responsiveness and search engine rankings are all valuable indicators of a website's overall health and effectiveness. By monitoring these metrics over time, business owners can make informed decisions about where to focus their efforts in order to improve the user experience.</p>
+<p><strong>3. How often should I analyze my website?</strong></p>
+<p>Ideally, you should analyze your website regularly - at least once per month if possible - in order to stay on top of any issues or opportunities as they arise. You may also want to conduct periodic deep dives into specific aspects of your site (such as SEO or usability) on a quarterly or annual basis depending upon your individual needs &amp; goals.</p>
+<p><strong>4. Do I need specialized knowledge or tools in order to perform an effective website analysis?</strong></p>
+<p>While there are many sophisticated tools available for conducting detailed analyses of websites (such as Google Analytics), basic assessments can be performed using various free tools from online resources like PageSpeed Insights by Google or<a href="http://semrush.com/"> SEMrush.com</a>. Slight technical expertise would help but even without specialized skills there are step-by-step guides available online that individuals could follow through while checking the various aspects regarding different factors affecting their own business websites' performance e.g content quality etc).</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-col fl-node-zl4s10x2tbnp fl-col-small fl-visible-desktop fl-visible-large sticky top-20" data-node="zl4s10x2tbnp">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-table-of-contents fl-node-09a7sxgk21u4" data-node="09a7sxgk21u4">
+<div class="fl-module-content fl-node-content">
+<div class="TableOfContents  " id="TableOfContents-09a7sxgk21u4">
+<div class="TableOfContents-wrapper">
+<div class="TableOfContents-toc">
+<div class="accordion" id="TableOfContentsAccordion-09a7sxgk21u4">
+<div class="card panel">
+<div class="card-header" id="headingOne">
+<button class="btn btn-link toggle desktop-disabled " data-parent="#TableOfContentsAccordion-09a7sxgk21u4" type="button" data-toggle="collapse" data-target="#tocOne" aria-expanded="false" aria-controls="tocOne">
+Table of Contents <i class="fl-accordion-button-icon fl-accordion-button-icon-right dashicons-arrow-down-alt2 dashicons dashicons-before"><span class="sr-only">Expand</span></i>
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.125 10h13.75M10 3.125v13.75" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</button>
+</div>
+<div id="tocOne" class="collapse in" aria-labelledby="headingOne" data-parent="#TableOfContentsAccordion-09a7sxgk21u4">
+<div class="card-body">
+<ul class="TableOfContents-list" id="TableOfContents-list-09a7sxgk21u4">
+</ul>
+</div>
+</div>
+</div>
+<div class="card panel">
+<div class="card-header" id="additional-reading-heading">
+<button class="btn btn-link collapsed toggle" type="button" data-parent="#TableOfContentsAccordion-09a7sxgk21u4" data-toggle="collapse" data-target="#additional-reading" aria-expanded="false" aria-controls="additional-reading">
+Additional Reading <i class="fl-accordion-button-icon fl-accordion-button-icon-right dashicons-arrow-down-alt2 dashicons dashicons-before"><span class="sr-only">Expand</span></i>
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.125 10h13.75M10 3.125v13.75" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</button>
+</div>
+<div id="additional-reading" class="collapse" aria-labelledby="additional-reading-heading" data-parent="#TableOfContentsAccordion-09a7sxgk21u4">
+<div class="card-body">
+<ul class="TableOfContents-list">
+<li class="TableOfContents-list-item">
+<a href="../blog/website-cost-guide/index.html" rel target>How Much Does It Cost to Build a Website? </a>
+</li>
+<li class="TableOfContents-list-item">
+<a href="../blog/website-redesign-project-plan/index.html" rel target="_self">A Step-by-Step Website Redesign Project Plan </a>
+</li>
+<li class="TableOfContents-list-item">
+<a href="../blog/web-design-system/index.html" rel target="_self">How to Build a Web Design System </a>
+</li>
+<li class="TableOfContents-list-item">
+<a href="../wordpress-agency/wordpress-web-development/index.html" rel target="_self">Our Approach to WordPress Development </a>
+</li>
+<li class="TableOfContents-list-item">
+<a href="../blog/how-can-a-proper-ux-research-process-enhance-product-metrics/index.html" rel target="_self">Choosing the Right Product Metrics Using UX Research Process </a>
+</li>
+<li class="TableOfContents-list-item">
+<a href="../blog/top-retail-website-examples/index.html" rel target="_self">Our Top Retail Website Examples </a>
+</li>
+<li class="TableOfContents-list-item">
+<a href="../blog/web-design-vs-web-development/index.html" rel target="_self">Understanding Web Design vs Web Development </a>
+</li>
+<li class="TableOfContents-list-item">
+<a href="../blog/top-beauty-website-examples/index.html" rel target="_self">Our Top Beauty Website Examples </a>
+</li>
+<li class="TableOfContents-list-item">
+<a href="../resource/shopify-speed-guide-checklist/index.html" rel target="_self">Our Shopify Speed Guide Checklist </a>
+</li>
+<li class="TableOfContents-list-item">
+<a href rel target="_self">Guide to Optimizing Shopify Image sizes </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="TableOfContents-cta custom-button bordered-icon-front no-border-text small-icon">
+<a href="../contact/index.html" target="_self" rel class="fl-button" role="button">
+<span class="fl-button-text">Book A Strategy Session</span>
+<i class="fl-button-icon fl-button-icon-before dashicons dashicons-before dashicons-arrow-right-alt" aria-hidden="true"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div> </div>
+</article>
+
+</div>
+</div>
+</div>
+</div>
+<footer class="fl-builder-content fl-builder-content-197 fl-builder-global-templates-locked" data-post-id="197" data-type="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter"><div class="fl-row fl-row-full-width fl-row-bg-gradient fl-node-c7ou2dj1zfq4 fl-row-default-height fl-row-align-center" data-node="c7ou2dj1zfq4">
+<div class="fl-row-content-wrap">
+<div class="fl-row-content fl-row-fixed-width fl-node-content">
+<div class="fl-col-group fl-node-xt1rabo3hc5s" data-node="xt1rabo3hc5s">
+<div class="fl-col fl-node-ins6gt2f3ze5 fl-col-small" data-node="ins6gt2f3ze5">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-photo fl-node-c0gtwklqhnse" data-node="c0gtwklqhnse">
+<div class="fl-module-content fl-node-content">
+<div class="fl-photo fl-photo-align-left" itemscope itemtype="https://schema.org/ImageObject">
+<div class="fl-photo-content fl-photo-img-webp">
+<img decoding="async" class="fl-photo-img wp-image-1406 size-full perfmatters-lazy" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;83&#039;%20height=&#039;80&#039;%20viewBox=&#039;0%200%2083%2080&#039;%3E%3C/svg%3E" alt="Huemor-Logo-Black@2x-1-e1674490603267" itemprop="image" height="80" width="83" title="Huemor-Logo-Black@2x-1-e1674490603267" data-src="../wp-content/uploads/2023/02/logo.png" data-srcset="../wp-content/uploads/2023/02/logo.png 83w, https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@2x-1-e1674490603267-24x24.webp 24w, https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@2x-1-e1674490603267-36x36.webp 36w, https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@2x-1-e1674490603267-48x46.webp 48w" data-sizes="(max-width: 83px) 100vw, 83px" /><noscript><img decoding="async" class="fl-photo-img wp-image-1406 size-full" src="../wp-content/uploads/2023/02/logo.png" alt="Huemor-Logo-Black@2x-1-e1674490603267" itemprop="image" height="80" width="83" title="Huemor-Logo-Black@2x-1-e1674490603267" srcset="../wp-content/uploads/2023/02/logo.png 83w, https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@2x-1-e1674490603267-24x24.webp 24w, https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@2x-1-e1674490603267-36x36.webp 36w, https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@2x-1-e1674490603267-48x46.webp 48w" sizes="(max-width: 83px) 100vw, 83px" /></noscript>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-col fl-node-qczey80dr719 fl-col-small" data-node="qczey80dr719">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-button fl-node-mps3bwr1z64c custom-button fully-bordered" data-node="mps3bwr1z64c">
+<div class="fl-module-content fl-node-content">
+<div class="fl-button-wrap fl-button-width-auto fl-button-right fl-button-has-icon">
+<a href="../support-request/index.html" target="_self" class="fl-button">
+<span class="fl-button-text">Client Support</span>
+<i class="fl-button-icon fl-button-icon-after dashicons dashicons-before dashicons-arrow-right-alt" aria-hidden="true"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-col-group fl-node-jle5cxr78syg fl-col-group-custom-width" data-node="jle5cxr78syg">
+<div class="fl-col fl-node-o39a470ldvwj fl-col-small fl-col-small-custom-width" data-node="o39a470ldvwj">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-button fl-node-enubltfycdpa custom-button no-border icon-color" data-node="enubltfycdpa">
+<div class="fl-module-content fl-node-content">
+<div class="fl-button-wrap fl-button-width-auto fl-button-left fl-button-has-icon">
+<a href="../website-platforms/index.html" target="_self" class="fl-button">
+<span class="fl-button-text">Website Platforms</span>
+<i class="fl-button-icon fl-button-icon-after dashicons dashicons-before dashicons-arrow-right-alt" aria-hidden="true"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-x3n5bg76rich links-hover" data-node="x3n5bg76rich">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p><a href="../wordpress-agency/index.html">WordPress Website</a></p>
+<p><a href="../shopify-agency/index.html">Shopify Website</a></p>
+<p><a href="../hubspot-agency/index.html">Hubspot Website</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-col fl-node-283npusmy5cx fl-col-small fl-col-small-custom-width" data-node="283npusmy5cx">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-button fl-node-tbg0d2flayq7 custom-button no-border icon-color" data-node="tbg0d2flayq7">
+<div class="fl-module-content fl-node-content">
+<div class="fl-button-wrap fl-button-width-auto fl-button-left fl-button-has-icon">
+<a href="../services/index.html" target="_self" class="fl-button">
+<span class="fl-button-text">Website Services</span>
+<i class="fl-button-icon fl-button-icon-after dashicons dashicons-before dashicons-arrow-right-alt" aria-hidden="true"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-3e07jof6hl8v links-hover" data-node="3e07jof6hl8v">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p><a href="../web-design-agency/index.html">Web Design</a></p>
+<p><a href="../web-development-agency/index.html">Web Development</a></p>
+<p><a href="../website-maintenance-and-support/index.html">Website Maintenance &amp; Support</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-col fl-node-zfk0velincjx fl-col-small fl-col-small-custom-width" data-node="zfk0velincjx">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-button fl-node-keh2p57it10y custom-button no-border icon-color" data-node="keh2p57it10y">
+<div class="fl-module-content fl-node-content">
+<div class="fl-button-wrap fl-button-width-auto fl-button-left fl-button-has-icon">
+<a href="../industries/index.html" target="_self" class="fl-button">
+<span class="fl-button-text">Clients We Serve</span>
+<i class="fl-button-icon fl-button-icon-after dashicons dashicons-before dashicons-arrow-right-alt" aria-hidden="true"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-ikvyg69qe2wb links-hover" data-node="ikvyg69qe2wb">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p><a href="../web-design-agency/saas/index.html">SaaS Website</a></p>
+<p><a href="../web-design-agency/b2b/index.html">Corporate Website</a></p>
+<p><a href="../ecommerce-website-agency/index.html">Ecommerce Website</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="fl-col fl-node-nq3dgx02smby fl-col-small fl-col-small-custom-width" data-node="nq3dgx02smby">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-button fl-node-i6ovpgj28tk1 custom-button no-border icon-color" data-node="i6ovpgj28tk1">
+<div class="fl-module-content fl-node-content">
+<div class="fl-button-wrap fl-button-width-auto fl-button-left fl-button-has-icon">
+<a href="../agency/index.html" target="_self" class="fl-button">
+<span class="fl-button-text">About Us</span>
+<i class="fl-button-icon fl-button-icon-after dashicons dashicons-before dashicons-arrow-right-alt" aria-hidden="true"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-yg97dei3hk2v links-hover" data-node="yg97dei3hk2v">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p><a href="../agency/careers/index.html">Careers</a></p>
+<p><a href="../agency/partners/index.html">Partners</a></p>
+<p><a href="../agency/news/index.html">News</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-col-group fl-node-bu9t5r4w1eqn" data-node="bu9t5r4w1eqn">
+<div class="fl-col fl-node-iaskwzxo0r3t fl-col-has-cols" data-node="iaskwzxo0r3t">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-separator fl-node-qsrljodvnti8" data-node="qsrljodvnti8">
+<div class="fl-module-content fl-node-content">
+<div class="fl-separator"></div>
+</div>
+</div>
+<div class="fl-col-group fl-node-f46crmzue1jw fl-col-group-nested fl-col-group-custom-width fl-col-group-responsive-reversed" data-node="f46crmzue1jw">
+<div class="fl-col fl-node-slkfnorbtm39 fl-col-small-custom-width" data-node="slkfnorbtm39">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-ygrvibzk9fw3" data-node="ygrvibzk9fw3">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>Follow Us</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-p2vx0o359j7k fl-visible-desktop fl-visible-large fl-visible-medium links-with-icons" data-node="p2vx0o359j7k">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p><a href="https://www.linkedin.com/in/ahmad-jorban-308702216/" target="_blank" rel="noopener">LinkedIn</a>           <a href="https://www.instagram.com/jorbanwebdesign/" target="_blank" rel="noopener">Instagram </a>    </p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-gzo9tlcad2wu fl-visible-mobile links-with-icons" data-node="gzo9tlcad2wu">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p><a href="https://www.linkedin.com/in/ahmad-jorban-308702216/" target="_blank" rel="noopener">LinkedIn</a>      <a href="https://dribbble.com/huemor" target="_blank" rel="noopener">Dribbble</a></p>
+<p>&nbsp;</p>
+<p><a href="https://www.instagram.com/jorbanwebdesign/" target="_blank" rel="noopener">Instagram </a>    </p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-ly4h86ovxq9k" data-node="ly4h86ovxq9k">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>Home Base: Israel</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-pwmibl14xdnf" data-node="pwmibl14xdnf">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>2 Alkana st, Jiser Az Zarqa - 3785800</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-zrgk3n9w2oy4 fl-visible-mobile" data-node="zrgk3n9w2oy4">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>Copyright 2023 Jorban LLC.</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-80v1q2gs4ul5 fl-visible-mobile links-with-icons" data-node="80v1q2gs4ul5">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p><a href="../privacy-policy/index.html">Privacy Policy</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl-col fl-node-s0g2ahe4zlqm fl-col-small fl-col-small-custom-width" data-node="s0g2ahe4zlqm">
+<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-xrvhkabycsp3" data-node="xrvhkabycsp3">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>We'd love to hear from you</p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-iha2qpwtrj4e links-with-icons" data-node="iha2qpwtrj4e">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p><a href="tel:+972 0539527635">+972 0539527635</a>      <a href="jorbanaahmad@gmail.com#2b584a5243426b435e4e464459055944484058"><span  data-cfemail="9be8fae2f3f2dbf3eefef6f4e9b5e9f4f8f0e8">jorbanaahmad@gmail.com</span></a></p>
+</div>
+</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-izyvpsqrhe0o fl-visible-desktop fl-visible-large fl-visible-medium links-with-icons" data-node="izyvpsqrhe0o">
+<div class="fl-module-content fl-node-content">
+<div class="fl-rich-text">
+<p>Copyright 2023 Jorban LLC.  <a href="../privacy-policy/index.html">Privacy Policy</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="rocketlazyloadscript">(function(){var s=document.createElement('script');e = !document.body ? document.querySelector('head'):document.body;s.src='../../acsbapp.com/apps/app/dist/js/app.js';s.defer=true;s.onload=function(){acsbJS.init({
+            statementLink     : '',
+            feedbackLink      : '',
+            footerHtml        : '',
+            hideMobile        : false,
+            hideTrigger       : false,
+            language          : 'en',
+            position          : 'left',
+            leadColor         : '#146FF8',
+            triggerColor      : '#146FF8',
+            triggerRadius     : '50%',
+            triggerPositionX  : 'right',
+            triggerPositionY  : 'bottom',
+            triggerIcon       : 'people',
+            triggerSize       : 'medium',
+            triggerOffsetX    : 20,
+            triggerOffsetY    : 20,
+            mobile            : {
+                triggerSize       : 'small',
+                triggerPositionX  : 'right',
+                triggerPositionY  : 'bottom',
+                triggerOffsetX    : 0,
+                triggerOffsetY    : 0,
+                triggerRadius     : '50%'
+            }
+        });
+    };
+    e.appendChild(s);}());</script>
+
+<aside id="moove_gdpr_cookie_info_bar" class="moove-gdpr-info-bar-hidden moove-gdpr-align-center moove-gdpr-dark-scheme gdpr_infobar_postion_bottom" aria-label="GDPR Cookie Banner" style="display: none;">
+<div class="moove-gdpr-info-bar-container">
+<div class="moove-gdpr-info-bar-content">
+<div class="moove-gdpr-cookie-notice">
+<p>We are using cookies to give you the best experience on our website.</p>
+<p>You can find out more about which cookies we are using or switch them off in <span role="button" data-href="#moove_gdpr_cookie_modal" class="change-settings-button">settings</span>.</p>
+</div>
+
+<div class="moove-gdpr-button-holder">
+<button class="mgbutton moove-gdpr-infobar-allow-all gdpr-fbo-0" aria-label="Accept">Accept</button>
+<button class="mgbutton moove-gdpr-infobar-reject-btn gdpr-fbo-1 " aria-label="Reject">Reject</button>
+</div>
+ </div>
+
+</div>
+
+</aside>
+
+
+<link rel="stylesheet" id="fl-builder-google-fonts-677a6d9a5b8a01cefbfbd367a23e718d-css" href="http://fonts.googleapis.com/css?family=Archivo%3A300%2C800%2C700%2C400%2C500%2C600%7CInter%3A400%7CPoppins%3A600&amp;ver=6.2.2" media="all" />
+<script src="../wp-content/plugins/bb-plugin/js/jquery.waypoints.mina77c.js?ver=2.7.1.1" id="jquery-waypoints-js" defer></script>
+<script data-minify="1" src="../wp-content/cache/min/1/wp-content/uploads/bb-plugin/cache/40245-layout97e8.js?ver=1692186639" id="fl-builder-layout-40245-js" defer></script>
+<script id="leadin-script-loader-js-js-extra">
+var leadin_wordpress = {"userRole":"visitor","pageType":"page","leadinPluginVersion":"10.1.30"};
+</script>
+<script data-minify="1" src="../wp-content/cache/min/1/66065567d2e.js?ver=1692186404" async defer id="hs-script-loader"></script>
+<script id="wpil-frontend-script-js-extra">
+var wpilFrontend = {"ajaxUrl":"\/wp-admin\/admin-ajax.php","postId":"40245","postType":"post","openInternalInNewTab":"0","openExternalInNewTab":"0","disableClicks":"0","openLinksWithJS":"0","trackAllElementClicks":"0","clicksI18n":{"imageNoText":"Image in link: No Text","imageText":"Image Title: ","noText":"No Anchor Text Found"}};
+</script>
+<script src="../wp-content/plugins/link-whisper-premium/js/frontend.min1ccf.js?ver=1689318398" id="wpil-frontend-script-js" defer></script>
+<script src="../wp-content/plugins/bb-plugin/js/jquery.ba-throttle-debounce.mina77c.js?ver=2.7.1.1" id="jquery-throttle-js" defer></script>
+<script data-minify="1" src="../wp-content/cache/min/1/wp-content/uploads/bb-plugin/cache/9ae687fed74cd6fb2abe36b16a05f019-layout-bundle5c85.js?ver=1692186634" id="fl-builder-layout-bundle-9ae687fed74cd6fb2abe36b16a05f019-js" defer></script>
+<script id="scripts-js-extra">
+var scripts_data = [];
+</script>
+<script data-minify="1" src="../wp-content/cache/min/1/wp-content/themes/beaverwarrior/build/script7d2e.js?ver=1692186404" id="scripts-js" defer></script>
+<script src="../wp-content/themes/beaverwarrior/assets/vendor/slick/slick/slick.min.js" id="slick-slider-js" defer></script>
+<script data-minify="1" src="../wp-content/cache/min/1/wp-content/themes/beaverwarrior/assets/custom7d2e.js?ver=1692186404" id="scroll-custom-js-js" defer></script>
+<script id="perfmatters-lazy-load-js-before">
+window.lazyLoadOptions={elements_selector:"img[data-src],.perfmatters-lazy,.perfmatters-lazy-css-bg",thresholds:"0px 0px",class_loading:"pmloading",class_loaded:"pmloaded",callback_loaded:function(element){if(element.tagName==="IFRAME"){if(element.classList.contains("pmloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener("LazyLoad::Initialized",function(e){var lazyLoadInstance=e.detail.instance;var target=document.querySelector("body");var observer=new MutationObserver(function(mutations){lazyLoadInstance.update()});var config={childList:!0,subtree:!0};observer.observe(target,config);});
+</script>
+<script async src="../wp-content/plugins/perfmatters/js/lazyload.min4c71.js?ver=2.1.3" id="perfmatters-lazy-load-js"></script>
+<script id="moove_gdpr_frontend-js-extra">
+var moove_frontend_gdpr_scripts = {"ajaxurl":"https:\/\/huemor.rocks\/wp-admin\/admin-ajax.php","post_id":"40245","plugin_dir":"https:\/\/huemordev.b-cdn.net\/wp-content\/plugins\/gdpr-cookie-compliance","show_icons":"all","is_page":"1","ajax_cookie_removal":"false","strict_init":"3","enabled_default":{"third_party":1,"advanced":1},"geo_location":"true","force_reload":"false","is_single":"","hide_save_btn":"false","current_user":"0","cookie_expiration":"365","script_delay":"2000","close_btn_action":"1","close_btn_rdr":"","scripts_defined":"{\"cache\":true,\"header\":\"\",\"body\":\"\",\"footer\":\"\",\"thirdparty\":{\"header\":\"<!-- Google Tag Manager -->\\r\\n<script data-gdpr>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\\r\\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\\r\\nj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\\r\\n'https:\\\/\\\/www.googletagmanager.com\\\/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\\r\\n})(window,document,'script','dataLayer','GTM-PMZ7CZF');<\\\/script>\\r\\n<!-- End Google Tag Manager -->\",\"body\":\"<!-- Google Tag Manager (noscript) -->\\r\\n<noscript><iframe src=\\\"https:\\\/\\\/www.googletagmanager.com\\\/ns.html?id=GTM-PMZ7CZF\\\"\\r\\nheight=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"><\\\/iframe><\\\/noscript>\\r\\n<!-- End Google Tag Manager (noscript) -->\",\"footer\":\"\"},\"advanced\":{\"header\":\"\",\"body\":\"\",\"footer\":\"\"}}","gdpr_scor":"true","wp_lang":"","geo_debug":"","display_cookie_banner":"false","gdpr_consent_version":"1","gdpr_uvid":"85a16e01d1d69363d37c691daab6a374","stats_enabled":"","gdpr_aos_hide":["0","1","2"],"consent_log_enabled":"","enable_on_scroll":"true","gdpr_aos_hide_seconds":"10"};
+</script>
+<script data-minify="1" src="../wp-content/cache/min/1/wp-content/plugins/gdpr-cookie-compliance/dist/scripts/main7d2e.js?ver=1692186404" id="moove_gdpr_frontend-js" defer></script>
+<script id="moove_gdpr_frontend-js-after">
+var gdpr_consent__strict = "true"
+var gdpr_consent__thirdparty = "true"
+var gdpr_consent__advanced = "false"
+var gdpr_consent__cookies = "strict|thirdparty"
+</script>
+<script data-minify="1" src="../wp-content/cache/min/1/wp-content/plugins/gdpr-cookie-compliance-addon/assets/js/gdpr_cc_addon7d2e.js?ver=1692186404" id="gdpr_cc_addon_frontend-js" defer></script>
+<script src="../wp-content/plugins/bb-plugin/js/jquery.magnificpopup.mina77c.js?ver=2.7.1.1" id="jquery-magnificpopup-js" defer></script>
+<script src="../wp-content/themes/bb-theme/js/bootstrap.mine96c.js?ver=1.7.13" id="bootstrap-js" defer></script>
+<script id="fl-automator-js-extra">
+var themeopts = {"medium_breakpoint":"992","mobile_breakpoint":"768","scrollTopPosition":"800"};
+</script>
+<script src="../wp-content/themes/bb-theme/js/theme.mine96c.js?ver=1.7.13" id="fl-automator-js" defer></script>
+<script data-minify="1" async data-no-optimize="1" src="../wp-content/cache/min/1/wp-content/plugins/perfmatters/vendor/instant-page/instantpage7d2e.js?ver=1692186404" id="perfmatters-instant-page-js"></script>
+
+
+<div id="moove_gdpr_cookie_modal" class="gdpr_lightbox-hide" role="complementary" aria-label="GDPR Settings Screen">
+<div class="moove-gdpr-modal-content moove-clearfix logo-position-left moove_gdpr_modal_theme_v1">
+<button class="moove-gdpr-modal-close" aria-label="Close GDPR Cookie Settings">
+<span class="gdpr-sr-only">Close GDPR Cookie Settings</span>
+<span class="gdpr-icon moovegdpr-arrow-close"></span>
+</button>
+<div class="moove-gdpr-modal-left-content">
+<div class="moove-gdpr-company-logo-holder">
+<img width="507" height="120" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;507&#039;%20height=&#039;120&#039;%20viewBox=&#039;0%200%20507%20120&#039;%3E%3C/svg%3E" alt="Huemor" class="img-responsive perfmatters-lazy" data-src="https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@3x.webp?ver" /><noscript><img width="507" height="120" src="https://huemordev.b-cdn.net/wp-content/uploads/2017/12/Huemor-Logo-Black@3x.webp?ver" alt="Huemor"     class="img-responsive" /></noscript>
+</div>
+ <ul id="moove-gdpr-menu">
+<li class="menu-item-on menu-item-privacy_overview menu-item-selected">
+<button data-href="#privacy_overview" class="moove-gdpr-tab-nav" aria-label="Privacy Overview">
+<span class="gdpr-nav-tab-title">Privacy Overview</span>
+</button>
+</li>
+<li class="menu-item-off menu-item-third_party_cookies">
+<button data-href="#third_party_cookies" class="moove-gdpr-tab-nav" aria-label="3rd Party Cookies">
+<span class="gdpr-nav-tab-title">3rd Party Cookies</span>
+</button>
+</li>
+</ul>
+<div class="moove-gdpr-branding-cnt">
+<a href="https://wordpress.org/plugins/gdpr-cookie-compliance/" rel="noopener noreferrer" target="_blank" class="moove-gdpr-branding">Powered by&nbsp; <span>GDPR Cookie Compliance</span></a>
+</div>
+ </div>
+
+<div class="moove-gdpr-modal-right-content">
+<div class="moove-gdpr-modal-title">
+</div>
+
+<div class="main-modal-content">
+<div class="moove-gdpr-tab-content">
+<div id="privacy_overview" class="moove-gdpr-tab-main">
+<span class="tab-title">Privacy Overview</span>
+<div class="moove-gdpr-tab-main-content">
+<p>This website uses cookies so that we can provide you with the best user experience possible. Cookie information is stored in your browser and performs functions such as recognising you when you return to our website and helping our team to understand which sections of the website you find most interesting and useful.</p>
+</div>
+
+</div>
+
+<div id="third_party_cookies" class="moove-gdpr-tab-main" style="display:none">
+<span class="tab-title">3rd Party Cookies</span>
+<div class="moove-gdpr-tab-main-content">
+<p>This website uses Piwik and Clearbit to collect anonymous information such as the number of visitors to the site, and the most popular pages.</p>
+<p>Keeping this cookie enabled helps us to improve our website.</p>
+<div class="moove-gdpr-status-bar">
+<div class="gdpr-cc-form-wrap">
+<div class="gdpr-cc-form-fieldset">
+<label class="cookie-switch" for="moove_gdpr_performance_cookies">
+<span class="gdpr-sr-only">Enable or Disable Cookies</span>
+<input type="checkbox" aria-label="3rd Party Cookies" value="check" name="moove_gdpr_performance_cookies" id="moove_gdpr_performance_cookies">
+<span class="cookie-slider cookie-round" data-text-enable="Enabled" data-text-disabled="Disabled"></span>
+</label>
+</div>
+
+</div>
+
+</div>
+
+<div class="moove-gdpr-strict-secondary-warning-message" style="margin-top: 10px; display: none;">
+<p>Please enable Strictly Necessary Cookies first so that we can save your preferences!</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="moove-gdpr-modal-footer-content">
+<div class="moove-gdpr-button-holder">
+<button class="mgbutton moove-gdpr-modal-allow-all button-visible" aria-label="Enable All">Enable All</button>
+<button class="mgbutton moove-gdpr-modal-save-settings button-visible" aria-label="Save Settings">Save Settings</button>
+</div>
+ </div>
+
+</div>
+
+<div class="moove-clearfix"></div>
+</div>
+
+</div>
+
+
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="wpsp-script-frontend"></script>
+</body>
+
+<!-- Mirrored from Jorban.rocks/website-analysis-plan/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Aug 2023 12:29:12 GMT -->
+</html>
+
